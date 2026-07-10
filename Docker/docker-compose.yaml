@@ -1,0 +1,37 @@
+version: '3'
+services:
+    webserver:
+        image: php:latest
+        build: ./webserver
+        environment:
+            - DB_SERVER=${DB_SERVER}
+            - DB_USER=${DB_ROOT_USER}
+            - DB_PASSWORD=${DB_ROOT_PASSWORD}
+        volumes:
+            - ./websites:/var/www/student
+        depends_on:
+            - mysql
+        expose:
+            - 80
+        ports:
+            - 80:80
+    mysql:
+        image: mariadb:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+        volumes:
+            - mysqldata:/var/lib/mysql
+        ports:
+            - 3306:3306
+    phpmyadmin:
+        image: phpmyadmin
+        restart: always
+        ports:
+            - 8080:80
+        environment:
+            PMA_HOST: mysql
+        depends_on:
+            - webserver
+            - mysql
+volumes:
+    mysqldata: {}

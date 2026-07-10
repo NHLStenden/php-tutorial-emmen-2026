@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "CeraPro"; 
+    src: url("../fonts/CeraPRO-Light.woff2");
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+body{
+    font-family: CeraPro, sans-serif;
+    font-weight: 400; 
+}
+
+
+main {
+    & article {
+        & header {
+            display: flex;
+            flex-direction: row;
+            background-color:#005aa7 ;
+            align-content: center;
+            justify-content: center;
+            height: fit-content;
+
+            color:white;
+
+            & img {
+                width:80px;
+                margin-right: 30px;
+            }
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        & section {
+            &.tiles {
+                display: flex;
+                flex-direction: row;
+                width: calc(100vw - 30px);
+                overflow: hidden;
+                flex-wrap: wrap;
+
+
+                & .tile {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                    padding:10px;
+                    background-color: whitesmoke;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 4px rgb(80,80,80, 0.7);
+
+                    &.small {
+                        height: 200px;
+                        max-width: 200px;
+                        align-items: center;
+                        text-align: center;
+                        flex-grow:1;
+                        flex-shrink: 1;
+                        flex-basis: 200px;
+
+                        justify-content: center;
+
+                        a  {
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                    }
+
+                    &.large {
+                        width: 100%;
+                    }
+
+
+                    & img {
+                        max-height: 120px;
+                        max-width: 120px;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}
