@@ -25,7 +25,6 @@ services:
             - 3306:3306
     phpmyadmin:
         image: phpmyadmin
-        restart: always
         ports:
             - 8080:80
         environment:

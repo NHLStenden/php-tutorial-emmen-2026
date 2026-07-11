@@ -6,7 +6,7 @@ COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 COPY --chown=root:root *.conf /etc/apache2/sites-available
 
 RUN mkdir /var/www/student && \
-    docker-php-ext-install pdo pdo_mysql && \
+    docker-php-ext-install pdo pdo_mysql mysqli && \
     pecl  install xdebug && \
     docker-php-ext-enable  xdebug
 
