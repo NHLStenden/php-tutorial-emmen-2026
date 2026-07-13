@@ -1,6 +1,6 @@
 version: '3'
 services:
-    webserver:
+    webserver-php-turorial:
         image: php:latest
         build: ./webserver
         environment:
@@ -10,12 +10,12 @@ services:
         volumes:
             - ./websites:/var/www/student
         depends_on:
-            - mysql
+            - mysql-php-tutorial
         expose:
             - 80
         ports:
             - 80:80
-    mysql:
+    mysql-php-tutorial:
         image: mariadb:latest
         environment:
             MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
@@ -26,11 +26,11 @@ services:
     phpmyadmin:
         image: phpmyadmin
         ports:
-            - 8080:80
+            - "8080:80"
         environment:
             PMA_HOST: mysql
         depends_on:
-            - webserver
-            - mysql
+            - webserver-php-turorial
+            - mysql-php-tutorial
 volumes:
     mysqldata: {}
