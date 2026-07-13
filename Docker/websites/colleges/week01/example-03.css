@@ -1,0 +1,28 @@
+article p {
+    font-family: sans-serif;
+}
+
+
+article section header h1 {
+    color:blue;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    color:black;
+    text-decoration: none;
+    width:fit-content;
+}
+nav a:hover {
+    background-color: #404040;
+    color:white;
+}
+
+footer {
+    border-top:1px solid black;
+}
+
+footer p {
+    font-size: small;
+}
