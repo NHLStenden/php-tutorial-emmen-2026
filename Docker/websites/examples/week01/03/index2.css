@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+
+    article {
+        header h1 {
+            font-size: 1.3rem;
+        }
+
+        section {
+            margin-left: 10px;
+
+            h2 {
+                border-bottom: 1px solid rgba(255,0,0,0);
+                font-size: 1.2rem;
+                animation-name: animate-h2-line;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+
+            }
+
+            p {
+                margin-left: 10px;
+                text-align: justify;
+            }
+        }
+
+        footer {
+            border-top: 1px solid darkgray;
+            padding-top: 5px;
+            font-size: smaller;
+        }
+    }
+
+    aside {
+        border: 1px solid darkgray;
+        padding: 3px;
+        margin-left: 10px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 4px rgb(200,200,200);
+        font-style: italic;
+        min-width: 200px;
+
+        animation-name: slide-in-aside;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+
+        position:relative;
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes slide-in-aside {
+    from {
+        background-color: white;
+        opacity: 0;
+        top:200px;
+    }
+    to {
+        opacity: 1;
+        top:0;
+        background-color:whitesmoke;
+    }
+}
+
+@keyframes animate-h2-line {
+    from{
+        width: 20%;
+        border-bottom-color:rgb(0,0,0,0);
+    }
+    to {
+        width: 100%;
+        border-bottom-color:rgb(255,0,0,255);
+
+    }
+}
