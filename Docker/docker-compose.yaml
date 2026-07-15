@@ -1,12 +1,13 @@
 version: '3'
 services:
     webserver-php-turorial:
-        image: php:latest
+
         build: ./webserver
         environment:
             - DB_SERVER=${DB_SERVER}
             - DB_USER=${DB_ROOT_USER}
             - DB_PASSWORD=${DB_ROOT_PASSWORD}
+            - PHP_IDE_CONFIG=serverName=localhost
         volumes:
             - ./websites:/var/www/student
         depends_on:
@@ -14,7 +15,9 @@ services:
         expose:
             - 80
         ports:
-            - 80:80
+            - "80:80"
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
     mysql-php-tutorial:
         image: mariadb:latest
         environment:
@@ -28,7 +31,7 @@ services:
         ports:
             - "8080:80"
         environment:
-            PMA_HOST: mysql
+            PMA_HOST: mysql-php-tutorial
         depends_on:
             - webserver-php-turorial
             - mysql-php-tutorial
