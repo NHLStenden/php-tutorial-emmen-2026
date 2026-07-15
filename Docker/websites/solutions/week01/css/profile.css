@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+
+img.logo {
+    max-height: 24px;
+}
+
+section {
+    ul {
+        li.favorite {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

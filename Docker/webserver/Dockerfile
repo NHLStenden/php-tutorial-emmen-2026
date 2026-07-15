@@ -1,8 +1,9 @@
 FROM php:8.2-apache-bullseye
 
 COPY custom.php.ini /usr/local/etc/php/conf.d/custom-settings-php.ini
-COPY student.conf /etc/apache2/sites-available
 COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
+
+COPY student.conf /etc/apache2/sites-available
 COPY --chown=root:root *.conf /etc/apache2/sites-available
 
 RUN mkdir /var/www/student && \
