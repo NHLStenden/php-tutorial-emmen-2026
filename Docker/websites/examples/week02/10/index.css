@@ -1,0 +1,21 @@
+main {
+    font-family: sans-serif;
+    article {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        row-gap: 3rem;
+        justify-content: center;
+
+        section {
+            flex-grow: 1;
+            flex-basis: 10%;
+
+            border:1px solid darkgray;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 4px 4px 4px darkgray;
+
+        }
+    }
+}

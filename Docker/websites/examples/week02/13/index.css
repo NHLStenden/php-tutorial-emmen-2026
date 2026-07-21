@@ -1,0 +1,59 @@
+main {
+    font-family: sans-serif;
+
+    > header {
+        h1 {
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size:0.9rem;
+            color:gray;
+        }
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 10px; /* first value = horizontal, second is vertical */
+        justify-content: flex-start; /* or try flex-start */
+    }
+
+    section {
+        flex-basis: 20%;
+        flex-grow: 1;
+        max-width: 20%;
+        padding: 10px;
+        border: 1px solid darkgray;
+        box-shadow: 4px 4px 4px rgba(200, 200, 200, 0.8);
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+        article {
+            section {
+                flex-basis: 45%;
+                max-width: 45%;
+                background-color: hotpink;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        article {
+            display: block;
+            section {
+                max-width: initial;
+                background-color:aquamarine;
+            }
+
+            section + section {
+                margin-top: 10px;
+            }
+        }
+    }
+}
