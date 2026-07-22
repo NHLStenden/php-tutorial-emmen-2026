@@ -1,5 +1,7 @@
 # Week 1 - example 2
 
+View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week01/02).
+
 Look at the file 'index.html' in this folder. You'll notice that everything we learned from example 1 is missing:
 
 * there is no doctype

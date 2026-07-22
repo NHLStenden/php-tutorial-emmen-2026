@@ -1,4 +1,5 @@
 # A simple PHP program
+View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week01/04).
 
 The simplest of PHP programs: just show "Hello world" on the screen. Just as we saw in the seconds example, there is 
 no HTML at all, and still the browser displays it correctly.

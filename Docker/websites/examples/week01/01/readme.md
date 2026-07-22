@@ -1,8 +1,10 @@
 # Week 1 - example 1
 
+View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week01/01).
+
 Have a look at the index.html. You can open it in any browser to view how the file is displayed.
 
-In order for the browser to understand what you want to display we need a number of instructions:
+In order for the browser to understand what you want to display we need a number of instructions.
 
 ## This is HTML
 
