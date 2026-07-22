@@ -18,8 +18,14 @@ main {
         padding:20px;
 
         section {
-            flex-basis: 15%;
-            min-width: 300px;
+            flex-basis: 10%;
+            min-width: 200px;
+            flex-grow: 1;
+
+            &:nth-child(2) {
+                flex-grow: 3;
+            }
+
 
             border:1px solid darkgray;
             border-radius: 4px;

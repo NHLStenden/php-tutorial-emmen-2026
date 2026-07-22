@@ -52,7 +52,7 @@ main {
 @media (max-width: 768px) {
     main {
         aside {
-            background-color: whitesmoke;
+            background-color: aliceblue;
         }
     }
 
@@ -60,15 +60,8 @@ main {
 
 @media (max-width: 576px) {
     main {
-        article {
-            aside {
-
-                background-color: whitesmoke;
-            }
-
-            section {
-
-            }
+        aside {
+            background-color: cadetblue;
         }
     }
 

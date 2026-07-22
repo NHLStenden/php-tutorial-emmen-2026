@@ -9,17 +9,19 @@ main {
         flex-direction: row; /* also try row-reverse*/
         flex-wrap: wrap;
 
-        justify-content:flex-start;
+        justify-content:space-between;
+        align-items: stretch;
 
         column-gap: 1rem;
         row-gap: 1rem;
 
-        background-color: whitesmoke;
+        background-color: darkgoldenrod;
         padding:20px;
 
         section {
             flex-basis: 15%;
             min-width: 300px;
+            flex-grow: 1;
 
             border:1px solid darkgray;
             border-radius: 4px;
