@@ -1,6 +1,6 @@
 version: '3'
 services:
-    webserver-php-turorial:
+    webserver-php-tutorial:
 
         build: ./webserver
         environment:
@@ -33,7 +33,7 @@ services:
         environment:
             PMA_HOST: mysql-php-tutorial
         depends_on:
-            - webserver-php-turorial
+            - webserver-php-tutorial
             - mysql-php-tutorial
 volumes:
     mysqldata: {}
