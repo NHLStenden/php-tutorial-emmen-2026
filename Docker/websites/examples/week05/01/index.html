@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main>
+    <article>
+        <header><h1>Fill out my form</h1></header>
+        <form action="process.php" method="post">
+            <label for="field01">Normal text</label>
+            <input type="text"
+                   placeholder="Type some text"
+                   required
+                   size="20" minlength="1" maxlength="10"
+                   name="field01" id="field01"><br>
+            <label for="field02">E-mail address</label>
+            <input type="email" name="field02" id="field02"><br>
+
+            <label for="field03">Telephone number</label>
+            <input type="tel" name="field03" id="field03" placeholder="Enter a valid phonenumber"><br>
+
+            <label for="field04">Date</label>
+            <input type="date"
+                   min="2026-01-01"
+                   max="2026-12-31"
+                   name="field04" id="field04"><br>
+
+            <label for="field05">Month</label>
+            <input type="month"
+                   required
+                   min="2026-01-01"
+                   max="2026-12-31"
+                   name="field05" id="field05"><br>
+
+            <label for="field06">Week</label>
+            <input type="week"
+                   min="2026-01-01"
+                   max="2026-12-31"
+                   name="field06" id="field06"><br>
+
+            <label for="field07">Time</label>
+            <input type="time"
+                   min="08:00"
+                   max="18:00"
+                   name="field07" id="field07"><br>
+
+            <label for="field08">Range</label>
+            <input type="range"
+                   min="0"
+                   max="100"
+                   step="10"
+                   name="field08" id="field08"><br>
+
+            <label for="field09">Number</label>
+            <input type="number"
+                   min="0"
+                   max="100"
+                   step="5"
+                   name="field09" id="field09"><br>
+
+            <label for="field10" >Checkbox</label>
+            <input type="checkbox"
+                   checked
+                   name="field10" id="field10"><br>
+
+            <fieldset>
+                <legend>Radio button</legend>
+                <label><input type="radio" id="field11a" name="field11" value="R">Rock</label><br>
+                <label><input type="radio" id="field11b" name="field11" value="J" checked>Jazz</label><br>
+                <label><input type="radio" id="field11c" name="field11" value="C">Classical</label><br>
+            </fieldset>
+
+
+            <input type="submit" name="submitbutton"><br>
+        </form>
+    </article>
+</main>
+</body>
+</html>

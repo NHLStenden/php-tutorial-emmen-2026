@@ -44,5 +44,17 @@ array_walk($list5, function (&$item, $key){
     echo "$key = $item \n";
 });
 
+echo "-------------------------\n";
+// split a string into separate words, using the space character as a separator
+$text = "This is a string containing some words";
+$words = explode(" ", $text);
+var_dump($words);
+
+sort($words);
+$sortedwords = implode(" ", $words);
+
+echo "-------------------------\n";
+var_dump($sortedwords);
+
 ?>
 </code></pre>

@@ -17,6 +17,7 @@ The following items need to be done
 * Add examples to sheets
   * Week 1
   * Week 2
+    * (DONE)conditionals; examples and various forms
   * Week 3
   * (WIP) Week 4
 
@@ -31,4 +32,6 @@ The following items need to be done
   * Week 2
   * Week 3
   * Week 4
+    * reformulate
+    * (DONE) create working solution
   * 

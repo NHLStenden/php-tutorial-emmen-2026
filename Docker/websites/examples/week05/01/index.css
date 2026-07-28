@@ -1,0 +1,20 @@
+body {
+    font-family: sans-serif;
+}
+
+label {
+    display: inline-block;
+    width: 15em;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    width: fit-content;
+}
+
+input {
+    padding:4px;
+    &:user-invalid {
+        border:2px solid red;
+    }
+}

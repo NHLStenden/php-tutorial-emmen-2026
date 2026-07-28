@@ -1,0 +1,31 @@
+main {
+    font-family: sans-serif;
+    font-size: 18pt;
+    box-sizing: border-box;
+
+    article {
+        section {
+            display: grid;
+            grid-template-columns: repeat(12, [col-start] 1fr);
+            column-gap: 1rem;
+            justify-content: flex-start;
+
+            label {
+                font-weight: bold;
+                grid-column: span 4;
+            }
+        }
+        section + section {
+            margin-top:40px;
+        }
+    }
+}
+
+.width-1col { grid-column: span 1;}
+.width-2col { grid-column: span 2;}
+.width-3col { grid-column: span 3;}
+.width-4col { grid-column: span 4;}
+.width-5col { grid-column: span 5;}
+.width-6col { grid-column: span 6;}
+.width-8col { grid-column: span 8;}
+.width-12col { grid-column: span 12;}
