@@ -16,5 +16,5 @@ RUN a2enmod rewrite headers && \
     a2dissite 000-default && \
     a2ensite student.conf && \
     chown -R www-data:users /var/www/student && \
-    chmod g+rwX /var/www/student
-
+    chmod -R g+rwX /var/www/student && \
+    chmod -R o+rwX /var/www/student
