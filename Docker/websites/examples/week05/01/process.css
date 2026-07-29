@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+section.errors {
+    h2 {
+        color:red;
+    }
+}
+
+section.values {
+    tr.invalid td:nth-child(2) {
+        color:red;
+    }
+}

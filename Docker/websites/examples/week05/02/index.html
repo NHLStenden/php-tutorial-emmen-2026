@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced form controls</title>
+</head>
+<body>
+<main>
+    <article>
+        <section>
+            <form action="process.php" method="post" enctype="multipart/form-data">
+                <label for="multi">Pick one or more values:</label>
+                <select id="multi" name="multi[]" multiple size="10">
+                    <optgroup label="fruits">
+                        <option>Banana</option>
+                        <option selected>Cherry</option>
+                        <option>Lemon</option>
+                    </optgroup>
+                    <optgroup label="vegetables">
+                        <option>Carrot</option>
+                        <option>Eggplant</option>
+                        <option>Potato</option>
+                    </optgroup>
+                </select>
+
+                <hr>
+
+                <label for="myFruit">What's your favorite fruit?</label>
+                <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
+                <datalist id="mySuggestion">
+                    <option>Apple</option>
+                    <option>Banana</option>
+                    <option>Blackberry</option>
+                    <option>Blueberry</option>
+                    <option>Lemon</option>
+                    <option>Lychee</option>
+                    <option>Peach</option>
+                    <option>Pear</option>
+                </datalist>
+
+                <hr>
+                <label for="uploader">Pick a file</label>
+                <input type="file" id="uploader" name="myfile">
+                <hr>
+
+                <button type="submit">Let&amp;s go!</button>
+            </form>
+            <hr>
+        </section>
+        <section>
+            <p>Source: <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Other_form_controls">MDN</a></p>
+        </section>
+    </article>
+
+</main>
+</body>
+</html>

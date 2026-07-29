@@ -374,8 +374,14 @@ references below for more information).
 The `pseude-selector` `:focus` will allow us to style an input when the user has moved 'the focus' to an `<input>`
 element or other form control (like `<select>`, `<textarea>`).
 
+# Sending informaton to the server
+
+
+
+
 # References
 
+* [MDN on forms](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form)
 * [MDN Learn Forms](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms)
 * [MDN on form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
 * [An introduction to Regular Expressions](https://learning.oreilly.com/library/view/an-introduction-to/9781492082569/)
