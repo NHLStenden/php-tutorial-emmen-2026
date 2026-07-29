@@ -10,6 +10,7 @@ label {
 
 fieldset {
     width: fit-content;
+    margin:10px;
 }
 
 input {
@@ -17,4 +18,8 @@ input {
     &:user-invalid {
         border:2px solid red;
     }
+}
+
+input:focus {
+    border:2px solid black;
 }

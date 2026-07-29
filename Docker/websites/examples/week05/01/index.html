@@ -73,6 +73,26 @@
                 <label><input type="radio" id="field11c" name="field11" value="C">Classical</label><br>
             </fieldset>
 
+            <label for="field12">Pattern</label>
+            <input type="text"  name="field12" id="field12"
+                   pattern="[A-Z]+"
+                   size="30"
+                   required
+                   placeholder="Type only capital characters"><br>
+
+            <label for="field13">Password</label>
+            <input type="password" name="field13" id="field13" minlength="4" maxlength="42" ><br>
+
+            <label for="field14">Dropdown</label>
+            <select name="field14" id="field14">
+                <option value="">-None-</option>
+                <option value="J">Jazz</option>
+                <option value="R">Rock</option>
+                <option value="C">Classical</option>
+            </select>
+
+            <br>
+            <hr>
 
             <input type="submit" name="submitbutton"><br>
         </form>
