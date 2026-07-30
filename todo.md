@@ -5,12 +5,28 @@ The following items need to be done
 # Examples
 
 * Create proper index pages per week
-  * Week 1
-  * Week 2
+  * (DONE) Week 1
+  * (DONE) Week 2
   * Week 3
   * Week 4
-* Add descriptions for index pages per week
+* Add descriptions in readme.md for index pages per week 
+  * (DONE) week 1
+  * week 2
+  * week 3
+  * week 4
+  * week 5
 * add book references
+  * week 1
+  * week 2
+  * week 3
+  * week 4
+  * week 5
+* make sure the HTML/CSS validates using W3C validator website. 
+  * (DONE) week 1
+  * (DONE) week 2
+  * week 3
+  * week 4
+  * week 5
 
 # Presentations
 
