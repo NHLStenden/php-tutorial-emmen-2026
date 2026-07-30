@@ -32,7 +32,7 @@ $z = $x * $y;
 
 <footer>
     <p>
-        See more at the examples of <a href="../../examples/week01/">Week 1</a>
+        See more at the examples of <a href="../../../examples/week01">Week 1</a>
     </p>
 </footer>
 </body>
