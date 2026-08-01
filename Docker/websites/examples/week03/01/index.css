@@ -1,0 +1,37 @@
+ * {
+     box-sizing: border-box;
+ }
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    article {
+        position: relative;
+        height: 800px;
+        width: calc(100vw - 20px);
+        background-color: bisque;
+
+        section {
+            border:1px solid darkgray;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 4px 4px 4px darkgray;
+            width: 30em;
+            background-color: aqua;
+
+            &:first-of-type {
+                position: absolute;
+                top: 80px;
+                left: 200px;
+            }
+
+            &:last-of-type {
+                position: absolute;
+                right:0;
+                bottom:0;
+            }
+        }
+    }
+}

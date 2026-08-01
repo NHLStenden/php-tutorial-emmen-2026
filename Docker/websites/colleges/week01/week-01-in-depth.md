@@ -94,7 +94,7 @@ elements. Some example:
 
 # References
 
-**Online programming resources**
+## Online programming resources
 
 * [MDN: HTML head](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata)
 * [W3 Schools : Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
@@ -102,18 +102,23 @@ elements. Some example:
 * Validate your HTML with [W3C Validator](https://validator.w3.org)
 * CSS animation playground : [Animista](https://animista.net/)
 
-**Book chapters**
+## Book chapters
 
-* _HTML and CSS_: Chapters 1.1, 1.2, 1.3, 1.4, 1.6, 2
+* _HTML and CSS_: 
+  * Introduction. Chapters 1.1, 1.2, 1.3, 1.4, 1.6, 
+  * Basic structure of HTML documents. Chapter 2 
+  * Head data. Chapters 3.1,3.2,3.3,3.5, 3.6
+  * HTML Elements. Chapters 4.1, 4.2,4.3,4.4,4.6
+  * Styling with CSS. Chapters 8, 8.2, 8.3.1-8.3.5, 8.4, 9, 10
 * _PHP Crash Course_: Part I, chapter 1
 
-**Online References**
+## Online References
 
 * [MDN: HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [MDN: Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content)
 * Setting up your webserver with [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-**Possible IDEs**
+## Possible IDEs
 
 * [Jetbrains PHP Storm](https://www.jetbrains.com/phpstorm)
 * [Visual Studio Code](https://code.visualstudio.com)

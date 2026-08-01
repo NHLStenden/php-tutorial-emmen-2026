@@ -1,118 +1,59 @@
-# Conditionals and type juggling
+# Sticky positioning
 
-When comparing values PHP will sometimes try to coerce the two parts of a comparison to the same type
+When designing a table (or table like element) you might want to fix the header to the top of
+the website when scrolling. This can be achieved using the `position:sticky` instruction.
 
-## Type coercion checking
+Note the HTML structure below. The important part is that we explicitly added a table head `thead` having one row `tr`
+and multiple table header cells `th`. This is good practice but also simplifies the CSS we need to write: we can simply
+reference the `th` elements.
 
-When using a comparison to check if two values are equal, PHP might coerce both parts of the comparison to the same type
-before comparing the values. This is expected behaviour when using the `==` operator. See the example below.
+```html
 
-```php
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    ....
+    </tbody>
+</table>
+```
 
-$a = "10";
-$b = 10;
+The CSS focuses on the positioning of the `<th>` elements. We set the position to `sticky`. This also requires us to add
+a
+instruction for the `top`. Because table headers normally are transparent the header text will (optically) mix with the
+text flowing behind it. Therefore, we use a background color to cover up the whole area behind the table headers. In
+this
+case a `rgba()` color is specified. This allows for specifying an opacity different from 1. This makes the backgruond
+color a little transparent so the table text will be visible just a little bit. The lower the last number (in the example it
+is `0.8`) will make it more transparent.
 
-if ($a == $b) {
-    print "a and be are the same\n";
-}
-else {
-    print "b and b  are not the same\n";
+```css
+
+thead tr th {
+    position: sticky;
+    top: 0;
+    background-color: rgba(250, 250, 250, 0.8);
 }
 ```
 
-Surprisingly, the outcome is that $a and $b have the same value, even though $a is a string and $b is a number (int or
-float).
+The `position: sticky` will stick the headers to the top when they would otherwise be scrolled out of view. See for the
+exact definition the MDN reference for position at the end of this article.
 
-```php
+Notice that a lot different syntaxes may be used to specify colors for background (Red, Green and Blue values). See
+references at the end. In the example the 'old fashioned' way with commas as separators is used. So this is valid as 
+well:
 
-$a = "10";
-$b = 10;
-
-if ($a === $b) {
-    print "a and b are the same\n";
-}
-else {
-    print "b and b are not the same\n";
-}
+```css
+  background-color:rgb(250 250 250 / 80%);
 ```
-
-## Type comparison with numbers
-
-Notice that when comparing numbers there might be slightly unexpected behaviour! See the examples below. When using the
-`==` comparison, the outcome is as expected. When using the `===` operator PHP will decide variables `$x` and `$y` are
-not the same!
-
-```php
-
-
-$x = 10.0;
-$y = 10;
-
-if ($x == $y) {
-    print "x and be are the same\n";
-}
-else {
-    print "x and y not are the same\n";
-}
-
-if ($a === $b) {
-    print "x and y are the same\n";
-}
-else {
-    print "x and y are not the same\n";
-}
-```
-
-## Comparing float values
-
-Because two floating point numbers can be represented slightly different from the calculated value or assigned value it
-is difficult to determine if two floating point numbers 'are the same'. Besided, the defition of 'are the same' can be
-very different in varying situations. When dealing with very large numbers (e.g. millions of dollars) a difference of a
-few cents will not matter maybe. However, when calculating values between 0 and 1, even a value of one tenth can ruin
-your algorithm. So, often you need to define a margin named 'epsilon' that means 'if the difference between two numbers
-is less than this very small number I define the are equal'.
-
-In the example below this is shown. (explanation below the example)
-
-```php
-$p = 10.000000000001;
-$q = 10.000;
-const EPSILON = 1e-5;
-print "margin = " . number_format(EPSILON, 10) . "\n}";
-
-if (abs($p - $q) <== EPSILON) {
-    print "The two floats p and q are roughly the same";
-}
-```
-
-First two variables `$p` and `$q` are created. They are of the type `float`. Then a constant is defined using the
-`const`
-keyword. Constans are often names in all capitals to distinguish them from variables.
-
-The value of `EPSILON` is expressed using a scientific expression:  "one to the power of minus 5" that results in
-`0.00001`.
-
-The value of `EPSILON` is printed using the `number_format` built in PHP function (see references section at the end of
-this article).
-
-Then a comparison is done. The comparison constist of the following parts
-
-* subtraction of `$p` and `$q`: `$p - $q` .
-* a function call to the `sub()` built in PHP function; this will make the result always a positive number (greater than
-  zero)
-* a comparion between the absolute value of the subtractions and `EPSILON` using `<==`: **smaller than or equal**. This
-  will yield 'true' if the absolute value of the subtraction is smaller than or equal to `EPSILON`.
-
-Notice that `<==` does not coerce the types! THe `abs()` function allows both `int` and `float` . We will look into that
-in week 3 when dealing with functions.
-
-
-# Conclusions
-
-The best practice is to always use the `===` operator. When comparing floats you will need to use a margin ('epsilon')
 
 # References
 
-* [PHP Comparison operators](https://www.php.net/manual/en/language.operators.comparison.php)
-* [PHP number_format ()](https://www.php.net/manual/en/function.number-format.php)
-* [PHP abs ()](https://www.php.net/manual/en/function.abs.php)
+* [MDN CSS Position](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position)
+* [MDN rgb() CSS ](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/rgb)

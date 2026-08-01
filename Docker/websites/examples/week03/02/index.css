@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    article {
+        position: relative;
+        height: 800px;
+        width: calc(100vw - 20px);
+        background-color: bisque;
+
+        section {
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 4px 4px 4px darkgray;
+
+            background-color: aqua;
+            position: relative;
+
+            &:first-of-type {
+                height: 400px;
+                width: 30em;
+                margin-left:200px;
+                margin-top:200px;
+
+                header {
+                    position: relative;
+                    top: 40px;
+                    left: 0;
+                    text-align: center;
+                    z-index: 999;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    max-height: 200px;
+                }
+
+                p {
+                    position: relative;
+                    top: 200px;
+
+                }
+            }
+
+            &:nth-of-type(2) {
+                position: absolute;
+                right: 00px;
+                top:0;
+                width: 50vw;
+                header {
+                    /*image source : https://www.magnific.com/free-vector/simple-ribbons-collection_1188391.htm#fromView=search&page=3&position=20&uuid=a886d205-76de-405f-8504-be01364d8f92&query=Banner*/
+                    background-image: url("./images/website-banner.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position-y:0;
+
+                    height:300px;
+                    h2 {
+                        text-align: center;
+                        position: relative;
+                        top: 100px;
+                        font-size: 3rem;
+                        margin:0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
