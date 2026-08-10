@@ -1,6 +1,10 @@
 # Assignments week 2
 
-# Assignment 1
+Here you will find
+
+# HTML and CSS assignments
+
+## Assignment 1
 
 See the two websites below. Navigate to them and do all the exercises. This will greatly enhance your skills with the
 flexbox and grid.
@@ -30,7 +34,7 @@ Information about this assignment:
 * the total area is 600x600 pixels.
 * this black lines are 3px thick.
 
-# Assignment 3 :Create your own facebook
+## Assignment 3 :Create your own facebook
 
 Look at the two images below. This is a facebook directory of all the employees in your virtual company. The directory
 should show all employees on 'cards' separated by a small 'gap'. There should be as many persons on a 'row' as possible.
@@ -38,11 +42,11 @@ should show all employees on 'cards' separated by a small 'gap'. There should be
 Images: courtesy of [This person does not exist](https://thispersondoesnotexist.com/). Look at the folder
 `/assignments/avatars` for all the images. 
 
-![facebook-2.png](resources/week02/facebook-2.png)
+![facebook-2.png](resources/week-02/facebook-2.png)
 
 When the page is larger than the space in the browser, a vertical scrollbar must be added. Have a look at the example.
 
-![facebook-1.png](resources/week02/facebook-1.png)
+![facebook-1.png](resources/week-02/facebook-1.png)
 
 This can be done using the `overflow: auto` instruction on the container. 
 
@@ -62,15 +66,16 @@ Hints:
 
 When you managed to create the page start experimenting with values for `justify-content` and `align-items` 
 
+# PHP Programming assignments
 
-# Calculation with dates
+# Assignment 1: Calculation with dates
 
 Create a variable called date and store the following number 14062016. This number stands for 14th of June 2016.
 
 Use the operators Modulo (%) and Division (/), and only these operators, to extract the day, month and year in different
 variables. Your answer should work with all different possibilities for variable date.
 
-## Assignment 4: Programming with Conditionals
+## Assignment 2: Programming with Conditionals
 
 Implement the following decision table using PHP in combination with HTML. Define a variable and set it to a value
 between zero and 20. Use PHP conditionals to determine the 'Result'.

@@ -12,9 +12,11 @@ Place your files in the folder `/Docker/websites/student/week-01`. To view your 
 * http://localhost/student/week-01/assignment-01.html
 * http://localhost/student/week-01/assignment-03.php
 
-# Create a website for the city of Amsterdam
+# HTML and CSS Programming
 
-## Step 1 - Implement the following
+## Create a website for the city of Amsterdam
+
+### Step 1 - Implement the following
 
 Create the following webpages using the following example(s). Save every version as a different file so that we can
 review the changes between versions.
@@ -29,7 +31,7 @@ Details
 
 Your resources, text and images, are available via the ForStudents.zip in the [resources](./resources) folder.
 
-## Step 2 - Improve the page with styling
+### Step 2 - Improve the page with styling
 
 Improve your first step by adding styling. See the example below.
 
@@ -42,7 +44,7 @@ Details
     * make level 2 headers red
     * improve fonts by choosing a better font (the example uses `sans-serif`)
 
-## Step 3 - Link to new pages
+### Step 3 - Link to new pages
 
 In this next step we will be adding two new pages:
 
@@ -67,15 +69,17 @@ In the [resource folder](./resources) you'll find these larger images.
 
 Here are the two example pages. This first is about the bridges, the seconds contains the example for the museums.
 
-![step 4](./images/assignment-week-01d.png)
+![step 4a](./images/assignment-week-01d.png)
 
-![step 4](./images/assignment-week-01e.png)
+<hr>
+
+![step 4b](./images/assignment-week-01e.png)
 
 # PHP Programming assignments
 
 In this you will create small webpages using your PHP programming skills.
 
-## Your profile website
+## Assigment 1: Your profile website
 
 Create a webpage about yourself. Use the following information to introduce yourself:
 
@@ -107,7 +111,7 @@ For instance this could be the result:
 The "LinkedIn" should be clickable and lead to your (or an imaginary) social media website. The social website must be
 prefixed by a logo of the site. E.g. [LinkedIn official logo](https://brand.linkedin.com/downloads).
 
-## Improve your profile!
+## Assignment 2:Improve your profile!
 
 Improve your profile page and add information about your siblings.
 
@@ -131,7 +135,7 @@ Or
 > My name is Angelo. I live in Brussels in Belgium. I am currently 21 years of age. My hobby is watching soccer. I have
 > no siblings.
 
-## Improve your profile some more
+### Assignment 3: Improve your profile some more
 
 In this step you will be adding a list of some of your countries favorite dishes / food.
 
