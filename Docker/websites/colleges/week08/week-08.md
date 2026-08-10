@@ -1,4 +1,4 @@
-# Week 8
+# Week 8 - Wrap up and preparation for exams
 
 * Teaching method: Seminar
 * Duration: 3 × 2 teaching hours

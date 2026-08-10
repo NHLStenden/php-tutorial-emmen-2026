@@ -1,5 +1,5 @@
 
-# Week 7
+# Week 7 - Consolidation
 
 * Teaching method: Seminar
 * Duration: 3 × 2 teaching hours
