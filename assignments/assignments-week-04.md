@@ -33,24 +33,23 @@ best to mimic the image. If it doesn't work, a total width of 1440px may be used
 Color: The following colors are included with the hsl to make them with using CSS. If you don't know how to use hsl to
 give colors, visit Then this page: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
 
-* Purple 100 – hsl (254, 88%, 90%)
-* Purple 500 – hsl (256, 67%, 59%)
-* Yellow 100 – HSL (31, 66%, 93%)
-* Yellow 500 – hsl (39, 100%, 71%)
-* White – hsl (0, 0%, 100%)
-* Black – hsl (0, 0%, 7%)
+* Purple 100 – hsl(254, 88%, 90%)
+* Purple 500 – hsl(256, 67%, 59%)
+* Yellow 100 – hsl(31, 66%, 93%)
+* Yellow 500 – hsl(39, 100%, 71%)
+* White – hsl(0, 0%, 100%)
+* Black – hsl(0, 0%, 7%)
 
 Fonts: The default font size is 18px. Set the font size to the <body> using CSS. The following information is provided.
 
 * Font family: DM-Sans; font-weights: 400, 500.
 
 Use the following line in your HTML (in the <head>) to add this new font:
-
-* <link rel="preconnect" href="https://fonts.googleapis.com"> 
-
-* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-
-* <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> 
+```html
+ <link rel="preconnect" href="https://fonts.googleapis.com"> 
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> 
+```
 
 Then, use the following css rule to apply DM Sans:
 
