@@ -61,10 +61,13 @@ function addAndEchoNumbers(int $first, int $second): void
 
 ```
 
+This can then be called using the function call below.
+
 ```php
   addAndEchoNumbers($a, $b);
-
 ```
+
+
 
 # References
 
