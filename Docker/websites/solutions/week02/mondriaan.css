@@ -1,25 +1,27 @@
 article {
-    width: 800px;
-    height: 800px;
-    background-color: blue;
+    width: 600px;
+    height: 600px;
+    background-color: hotpink;
+    padding:20px;
 }
 section {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 6fr 3fr 3fr 1fr ; /* 8 columns */
-    grid-template-rows: 10px 10px 3fr 3fr 1fr 1fr 1fr 1fr ; /* 10 rows */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; /* 8 columns */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 10 rows */
+
+    height: calc(100%);
     background-color: black;
     grid-column-gap: 3px;
     grid-row-gap: 3px;
     text-align: center;
-    margin:10px;
-
 }
 
 .white  { background-color: white; }
 .yellow { background-color: yellow; }
 .red    { background-color: red; }
 .black  { background-color: black; color: white; }
-.blue  { background-color: blue; color: white; }
+.blue   { background-color: blue; color: white; }
+.wip    { background-color: bisque;  }
 
 
 .col-1 { grid-column: span 1}
@@ -27,6 +29,9 @@ section {
 .col-3 { grid-column: span 3}
 .col-4 { grid-column: span 4}
 .col-5 { grid-column: span 5}
+.col-6 { grid-column: span 6}
+.col-7 { grid-column: span 7}
+.col-8 { grid-column: span 8}
 
 .row-1 { grid-row: span 1}
 .row-2 { grid-row: span 2}
@@ -36,3 +41,10 @@ section {
 .row-6 { grid-row: span 7}
 .row-7 { grid-row: span 8}
 .row-8 { grid-row: span 9}
+
+/** only use this to make a screen dump without the texts **/
+
+
+section div {
+    color: transparent !important;
+}

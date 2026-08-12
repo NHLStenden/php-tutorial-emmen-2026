@@ -1,5 +1,5 @@
 
-# Week 6
+# Week 6 - Printing HTML
 
 * Teaching method: Seminar
 * Duration: 3 × 2 teaching hours

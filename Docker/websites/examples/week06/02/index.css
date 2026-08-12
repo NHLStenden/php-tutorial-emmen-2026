@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+article {
+    height: calc(100vh - 10px);
+    width: calc(100vw - 10px);
+    background-color: darkgoldenrod;
+}
+
+
+article section {
+    width: calc(50%);
+    height: calc(50%);
+    overflow: auto;
+    background-color: cadetblue;
+}
+
+@media print {
+    section {
+        width: auto;
+        height: auto;
+    }
+}

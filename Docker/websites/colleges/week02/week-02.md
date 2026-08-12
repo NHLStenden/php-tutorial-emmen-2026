@@ -1,5 +1,4 @@
-
-# Week 2
+# Week 2 - CSS Layouts and PHP Conditionals
 
 * Teaching method: Seminar
 * Duration: 3 × 2 teaching hours
@@ -41,3 +40,12 @@ Please have a look at [assignments week 2](../assignments/assignments-week-02.md
 
 # Online books - advised reading
 
+## Book chapters
+
+* _HTML and CSS_:
+    * CSS Selectors. Chapters
+    * CSS media queries. Chapter 8.3.8
+    * The box model. Chapter 11.2, 11.3, 11.4
+    * Responsive design (grid/flex). Chapter 13.4
+* _PHP Crash Course_: 
+  * Part 1, chapter 4

@@ -1,5 +1,5 @@
 
-# Week 3
+# Week 3 - Positioning and PHP loops
 
 * Teaching method: Seminar
 * Duration: 3 × 2 teaching hours

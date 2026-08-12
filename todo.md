@@ -2,43 +2,61 @@
 
 The following items need to be done
 
+# Topics for reference
+
+Weekly topics
+
+* Introduction to HTML and PHP
+* CSS Layouts and PHP Conditionals
+* Positioning and PHP loops
+* Menus and PHP Functions
+* HTML Forms and processing
+* Printing HTML
+* Consolidation
+
+Wrap up and preparation for exams
+
 # Examples
 
 * Create proper index pages per week
-  * (DONE) Week 1
-  * (DONE) Week 2
-  * Week 3
-  * Week 4
+  * (DONE) Week 1 - Introduction to HTML and PHP
+  * (DONE) Week 2 - CSS Layouts and PHP Conditionals
+  * Week 3 - Positioning and PHP loops
+  * Week 4 - Menus and PHP Functions
+  * Week 5 - HTML Forms and processing
+  * Week 6 - Printing HTML
 * Add descriptions in readme.md for index pages per week 
-  * (DONE) week 1
-  * week 2
-  * week 3
-  * week 4
-  * week 5
-* add book references
-  * week 1
-  * week 2
-  * week 3
-  * week 4
-  * week 5
+  * (DONE) week 1 - Introduction to HTML and PHP
+  * week 2 - CSS Layouts and PHP Conditionals
+  * week 3 - Positioning and PHP loops
+  * week 4 - Menus and PHP Functions
+  * week 5 - HTML Forms and processing
+  * week 6 - Printing HTML
+* add book references to Docker/websites/colleges/week<xx>
+  * (DONE) week 1 
+  * (DONE) week 2
+  * week 3 - Positioning and PHP loops
+  * week 4 - Menus and PHP Functions
+  * week 5 - HTML Forms and processing
+  * week 6 - Printing HTML
 * make sure the HTML/CSS validates using W3C validator website. 
   * (DONE) week 1
   * (DONE) week 2
-  * week 3
-  * week 4
-  * week 5
+  * week 3 - Positioning and PHP loops
+  * week 4 - Menus and PHP Functions
+  * week 5 - HTML Forms and processing
+  * week 6 - Printing HTML
 
 # Presentations
 
 * Add examples to sheets
-  * Week 1
-  * Week 2
+  * Week 1 - Introduction to HTML and PHP
+  * Week 2 - CSS Layouts and PHP Conditionals
     * (DONE)conditionals; examples and various forms
-  * Week 3
-  * (WIP) Week 4
-  * (WIP) Week 5
-  * 
-
+  * Week 3 - Positioning and PHP loops
+  * (WIP) Week 4 - Menus and PHP Functions
+  * (WIP) Week 5 - HTML Forms and processing
+  * Week 6 - Printing HTML
 
 # Exams
 
@@ -49,14 +67,15 @@ The following items need to be done
 # Assignments
 
 * Create assignments per week / lesson
-  * (DONE) Week 1
-  * Week 2
-  * Week 3
-  * Week 4
+  * (DONE) Week 1 - Introduction to HTML and PHP 
+  * Week 2 - CSS Layouts and PHP Conditionals
+  * Week 3 - Positioning and PHP loops
+  * Week 4 - Menus and PHP Functions
     * reformulate
     * (DONE) create working solution
-  * Week 5
-    * 
+  * Week 5  - HTML Forms and processing
+  * Week 6 - Printing HTML
+  
 
 # Blackboard
 

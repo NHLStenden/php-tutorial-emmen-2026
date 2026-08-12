@@ -1,0 +1,150 @@
+/* Font-Family: Outfit; font-weights: 400, 600, 700.*/
+
+@font-face {
+    font-Family: Outfit;
+    src: url("fonts/outfit/Outfit-VariableFont_wght.ttf");
+
+}
+
+
+@font-face {
+    font-Family: Young-Serif;
+    src: url("fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+
+body {
+    font-size: 16pt;
+
+}
+
+main {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    article {
+        border-radius: 20px;
+        background-color: white;
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        section {
+            width: 800px;
+            font-family: Outfit, sans-serif;
+            padding: 20px;
+
+            &:first-of-type {
+                header {
+                    h1 {
+                        font-family: Young-Serif, sans-serif;
+                        text-align: left;
+                        font-size: 30pt;
+                    }
+
+                    img {
+                        border-radius: 20px;
+                        max-width: 800px;
+                    }
+
+                    p {
+                        font-family: Outfit, sans-serif;
+
+                    }
+                }
+            }
+
+            &:nth-of-type(3),
+            &:nth-of-type(4),
+            &:nth-of-type(5) {
+                header {
+                    h2 {
+                        font-family: Young-Serif, sans-serif;
+                        font-size: 22pt;
+                        color: hsl(14, 45%, 36%);
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                background-color: hsl(330, 100%, 98%);
+
+                header {
+                    h2 {
+                        color: hsl(332, 51%, 32%);
+                        font-size: 20pt;
+                    }
+                }
+
+                ul {
+                    list-style: square;
+
+                    li {
+                        padding-left: 10px;
+
+                        span:first-of-type {
+                            font-weight: 700;
+
+                            &:after {
+                                content: ": "
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                ul {
+                    list-style: square;
+                    list-style-position: outside;
+
+                    li {
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                ol {
+                    color: hsl(30, 10%, 34%);
+
+                    li {
+                        padding-left: 10px;
+
+                        span:first-of-type {
+                            font-weight: 700;
+
+                            &:after {
+                                content: ": "
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &:nth-of-type(5) {
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    tr {
+                        td {
+                            border-bottom: 1px solid darkgray;
+                            &:nth-of-type(2) {
+                                font-weight: bold;
+                                color:hsl(14, 45%, 36%);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

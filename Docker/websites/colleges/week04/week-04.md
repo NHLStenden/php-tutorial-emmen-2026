@@ -1,5 +1,5 @@
 
-# Week 4
+# Week 4 - Menus and PHP Functions
 
 * Teaching method: Seminar
 * Duration: 3 × 2 teaching hours
