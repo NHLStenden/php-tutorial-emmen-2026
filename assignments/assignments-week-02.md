@@ -66,7 +66,7 @@ Hints:
 
 When you managed to create the page start experimenting with values for `justify-content` and `align-items` 
 
-# PHP Programming assignments
+# PHP Programming assignments - Conditionals
 
 # Assignment 1: Calculation with dates
 

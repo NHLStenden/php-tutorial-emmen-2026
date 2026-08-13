@@ -1,0 +1,43 @@
+.strip {
+    display: flex;
+    flex-direction: row;
+
+    p {
+        margin:0;
+    }
+
+
+}
+
+.container {
+    position:relative
+}
+
+.fixed {
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.text {
+    width: 60em;
+}
+
+.animate div {
+    animation-name: cycle-colors;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    height: 30px;
+    animation-delay: 5s;
+}
+
+@keyframes cycle-colors {
+    0% {
+       filter : hue-rotate(0);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}

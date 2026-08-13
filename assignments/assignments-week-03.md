@@ -53,13 +53,9 @@ body {
 
 Images: Images are supplied via the img folder.
 
-# PHP Programming
+# PHP Programming - Functions
 
 This weeks assignments are about writing functions. 
-
-## Assignment 1 - compare to 100
-# Assignments week 3
-
 
 ## Write the 'explode()' and 'join()' or 'implode()' functions
 
@@ -74,7 +70,7 @@ Write these two functions yourself, using only the simplest form: a separator an
 
 Implement the following
 
-Write a function that returns a list of nutrients in a an HTML table format. The list should be styled using CSS.
+Write a function that returns a list of nutrients in an HTML table format. The list should be styled using CSS.
 
 The function takes 5 parameters of which the first 4 are numbers: Calories, Carbs, Protein and Fat. The last parameter
 is a Boolean (TRUE or FALSE). Based on the Boolean the final input of the list should say if it fits your diet (Diet

@@ -123,7 +123,7 @@ Complete all Week 2 assignments.
 
 By the end of this seminar, students will be able to:
 
-* apply hover effects;
+* working with CSS pseudo selectors;
 * position text on images;
 * use repetition structures (loops);
 * distinguish between while, do-while, for, and foreach loops;

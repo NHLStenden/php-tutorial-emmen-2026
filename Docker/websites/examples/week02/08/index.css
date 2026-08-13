@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+article {
+    width: calc(100vw - 30px);
+    height:50vh;
+    display: grid;
+    grid-template-rows:1fr 5fr 1fr 1fr;
+    grid-template-columns:150px 1fr 150px;
+    grid-gap: 20px;
+    background-color: #005aa7;
+    margin: 0;
+
+    header, footer, nav, section, aside, div.card {
+        background-color: whitesmoke;
+        padding: 20px;
+        border: 1px solid darkgray;
+    }
+}
+
+.cols-1 { grid-column: span 1;}
+.cols-2 { grid-column: span 2;}
+.cols-3 { grid-column: span 3;}
+
+.rows-1 {grid-row:span 1;}
+.rows-2 {grid-row:span 2;}
+.rows-3 {grid-row:span 3;}

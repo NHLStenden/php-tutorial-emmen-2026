@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+article {
+    width:calc(100vw - 30px);
+    display: grid;
+    grid-template-rows:80px 1fr 80px;
+    grid-template-columns:150px 1fr 150px;
+    grid-gap: 20px;
+    background-color: #005aa7;
+    margin:0;
+
+    grid-template-areas:
+            "head head head"
+            "menu content ads"
+            "foot foot foot";
+
+    header,footer,nav,section,aside {
+        background-color: whitesmoke;
+        padding:20px;
+        border:1px solid darkgray;
+    }
+
+    header {
+        grid-area:head;
+    }
+    section {
+        grid-area: content;
+    }
+    aside {
+        grid-area: ads;
+    }
+    footer {
+        grid-area: foot;
+    }
+
+}

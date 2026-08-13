@@ -67,36 +67,111 @@ The `font-weight` you can choose yourself.
 See the `resources/week-04` folder for the images and fonts you need. Almost all images are of the new WEBP
 format, these can be used in the same way as 'standard' images.
 
-# PHP Programming
+# PHP Programming - Functions
 
-## Colorwheel
+## Assignment 1 - Colorwheel
 
-Task 1a: Create an array called 'colorwheel' with about 6 different colors. These may be of your own choice. Next,
-create a function named ‘outputColor’ that doesn't accept a parameter. This function, when invoked, will create a random
-integer between 1 and 6 (including 1 and 6 as options, use the rand_int function of PHP). Based on this number, a color
-will be chosen from the array and displayed.  
-P.S. think about the scope of the function and the possible placement of the array!
+When using CSS there are various ways to assign colors for e.g. text and background. One of these is the HSL color. The
+letters are Hue - Saturation - Lightness. This colorschema can be imagened as being circular, like wrapped around a 
+barrel. 
 
-Task 1b: Make a copy of Task 1a's answer and modify it so that 2 colors have a double chance of being chosen relative to
-the other colors.
+### Step 1 - create HSL function
 
-Task 1c – advanced: Make a copy of the answer from Task 1a and modify it so that the previous color shown has only half
-a chance of being shown relative to the other colors. In the first round, there is no previous color shown and all
-colors have the same chance of being chosen.
+Create a function that will create a color based upon the three parameters H,S and L to create a HSL color. Make sure
+that the parameters are within range of the HSL-values. If a parameter is wrong just return `hsl(0 0 0)`.
 
-## Areacodes
+* Hue is an *angle* between zero and 360 degrees.
+* Saturation is a percentage between zero and 100%.
+* Lightness is also a percentage between zero and 100%.
+
+Use it to assign it to an element as a background:
+
+```html
+
+<article style="background-color:hsl(10 20 30)">some text</article>
+
+```
+
+Try values:
+* hue : 20
+* saturation: 50
+* lightness: 80
+
+Note that this is in fact bad practice, but it will be used in the next step to actually create a strip of colors. 
+
+### Use a loop
+
+Use a loop of your liking to make 360 elements. Each block should get a new color using the function. 
+
+Create a function with two parameters:
+* Saturation
+* Lightness
+
+The loop must vary the *Hue* from zero to 360. You can experiment with the parameters you want to vary and create a 
+strip like the image below.
+
+![assignment-week-05-10a.png](images/assignment-week-05-10a.png)
+
+Put the loop creating the elements in a function and call it from HTML. 
+
+Hints:
+* use `<div>` elements in combination with `display:flex` on the parent to place them next to each other to create a 
+  horizontal strip.
+* have a look at `flex-wrap`
+* do not echo from the function but `return` a string you build, otherwise the next assignments will get increasingly 
+  difficult! 
+
+### Use another loop!
+
+Now that we can vary the color with the second function we can create multiple strips to create a large area. 
+
+Create another function that will call the second function with varying saturation. So the last function has a loop
+that will vary the saturation from zero to 100% and calls the second function.
+
+This third function only has one parameter for *lightness*.
+
+The result should look something like the images below:
+
+Lightness 80%: 
+
+![assignment-week-05-10b.png](images/assignment-week-05-10b.png)
+
+Lightness 50%:
+
+![assignment-week-05-10c.png](images/assignment-week-05-10c.png)
+
+
+### Add text and reverse the wheel
+
+In this last assignment with the HSL-colors you will place text on top of the reversed color wheel.
+
+* Add a lot of text (using Emmet and Lorem Ipsum, see references at the end)
+* Reverse the lightness: start at 100% and decrease to zero
+* Use absolute positioning to place the color are and text on top each other
+* Restrict the width of the text so it will approximately fit the text using `em` as a width unit.
+
+
+Hints
+* add a container for both parts (text and color area)
+* make proper use of `position:relative` and `position:absolute` for the container and its children
+* have a look at the lesson of last week about positioning!
+
+The result should look something like this:
+![assignment-week-05-10d.png](images/assignment-week-05-10d.png)
+
+## Assignment 2 - Areacodes
 
 Task 2a: Create an array called 'areacodes' and place the following numbers in this exact sequence in the array: 14, 26,
 12, 58, 34, 66, 7, and 41. Write a function that looks up the highest number in the array and displays it on the screen.
 
-Task 2b: Create a function that can search for a number within this array, when found it gives a success! message that
-also contains the number found. Also, give it a fail! message when the number is not found.
+Task 2b: Create a function that can search for a number within this array, when found it gives a `success!` message that
+also contains the number found. Also, give it a `fail!` message when the number is not found.
 
 Task 2c – Advanced: Rewrite the search function of Task 2b, but expands the function with the ability to search for
 multiple numbers. Give a comprehensive success and fail message when applicable. The success message must include how
 many times the number you are looking for has been found in the array.
 
-# Creating shapes. 
+# Assignment 3 - Creating shapes. 
 Task 3a: Build the following 'shapes' using loops and echoes. An echo may contain only a single asterisk (*). Make use
 of `<br>` or '\n' when needed. Violating the `<br>` within a `<p></p>` rule is permitted.
 
@@ -108,3 +183,7 @@ Task 3c – advanced: Create a function that represents the fibonacci sequence, 
 function accepts a single parameter called 'count'. Parameter count is used to determine how many numbers of the
 fibonacci sequence are displayed.
 
+
+# References
+
+* [Generate placeholder text using Emmet](https://www.jetbrains.com/guide/tips/add-lorem-ipsum/)
