@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <title>Trade your games and gear</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="trade.css">
+    <link rel="stylesheet" href="printing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <main>
     <article>
         <header>
             <div class="lef">
-                <h1>Ultimate Game Store - Your one-stop-shop for all games</h1>
+                <h1>Ultimate Game Store - Your one-stop-shop for all gear &amp; games</h1>
                 <p><a href="/">Home</a></p>
             </div>
             <img src="images/banner.png" alt="banner">
@@ -19,11 +21,11 @@
         <aside>
             <nav>
                 <ul>
-                    <li><a href="x"><img src="images/button-console-games.png"></a></li>
-                    <li><a href="x"><img src="images/button-handheld-games.jpg.png"></a></li>
-                    <li><a href="x"><img src="images/button-computer-games.jpg.png"></a></li>
-                    <li><a href="x"><img src="images/button-search.jpg.png"></a></li>
-                    <li><a href="x"><img src="images/button-trade.jpg.png"></a></li>
+                    <li><a href="x"><img alt="button - console" src="images/button-console-games.png"></a></li>
+                    <li><a href="x"><img alt="button - handheld" src="images/button-handheld-games.jpg.png"></a></li>
+                    <li><a href="x"><img alt="button - computer" src="images/button-computer-games.jpg.png"></a></li>
+                    <li><a href="x"><img alt="button - search" src="images/button-search.jpg.png"></a></li>
+                    <li><a href="trade.html"><img alt="button - trade" src="images/button-trade.jpg.png"></a></li>
                 </ul>
             </nav>
             <div class="filter">
@@ -38,7 +40,7 @@
                 <p>[&nbsp;&nbsp;] Gear</p>
             </div>
         </aside>
-        <section class="ads">
+        <div class="ads">
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis est explicabo minus
                 necessitatibus tenetur ullam. Animi architecto assumenda aut culpa earum eveniet ipsa ipsam neque, porro
                 quidem rerum.
@@ -51,28 +53,43 @@
                 molestias nostrum perferendis quaerat qui sapiente sit ullam vel voluptatibus! Accusamus commodi
                 explicabo facere similique totam.
             </div>
-        </section>
+        </div>
         <section class="content">
             <header>
                 <h2>Trade your Game &amp; Gear</h2>
             </header>
-            <form>
+            <form method="post" action="process-trade.php">
                 <label for="your-name">Your name</label>
-                <input type="text" id="your-name" name="your-name">
+                <input type="text" id="your-name" name="your-name" required maxlength="40" size="40">
 
-                <label for="street">Street</label>
-                <input type="text" id="street" name="street">
+                <label for="street">Street + nr</label>
+                <input type="text" id="street" name="street" maxlength="40" size="40">
 
                 <label for="zip-code">ZIP code</label>
-                <input type="text" id="zip-code" name="zip-code">
+                <input type="text" id="zip-code" name="zip-code" maxlength="12" size="12">
 
                 <label for="city">City</label>
                 <input type="text" id="city" name="city">
 
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="NL">Netherlands</option>
+                    <option value="BE">Belgium</option>
+                    <option value="DE">Germany</option>
+
+                </select>
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Home phone">
+
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Mobile phone">
+
                 <fieldset>
                     <legend>Game Gear</legend>
-                    <label for="gear">Gear</label>
-                    <select id="gear" name="gear">
+                    <label for="gear-offering">Offering</label>
+                    <select id="gear-offering" name="gear-offering">
+                        <option value="-" label="None"></option>
                         <option value="XBOX360">XBox 360</option>
                         <option value="PS1">PS1</option>
                         <option value="PS2">PS2</option>
@@ -84,15 +101,39 @@
                         <option value="SW2">Switch 2</option>
                         <option value="WII">Wii</option>
                     </select>
+                    <label for="gear-wanted">Wanted</label>
+                    <select id="gear-wanted" name="gear-wanted">
+                        <option value="-" label="None"></option>
+                        <option value="XBOX360">XBox 360</option>
+                        <option value="PS1">PS1</option>
+                        <option value="PS2">PS2</option>
+                        <option value="PS3">PS3</option>
+                        <option value="PS4">PS4</option>
+                        <option value="PS5">PS5</option>
+                        <option value="XB1">XBox One</option>
+                        <option value="SW1">Switch 1</option>
+                        <option value="SW2">Switch 2</option>
+                        <option value="WII">Wii</option>
+                    </select>
+
                 </fieldset>
                 <fieldset>
-                    <legend>Games</legend>
-                    <label for="game1">Game 1</label>
-                    <input type="text" name="game[]" id="game1"/>
-                    <label for="game2">Game 2</label>
-                    <input type="text" name="game[]" id="game2"/>
-                    <label for="game3">Game 3</label>
-                    <input type="text" name="game[]" id="game3"/>
+                    <legend>Games - offer</legend>
+                    <label for="game-offer1">Game 1</label>
+                    <input type="text" name="game[]" id="game-offer1">
+                    <label for="game-offer2">Game 2</label>
+                    <input type="text" name="game[]" id="game-offer2">
+                    <label for="game-offer3">Game 3</label>
+                    <input type="text" name="game[]" id="game-offer3">
+                </fieldset>
+                <fieldset>
+                    <legend>Games - wanted</legend>
+                    <label for="game-wanted1">Game 1</label>
+                    <input type="text" name="game[]" id="game-wanted1">
+                    <label for="game-wanted2">Game 2</label>
+                    <input type="text" name="game[]" id="game-wanted2">
+                    <label for="game-wanted3">Game 3</label>
+                    <input type="text" name="game[]" id="game-wanted3">
                 </fieldset>
                 <button type="submit">Trade!</button>
             </form>

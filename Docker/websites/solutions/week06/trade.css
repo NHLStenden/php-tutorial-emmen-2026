@@ -1,10 +1,11 @@
-form {
+.content form {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto 300px;
+    grid-template-columns: auto auto;
     justify-content: flex-start;
     grid-gap: 10px;
 
-    label{
+    label {
         grid-column: 1;
         grid-column-start: 1;
     }
@@ -13,14 +14,38 @@ form {
         grid-column: span 2;
         display: grid;
         grid-template-columns: auto 200px;
+        grid-gap: 10px;
     }
 
     input, select {
-        outline:none;
+        outline: none;
+        width:fit-content;
     }
 
     input:focus, select:focus {
-        border:2px solid lightblue;
+        border: 2px solid lightblue;
         background-color: yellowgreen;
+    }
+}
+
+@media (max-width: 768px) {
+    .content form {
+        width: 100%;
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (max-width: 450px) {
+    main article {
+        grid-template-areas:
+                "banner banner banner banner"
+                "aside content  content content"
+                "foot foot foot foot ";
+        .content {
+        }
+        .ads {
+            display: none;
+        }
     }
 }

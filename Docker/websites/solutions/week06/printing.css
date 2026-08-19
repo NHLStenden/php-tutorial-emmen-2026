@@ -1,0 +1,48 @@
+@media print {
+    :root {
+        --main-color: white;
+        --background-color-contents: initial;
+        --text-color-contents:black;
+        --font-family: Arial;
+        --font-size: 12pt;
+        --font-size-small: 10pt;
+
+    }
+    main {
+        margin: 0;
+        width: initial;
+        height: initial;
+        overflow: initial;
+        article {
+            display: initial;
+            width: initial;
+            height: initial;
+            overflow: initial;
+
+            &> header {
+                display: none;
+            }
+            .ads {
+                display: none;
+            }
+
+            aside {
+                display: none;
+            }
+
+            .content {
+                border:initial;
+                box-shadow: initial;
+                border-radius: initial;
+            }
+
+            footer {
+                display: none;
+            }
+        }
+    }
+
+    .content form {
+        /** nothing needed here */
+    }
+}

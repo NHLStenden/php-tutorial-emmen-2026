@@ -5,6 +5,8 @@
 :root {
     --main-color: rgb(50 13 13);
     --text-color: white;
+    --text-color-contents:darkblue;
+    --background-color-contents: whitesmoke;
     --font-family: Arial;
     --font-size: 12pt;
     --font-size-small: 10pt;
@@ -101,7 +103,9 @@ main {
             grid-area: foot;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
 
             div p:hover {
                 background-color: yellowgreen;
@@ -111,21 +115,25 @@ main {
 
         .ads {
             grid-area: ads;
-            padding: 10px;
             font-size: small;
             display: flex;
+            grid-gap: 10px;
             flex-direction: column;
             justify-content: space-between;
             overflow: clip;
-            border:1px solid yellowgreen;
-            border-radius: 10px;
-            margin:10px;
+            margin: 10px;
+            div {
+                border: 1px solid yellowgreen;
+                border-radius: 10px;
+                flex:1;
+                padding: 10px;
+            }
         }
 
         .content {
             grid-area: content;
-            background-color: whitesmoke;
-            color: darkblue;
+            background-color: var(--background-color-contents);
+            color: var(--text-color-contents);
             overflow: auto;
             border:1px solid yellowgreen;
             margin:10px;
@@ -166,6 +174,7 @@ main {
                 box-shadow: none;
                 margin:0.5rem;
                 padding:0.5rem;
+
             }
 
             .ads {
@@ -193,3 +202,4 @@ main {
         }
     }
 }
+
