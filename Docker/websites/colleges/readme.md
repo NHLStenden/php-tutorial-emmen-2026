@@ -123,7 +123,7 @@ Complete all Week 2 assignments.
 
 By the end of this seminar, students will be able to:
 
-* working with CSS pseudo selectors;
+* working with CSS pseudo classes;
 * position text on images;
 * use repetition structures (loops);
 * distinguish between while, do-while, for, and foreach loops;

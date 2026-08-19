@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(50 13 13);
+    --text-color: white;
+    --font-family: Arial;
+    --font-size: 12pt;
+    --font-size-small: 10pt;
+
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family), sans-serif;
+    font-size: var(--font-size);
+}
+
+main {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+    color: var(--text-color);
+
+
+    article {
+        width: calc(100% - 0px);
+        height: calc(100% - 0px);
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+                "banner banner banner banner banner banner banner banner banner banner banner banner"
+                "aside content content content content content content content content content  ads ads"
+                "aside content content content content content content content content content  ads ads"
+                "aside content content content content content content content content content  ads ads"
+                "aside content content content content content content content content content  ads ads"
+                "aside content content content content content content content content content  ads ads"
+                "aside content content content content content content content content content  ads ads"
+                "aside content content content content content content content content content  ads ads"
+                "aside content content content content content content content content content  ads ads"
+                "foot foot foot foot foot foot foot foot foot foot foot foot";
+    "foot foot foot foot foot foot foot foot foot foot foot foot";
+    "foot foot foot foot foot foot foot foot foot foot foot foot";
+
+        & > header {
+            grid-area: banner;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 4px;
+
+            a {
+                color: yellowgreen;
+            }
+
+            img {
+                height: 150px;
+            }
+        }
+
+        aside {
+            grid-area: aside;
+            height: 100%;
+            background-color: black;
+            padding: 10px;
+
+            nav {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
+
+                img {
+                    max-height: 48px;
+
+                    &:hover {
+                        transform: skew(-10deg);
+                    }
+                }
+
+            }
+
+            .filter {
+                h2 {
+                    font-size: var(--font-size-small);
+                }
+
+                p {
+                    white-space: nowrap;
+                    font-size: var(--font-size-small);
+                }
+            }
+        }
+
+        footer {
+            grid-area: foot;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            div p:hover {
+                background-color: yellowgreen;
+                color: Black;
+            }
+        }
+
+        .ads {
+            grid-area: ads;
+            padding: 10px;
+            font-size: small;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: clip;
+            border:1px solid yellowgreen;
+            border-radius: 10px;
+            margin:10px;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: whitesmoke;
+            color: darkblue;
+            overflow: auto;
+            border:1px solid yellowgreen;
+            margin:10px;
+            padding:10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px yellowgreen;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        height: auto;
+
+        article {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr auto auto;
+            grid-template-areas:
+                "banner banner banner banner"
+                "aside content  content ads"
+                "foot foot foot foot ";
+
+            & > header {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+
+                h1 {
+                    text-align: center;
+                }
+
+                height: fit-content;
+            }
+            .content {
+                border:none;
+                border-radius: 0;
+                box-shadow: none;
+                margin:0.5rem;
+                padding:0.5rem;
+            }
+
+            .ads {
+                justify-content: flex-start;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        article {
+            footer {
+                grid-area: foot;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                div {
+                    border-top:1px solid lightgreen;
+                }
+            }
+
+        }
+    }
+}

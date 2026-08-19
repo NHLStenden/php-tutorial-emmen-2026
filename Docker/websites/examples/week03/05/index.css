@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    article {
+        section:first-of-type {
+            width: max(200px, 50vw);
+            height: min(10em, 50vh);
+            overflow:auto;
+            border: 1px solid darkblue;
+        }
+
+        section:nth-of-type(2) {
+            font-size: clamp(1rem, 2.5vw, 2rem);
+        }
+
+        section:nth-of-type(3) {
+            width:calc(50vw - 20px - 2px); /* remove padding left/right and border-left/right */
+            padding: 10px;
+            border:1px solid black;
+            p:last-of-type {
+                padding:10px;
+
+                color:color-mix(in oklab, black 50%, red 100%);
+                border-left: 10px solid rgb(80 80 80);
+
+                /* try the animation! Remove or comment the two lines above and enable the animation below to see more
+                   CSS functions in action. */
+                /*
+                animation-name:cycle-colors;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                 */
+            }
+
+            a:visited:hover {
+                text-decoration-color: red;
+                color:Green;
+            }
+        }
+    }
+}
+
+@keyframes cycle-colors {
+    0% {
+        color:color-mix(in oklab, black 0%, red 100%);
+        border-left: 10px solid color-mix(in oklab, black 50%, blue 100%);
+        transform: skew(0deg) translate(0px);
+    }
+
+    50% {
+        color:color-mix(in oklab, black 100%, red 100%);
+        border-left: 10px solid color-mix(in oklab, black 100%, blue 100%);
+        transform: skew(-10deg) translate(10px);
+    }
+    100% {
+        color:color-mix(in oklab, black 0%, red 100%);
+        border-left: 10px solid color-mix(in oklab, black 50%, blue 100%);
+        transform: skew(0deg) translate(0px);
+    }
+
+}
