@@ -1,3 +1,16 @@
+<?php
+
+$card1 = ["title" => "About", "description" => "This is some text"];
+$card2 = ["title" => "Help", "description" => "This is some text"];
+$card3 = ["title" => "Products", "description" => "This is some text"];
+$card4 = ["title" => "Contact", "description" => "This is some text"];
+$card5 = ["title" => "Directions", "description" => "This is some text"];
+$card6 = ["title" => "Complaints", "description" => "This is some text"];
+$card7 = ["title" => "Hall of fame", "description" => "This is some text"];
+
+$cards = [$card1, $card2, $card3, $card4, $card5, $card6, $card7];
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,18 +31,6 @@
         section*7>header>h
 
         <?php
-
-        $card1 = ["title" => "About",        "description" => "This is some text"];
-        $card2 = ["title" => "Help",         "description" => "This is some text"];
-        $card3 = ["title" => "Products",     "description" => "This is some text"];
-        $card4 = ["title" => "Contact",      "description" => "This is some text"];
-        $card5 = ["title" => "Directions",   "description" => "This is some text"];
-        $card6 = ["title" => "Complaints",   "description" => "This is some text"];
-        $card7 = ["title" => "Hall of fame", "description" => "This is some text"];
-
-
-        $cards = [$card1, $card2, $card3, $card4, $card5, $card6, $card7];
-
         foreach ($cards as $card) {
             echo <<< END_CARD
      <section>

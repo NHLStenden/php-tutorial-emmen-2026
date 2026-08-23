@@ -1,5 +1,5 @@
 
-# Week 3 - Positioning and PHP loops
+# Week 3 - Positioning and PHP Arrays & loops
 
 * Teaching method: Seminar
 * Duration: 3 × 2 teaching hours
@@ -10,7 +10,7 @@
 
 By the end of this seminar, students will be able to:
 
-* apply hover effects;
+* apply pseudo classes;
 * position text on images;
 * use repetition structures (loops);
 * distinguish between while, do-while, for, and foreach loops;

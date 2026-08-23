@@ -2,6 +2,7 @@
 <?php
 
  $month     = date("m");
+
 switch ($month) {
     case 1: $monthname = 'January'; break;
     case 2: $monthname = 'February'; break;
@@ -18,7 +19,7 @@ switch ($month) {
     default: $monthname = 'Error'; break;
 }
 
-$monthname  = match ($month) {
+$monthname2  = match ($month) {
     1 => 'January',
     2 => 'February',
     3 => 'March',
@@ -35,6 +36,7 @@ $monthname  = match ($month) {
 };
 
  print "Current month = $monthname";
+ print "Current month = $monthname2";
 
 
 ?>

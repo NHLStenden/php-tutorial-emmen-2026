@@ -1,4 +1,4 @@
-# CSS Functions
+# Week 3 - CSS Functions
 
 We use a well known structure for our HTML: an article with several `<section>` elements containing a header and some 
 paragraphs of text.

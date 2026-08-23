@@ -1,4 +1,4 @@
-# Flex layout for cards
+# Week 2 - Flex layout for cards 
 
 Here we have 7 cards we want to display using the following rules:
 

@@ -1,4 +1,4 @@
-# Positioning elements
+# Week 3 -  Positioning elements
 
 Normally elements will be layout using standard solutions that block and inline elements follow.
 

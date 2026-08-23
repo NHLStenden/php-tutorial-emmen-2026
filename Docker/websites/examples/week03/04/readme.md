@@ -1,4 +1,4 @@
-# Using pseudo classes
+# Week 3 - Using pseudo classes
 
 CSS uses 'selectors' to link HTML to CSS-instructions
 

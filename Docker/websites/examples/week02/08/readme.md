@@ -1,4 +1,4 @@
-# Creating a grid using classes to assign rows and columns to children
+#   Week 2 -  Creating a grid using classes to assign rows and columns to children
 
 Sometimes HTML structure is more complex or no semantic HTML can be uniquely designated for assigning rows and columns. 
 Then you will have to use classes like in this example. Look at the (shortened code below).

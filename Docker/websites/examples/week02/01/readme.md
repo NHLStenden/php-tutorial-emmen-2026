@@ -1,4 +1,4 @@
-# Grid demo 1
+# Week 2 - Grid demo 1
 
 In this example we explore the `display:grid` CSS instructions.
 

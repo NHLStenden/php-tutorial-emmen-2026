@@ -7,5 +7,5 @@ This tutorial is aimed at students beginning with web development using HTML, CS
 This repository is setup as described below:
 
 * [Assignments](assignments/readme.md)
-* [Colleges](Docker/websites/colleges/readme.md)
+* [Colleges](colleges/readme.md)
 * [Docker installation](Docker/readme.md)

@@ -1,7 +1,6 @@
-# Flex grid
+# Week 2 - Flex grid using automatic sizing 
 
-In this example we see that the HTML is quite different from the example with the 
-`display:grid`.
+In this example we see that the HTML is quite different from the example with the `display:grid`.
 
 ## Advantages in this specific example
 

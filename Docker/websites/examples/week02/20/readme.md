@@ -1,4 +1,4 @@
-# Conditionals
+#  Week 2 - Conditionals
 
 In this example a number of often used simple comparisons ('boolean expressions') are demonstrated.
 

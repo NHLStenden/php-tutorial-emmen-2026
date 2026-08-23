@@ -1,4 +1,4 @@
-# Sticky positioning
+# Week 3 - Sticky positioning
 
 When designing a table (or table like element) you might want to fix the header to the top of
 the website when scrolling. This can be achieved using the `position:sticky` instruction.
