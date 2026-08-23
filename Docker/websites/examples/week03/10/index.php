@@ -1,72 +1,53 @@
 <pre><code>
 <?php
 
-/**
- * This function will add two integer numbers and will return the result of the addition
- * @param int $first
- * @param int $second
- * @return int
- */
-function addNumbers(int $first, int $second): int
-{
-    return $first + $second;
+$a = "10";
+$b = 10;
+
+if ($a == $b) {
+    print "a and b are the same\n";
+}
+else {
+    print "b and b  are not the same\n";
 }
 
-/**
- * This function will join two strings together (also known as concatenate) and return a new string
- * @param string $first
- * @param string $second
- * @return string
- */
-function mergeTwoStrings(string $first, string $second): string
-{
-    return $first . $second;
+if ($a === $b) {
+    print "a and be are the same\n";
+}
+else {
+    print "b and be are not the same\n";
 }
 
-/**
- * This function will calculate the average of all integers in the given
- * @param array<int> $numbers
- * @return int
- */
-function calcAverage(array $numbers): float
-{
-    return array_sum($numbers) / count($numbers);
+$x = 10.0;
+$y = 10;
+
+if ($x == $y) {
+    print "x and be are the same\n";
+}
+else {
+    print "x and y not are the same\n";
 }
 
-/**
- * Notice that this function has no return type! It will add two numbers and present the result to the user
- * @param int $first
- * @param int $second
- * @return void
- */
-function addAndEchoNumbers(int $first, int $second): void
-{
-    $c = addnumbers($first, $second);
-    echo "$first + $second = $c\n";
+if ($a === $b) {
+    print "x and y are the same\n";
+}
+else {
+    print "x and y are not the same\n";
 }
 
-$a = 10;
-$b = 20;
-$c = addNumbers($a, $b);
+$p = 10.000000000001;
+$q = 10.000;
+const EPSILON = 1e-5;
 
-echo "$c\n";
+print "a = $a, b = $b\n";
+print "margin = " . number_format(EPSILON, 10) . "\n}";
+
+if (abs($p - $q) <= EPSILON) {
+    print "The two floats p and q are roughly the same";
+}
 
 
-addAndEchoNumbers($a, $b);
 
-echo "------------------------------------------\n";
-
-// dumb example: use an anonymous array in the function call.
-echo "Average : [1,2,3,4,5,6,7,8,9,10]" .  calcAverage([1,2,3,4,5,6,7,8,9,10]) . "\n";
-
-// better: use a variable and make it printable by joining the array with comma as separator.
-$numbers = [2,3,4,5,6,3,2,2,4,5,3];
-$listAsString = join(",", $numbers);
-echo "Average : [$listAsString]" .  calcAverage($numbers) . "\n";
-
-echo "------------------------------------------\n";
-
-echo "Join two strings: " . mergeTwoStrings("abc", "def") . "\n";
 
 ?>
 </code></pre>
