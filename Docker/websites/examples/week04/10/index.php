@@ -1,72 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHP Functions</title>
+</head>
+<body>
 <pre><code>
 <?php
 
-/**
- * This function will add two integer numbers and will return the result of the addition
- * @param int $first
- * @param int $second
- * @return int
- */
-function addNumbers(int $first, int $second): int
-{
-    return $first + $second;
-}
+$name = "Martin Molema";
 
-/**
- * This function will join two strings together (also known as concatenate) and return a new string
- * @param string $first
- * @param string $second
- * @return string
- */
-function mergeTwoStrings(string $first, string $second): string
-{
-    return $first . $second;
-}
+// repeat a string
 
-/**
- * This function will calculate the average of all integers in the given
- * @param array<int> $numbers
- * @return float
- */
-function calcAverage(array $numbers): float
-{
-    return array_sum($numbers) / count($numbers);
-}
-
-/**
- * Notice that this function has no return type! It will add two numbers and present the result to the user
- * @param int $first
- * @param int $second
- * @return void
- */
-function addAndEchoNumbers(int $first, int $second): void
-{
-    $c = addnumbers($first, $second);
-    echo "$first + $second = $c\n";
-}
-
-$a = 10;
-$b = 20;
-$c = addNumbers($a, $b);
-
-echo "$c\n";
+echo "Repeat the letter A 10 times:" . str_repeat('A', 10) . "\n";
+echo "Repeat the letter ABC 10 times:" . str_repeat('ABC', 10) . "\n";
 
 
-addAndEchoNumbers($a, $b);
+// padding and trimming
 
-echo "------------------------------------------\n";
+echo "Remove trailing  spaces: [". rtrim("    $name        ") . "] \n";
+echo "Remove leading spaces: [". ltrim("    $name        ") . "] \n";
+echo "Remove leading + trailing spaces: [". rtrim(ltrim("    $name        ")) . "] \n";
 
-// dumb example: use an anonymous array in the function call.
-echo "Average : [1,2,3,4,5,6,7,8,9,10]" .  calcAverage([1,2,3,4,5,6,7,8,9,10]) . "\n";
+// searching
 
-// better: use a variable and make it printable by joining the array with comma as separator.
-$numbers = [2,3,4,5,6,3,2,2,4,5,3];
-$listAsString = join(",", $numbers);
-echo "Average : [$listAsString]" .  calcAverage($numbers) . "\n";
+echo "Search the letter 'a' in $name : " . (str_contains($name, 'a') ?  "YES" : "NO") . "\n";
+echo "Search the letter 'A' in $name : " . (str_contains($name, 'A')  ?  "YES" : "NO") . "\n";
+echo "Search the location of the first occurence of the letter 'l' in $name : " . strpos($name, 'l') . "\n";
+echo "Search the location of the first occurence of the letter 'm' in $name starting at the end: " . strrpos($name, 'm') . "\n";
 
-echo "------------------------------------------\n";
+// replacing
 
-echo "Join two strings: " . mergeTwoStrings("abc", "def") . "\n";
+echo "Replace all letters 'a' with 'b' in Martin Molema: " . str_replace("a","b", $name) . "\n";
 
 ?>
 </code></pre>
+</body>
+</html>

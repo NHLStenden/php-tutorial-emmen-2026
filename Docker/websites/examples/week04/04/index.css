@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+}
+main {
+    article {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        aside {
+            width:300px;
+            background-color: #eee;
+            border-radius: 4px;
+            padding:10px;
+            nav {
+                font-size:small;
+                details {
+                    summary {
+                        list-style: none;
+                        &::marker {
+                            content: ""
+                        }
+                        cursor: pointer;
+                    }
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+
+                        li {
+                            padding: 4px;
+                            margin: 0;
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                border: none;
+                                padding: 4px;
+                                white-space: nowrap;
+
+                                &:hover {
+                                    background-color: #0066cc;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

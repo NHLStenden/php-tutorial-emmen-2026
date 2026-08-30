@@ -1,75 +1,54 @@
-# Week 4 - PHP - Type Juggling 1
+# Week 4 - PHP - Variable functions
 
-In this example a few type coercion are demonstrated.
+Information about PHP variables can be very useful when programming. Most often you want to check if a variable is
+of a certain type, for instance when recieving information from a file or HTML Form (see week 5).
 
-# The division function
+# Debugging
 
-Have a look at this example with a PHP function.
+Sometimes you want to inspect information in variables. PHP Supports this with a number of debugging functions.
+
+* `print_r` Prints human-readable information about a variable
+* `var_dump` Dumps information about a variable
+
+# Variable information
+
+If you want to check if a variable has certain attributes you can use functions like below:
+
+* `is_array()` : Finds whether a variable is an array (we'll handle arrays next week)
+* `is_bool()`: Finds out whether a variable is a boolean
+* `is_integer()` and `is_int()`: Finds out whether a variable is an integer
+* `isset()` — Determine if a variable is declared and is different than null
+
+Conversion functions:
+* `intval()`: get the integer value of a variable (even if it is a string)
+* `floatval()` and `doubleval()`: get the floating point value of a variable (even if it is a string)
+* `strval()`: Converts a variable to a string
+
+Some examples on an integer value
 
 ```php
-function divide(float $first, float $second): float|null
-    if ($second == 0) {
-        return null;
-    }
-    return $first / $second;
-}
+$x = 10;
+var_dump($x);
+
+echo "x is null? : "    . (is_null($x)  ? "yes" : "no") . "\n";
+echo "x is integer? : " . (is_int($x)   ? "yes" : "no") . "\n";
+echo "x is float? : "   . (is_float($x) ? "yes" : "no") . "\n";
 
 ```
 
-## No coercion
-
-When calling this function with different types of variables the type coercion can be observed. For instance
+Using a float:
 
 ```php
+$z = 1.2;
+var_dump($z);
 
-$a = 10.3;
-$b = 20;
-$c = divide($a, $b);
+echo "z is null? : "    . (is_null($z)  ? "yes" : "no") . "\n";
+echo "z is integer? : " . (is_int($z)   ? "yes" : "no") . "\n";
+echo "z is float? : "   . (is_float($z) ? "yes" : "no") . "\n";
+
 ```
-
-Will work perfectly and yields `0.515`. The variable $a is already a `float` because it contains a `.` to indicate a
-floating point.
-
-## Type coercion from string to float
-
-The example below yields `0.5`. The **string** value of $a is "10", but is first converted to a float and then the
-function is executed. So even though the `.` is missing, PHP will create a `float` instead of a `int` because the
-function `divide` "wants" `float` parameters.
-
-```php
-
-$a = "10";
-$b = 20;
-$c = divide($a, $b);
-```
-
-## Type coercion from string with a float value to float
-
-In the example below the variable $a holds the string "10.3". This can be type coerced into a float value of 10.3.
-Notice that in different countries the _floating point_ indicator can differ. In most countries it is the dot (`.`), but
-in The Netherlands it is a comma (`,`). So this will work perfectly and yields `0.515`.
-
-```php
-
-$a = "10.3";
-$b = 20;
-$c = divide($a, $b);
-```
-
-## Type coercion from empty string to float
-
-In the next example the value of $a is the empty string (`""`). Now PHP cannot coerce this into a float so an error is
-generated.
-
-```php
-
-$a = "";
-$b = 20;
-$c = divide($a, $b);
-```
-
-![error.png](error.png)
 
 # References
 
-* [PHP Type jugglign](https://www.php.net/manual/en/language.types.type-juggling.php)
+* [Variable handling Functions](https://www.php.net/manual/en/ref.var.php)
+

@@ -1,50 +1,72 @@
+<pre><code>
 <?php
 
-$card1 = ["title" => "About", "description" => "This is some text"];
-$card2 = ["title" => "Help", "description" => "This is some text"];
-$card3 = ["title" => "Products", "description" => "This is some text"];
-$card4 = ["title" => "Contact", "description" => "This is some text"];
-$card5 = ["title" => "Directions", "description" => "This is some text"];
-$card6 = ["title" => "Complaints", "description" => "This is some text"];
-$card7 = ["title" => "Hall of fame", "description" => "This is some text"];
+/**
+ * This function will add two integer numbers and will return the result of the addition
+ * @param int $first
+ * @param int $second
+ * @return int
+ */
+function addNumbers(int $first, int $second): int
+{
+    return $first + $second;
+}
 
-$cards = [$card1, $card2, $card3, $card4, $card5, $card6, $card7];
+/**
+ * This function will join two strings together (also known as concatenate) and return a new string
+ * @param string $first
+ * @param string $second
+ * @return string
+ */
+function mergeTwoStrings(string $first, string $second): string
+{
+    return $first . $second;
+}
+
+/**
+ * This function will calculate the average of all integers in the given
+ * @param array<int> $numbers
+ * @return float
+ */
+function calcAverage(array $numbers): float
+{
+    return array_sum($numbers) / count($numbers);
+}
+
+/**
+ * Notice that this function has no return type! It will add two numbers and present the result to the user
+ * @param int $first
+ * @param int $second
+ * @return void
+ */
+function addAndEchoNumbers(int $first, int $second): void
+{
+    $c = addnumbers($first, $second);
+    echo "$first + $second = $c\n";
+}
+
+$a = 10;
+$b = 20;
+$c = addNumbers($a, $b);
+
+echo "$c\n";
+
+
+addAndEchoNumbers($a, $b);
+
+echo "------------------------------------------\n";
+
+// dumb example: use an anonymous array in the function call.
+echo "Average : [1,2,3,4,5,6,7,8,9,10]" .  calcAverage([1,2,3,4,5,6,7,8,9,10]) . "\n";
+
+// better: use a variable and make it printable by joining the array with comma as separator.
+$numbers = [2,3,4,5,6,3,2,2,4,5,3];
+$listAsString = join(",", $numbers);
+echo "Average : [$listAsString]" .  calcAverage($numbers) . "\n";
+
+echo "------------------------------------------\n";
+
+echo "Join two strings: " . mergeTwoStrings("abc", "def") . "\n";
 
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flex layout - 3</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-<main>
-    <header>
-        <h1>Flex Layout for cards</h1>
-        <h2>Try to resize the browser window and notice the wrapping behaviour</h2>
-    </header>
-    <article>
-        section*7>header>h
-
-        <?php
-        foreach ($cards as $card) {
-            echo <<< END_CARD
-     <section>
-       <header><h2>{$card["title"]}</h2></header>
-       <p>{$card["description"]}</p>
-</section>
-END_CARD;
-
-        }
-
-
-        ?>
-
-    </article>
-</main>
-</body>
-</html>
+</code></pre>
