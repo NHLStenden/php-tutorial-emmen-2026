@@ -159,3 +159,15 @@ a {
         min-width: 400px;
     }
 }
+
+.week-description {
+    margin: 0 0 2rem 0;
+    padding: 1rem 1.25rem;
+    background: #f5f5f5;
+    border-left: 4px solid #ccc;
+}
+
+.week-description p {
+    margin: 0;
+}
+

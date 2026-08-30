@@ -65,39 +65,32 @@ def find_readme(item_dir: Path) -> Path | None:
     return None
 
 
-def parse_week_titles(
-    root_index_path: Path,
-) -> dict[str, str]:
+def parse_week_titles(root_index_path: Path) -> dict[str, dict[str, str]]:
     """
-    Leest de root index.html en haalt de weektitels eruit.
+    Read the root index.html and extract week information.
 
-    Verwacht bijvoorbeeld:
+    Expected table structure:
 
-        <tr>
-            <td><a href="week01">Week 1</a></td>
-            <td>Basic HTML</td>
-            <td>Basic PHP</td>
-        </tr>
+        Week |  HTML | PHP | Description
 
-    Dit wordt:
+    Returns a dictionary such as:
 
         {
-            "week01": "Week 1 - Basic HTML - Basic PHP"
+            "week01": {
+                "title": "Week 1 - Basic HTML - Basic PHP",
+                "description": "During this seminar..."
+            }
         }
-
-    De HTML wordt bewust met een eenvoudige parser via regex
-    gelezen, omdat we alleen de eenvoudige tabelstructuur
-    hoeven te verwerken.
     """
 
-    titles = {}
+    weeks = {}
 
     if not root_index_path.is_file():
         print(
-            f"Waarschuwing: root index.html ontbreekt: "
+            f"Warning: root index.html not found: "
             f"{root_index_path}"
         )
-        return titles
+        return weeks
 
     try:
         text = root_index_path.read_text(
@@ -106,12 +99,12 @@ def parse_week_titles(
 
     except (UnicodeDecodeError, OSError) as exc:
         print(
-            f"Waarschuwing: kan root index.html niet lezen: "
+            f"Warning: could not read root index.html: "
             f"{exc}"
         )
-        return titles
+        return weeks
 
-    # Zoek alle tabelrijen.
+    # Find all table rows.
     rows = re.findall(
         r"<tr\b[^>]*>(.*?)</tr>",
         text,
@@ -120,21 +113,24 @@ def parse_week_titles(
 
     for row in rows:
 
-        # Zoek de drie TD's in deze rij.
+        # Find all cells in the row.
         cells = re.findall(
             r"<td\b[^>]*>(.*?)</td>",
             row,
             re.IGNORECASE | re.DOTALL,
         )
 
-        if len(cells) < 3:
+        # We need at least:
+        # Week, Description, HTML and PHP.
+        if len(cells) < 4:
             continue
 
         week_cell = cells[0]
         html_cell = cells[1]
         php_cell = cells[2]
+        description_cell = cells[3]
 
-        # Zoek href="week03", href='week03', etc.
+        # Find href="week03", href='week03', etc.
         href_match = re.search(
             r'href\s*=\s*["\'](week\d{2})["\']',
             week_cell,
@@ -146,13 +142,21 @@ def parse_week_titles(
 
         week_name = href_match.group(1).lower()
 
-        # Strip HTML-tags uit de cellen.
+        # Remove HTML tags from the week cell.
         week_label = re.sub(
             r"<[^>]+>",
             "",
             week_cell,
         )
 
+        # Remove HTML tags from the description.
+        description = re.sub(
+            r"<[^>]+>",
+            " ",
+            description_cell,
+        )
+
+        # Remove HTML tags from HTML and PHP cells.
         html_title = re.sub(
             r"<[^>]+>",
             "",
@@ -165,10 +169,14 @@ def parse_week_titles(
             php_cell,
         )
 
-        # HTML entities terug omzetten.
+        # Decode HTML entities.
         week_label = html.unescape(
             week_label
         ).strip()
+
+        description = html.unescape(
+            description
+        )
 
         html_title = html.unescape(
             html_title
@@ -178,9 +186,14 @@ def parse_week_titles(
             php_title
         ).strip()
 
-        # Combineer de drie kolommen.
-        #
-        # Week 2 - Layouts - Conditionals
+        # Normalize whitespace in the description.
+        description = re.sub(
+            r"\s+",
+            " ",
+            description,
+        ).strip()
+
+        # Combine the week, HTML and PHP titles.
         combined_title = " - ".join(
             value
             for value in (
@@ -191,9 +204,12 @@ def parse_week_titles(
             if value
         )
 
-        titles[week_name] = combined_title
+        weeks[week_name] = {
+            "title": combined_title,
+            "description": description,
+        }
 
-    return titles
+    return weeks
 
 
 def parse_title(title: str) -> dict:
@@ -451,56 +467,86 @@ def generate_html(
     week_dir: Path,
     root_dir: Path,
     entries: list[dict],
-    week_title: str | None,
+    week_info: dict[str, str] | None,
 ) -> None:
     """
-    Genereert index.html in de weekfolder.
+    Generate index.html in the week directory.
 
-    De titel wordt afkomstig uit de root index.html.
+    The page title and description are taken from the
+    corresponding row in the root index.html.
     """
 
     output_path = week_dir / OUTPUT_FILENAME
 
-    # Sorteer op mapnummer
+    # Sort entries by folder number.
     entries.sort(
-        key=lambda item: int(item["path"].parent.name)
+        key=lambda item: int(
+            item["path"].parent.name
+        )
     )
 
     rows = []
 
     for entry in entries:
+
         readme_path = entry["path"]
         item_dir = readme_path.parent
 
-        # Relatief pad naar de numerieke map
-        relative_dir = item_dir.relative_to(week_dir)
-        href = relative_dir.as_posix() + "/"
+        relative_dir = item_dir.relative_to(
+            week_dir
+        )
 
-        title = html.escape(entry["title"])
-        language = html.escape(entry["language"])
-        paragraph = markdown_inline_to_html(entry["paragraph"])
-        map_name = html.escape(relative_dir.name)
+        href = (
+            relative_dir.as_posix()
+            + "/"
+        )
+
+        title = html.escape(
+            entry["title"]
+        )
+
+        language = html.escape(
+            entry["language"]
+        )
+
+        paragraph = markdown_inline_to_html(
+            entry["paragraph"]
+        )
+
+        map_name = html.escape(
+            relative_dir.name
+        )
 
         rows.append(
-            f"""            <tr>
-                <td><strong>{title}</strong></td>
-                <td>{language}</td>
-                <td><a href="{html.escape(href, quote=True)}">{map_name}</a></td>
-                <td>{paragraph}</td>
-            </tr>"""
+            f"""                <tr>
+                    <td><strong>{title}</strong></td>
+                    <td>{language}</td>
+                    <td><a href="{html.escape(href, quote=True)}">{map_name}</a></td>
+                    <td>{paragraph}</td>
+                </tr>"""
         )
 
     if rows:
-        table_rows = "\n".join(rows)
-    else:
-        table_rows = """            <tr>
-                <td colspan="4" class="empty">No README.md files found.</td>
-            </tr>"""
 
-    # Titel afkomstig uit de root index.html
-    if week_title:
-        page_title = week_title
+        table_rows = "\n".join(
+            rows
+        )
+
     else:
+
+        table_rows = """                <tr>
+                    <td colspan="4" class="empty">No README.md files found.</td>
+                </tr>"""
+
+    # Get title and description from the root index.
+    if week_info:
+
+        page_title = week_info["title"]
+        description = week_info["description"]
+
+    else:
+
+        # Fallback when the week is not found in the root index.
         match = re.fullmatch(
             r"week(\d{2})",
             week_dir.name,
@@ -508,16 +554,27 @@ def generate_html(
         )
 
         if match:
-            page_title = f"Week {match.group(1)}"
+            page_title = (
+                f"Week {match.group(1)}"
+            )
         else:
             page_title = week_dir.name
 
-    page_title = html.escape(page_title)
+        description = ""
 
-    # style.css staat in de hoofdmap
+    page_title = html.escape(
+        page_title
+    )
+
+    # Convert the description to safe HTML.
+    description_html = markdown_inline_to_html(
+        description
+    )
+
+    # The stylesheet is located in the root directory.
     css_href = f"../{CSS_FILENAME}"
 
-    # Compacte HTML zonder overbodige lege regels
+    # Generate compact HTML.
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -529,6 +586,9 @@ def generate_html(
 <body>
     <main>
         <h1>{page_title}</h1>
+        <section class="week-description">
+            {description_html}
+        </section>
         <table>
             <thead>
                 <tr>
@@ -554,7 +614,8 @@ def generate_html(
 
     print(
         f"  {week_dir.name}: "
-        f"{len(entries)} README(s) → {output_path}"
+        f"{len(entries)} README(s) → "
+        f"{output_path}"
     )
 
 
@@ -562,15 +623,16 @@ def generate_html(
 def process_week_directory(
     week_dir: Path,
     root_dir: Path,
-    week_titles: dict[str, str],
+    week_info: dict[str, str] | None,
 ) -> None:
     """
-    Verwerkt uitsluitend numerieke mappen die direct
-    onder de weekfolder staan.
+    Process only numeric directories directly inside
+    the week directory.
     """
 
     entries = []
 
+    # Find only direct numeric subdirectories.
     item_dirs = sorted(
         path
         for path in week_dir.iterdir()
@@ -580,10 +642,7 @@ def process_week_directory(
 
     for item_dir in item_dirs:
 
-        # ----------------------------------------------------
-        # Case-insensitive README zoeken
-        # ----------------------------------------------------
-
+        # Find readme.md case-insensitively.
         readme_path = find_readme(
             item_dir
         )
@@ -591,16 +650,13 @@ def process_week_directory(
         if readme_path is None:
 
             print(
-                f"  Geen readme.md: "
+                f"  No readme.md: "
                 f"{item_dir}"
             )
 
             continue
 
-        # ----------------------------------------------------
-        # README verwerken
-        # ----------------------------------------------------
-
+        # Extract information from README.
         data = extract_readme_data(
             readme_path
         )
@@ -608,7 +664,7 @@ def process_week_directory(
         if data is None:
 
             print(
-                f"  Overgeslagen (geen H1): "
+                f"  Skipped (no H1): "
                 f"{readme_path}"
             )
 
@@ -618,33 +674,26 @@ def process_week_directory(
             data
         )
 
-    # --------------------------------------------------------
-    # Zoek titel uit root index.html
-    # --------------------------------------------------------
-
-    week_title = week_titles.get(
-        week_dir.name.lower()
-    )
-
-    if week_title:
+    if week_info:
 
         print(
-            f"  Titel: {week_title}"
+            f"  Title: "
+            f"{week_info['title']}"
         )
 
     else:
 
         print(
-            f"  Waarschuwing: "
-            f"{week_dir.name} staat niet in "
-            f"de root index.html"
+            f"  Warning: "
+            f"{week_dir.name} not found in "
+            f"root index.html"
         )
 
     generate_html(
         week_dir,
         root_dir,
         entries,
-        week_title,
+        week_info,
     )
 
 
@@ -764,11 +813,14 @@ def main() -> None:
             f"Verwerken: "
             f"{week_dir.name}"
         )
+        week_info = week_titles.get(
+            week_dir.name.lower()
+        )
 
         process_week_directory(
             week_dir,
             root_dir,
-            week_titles,
+            week_info,
         )
 
         print()
