@@ -1,4 +1,4 @@
-# Week 4 - Type Juggling 1
+# Week 4 - PHP - Type Juggling 1
 
 In this example a few type coercion are demonstrated.
 

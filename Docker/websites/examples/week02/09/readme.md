@@ -1,4 +1,4 @@
-# Week 2 - Flexbox introduction
+# Week 2 - HTML - Flexbox introduction
 
 The flexible box layout module (usually referred to as flexbox) is a one-dimensional layout model for distributing space
 between items and includes numerous alignment capabilities. This article gives an outline of the main features of
@@ -21,8 +21,6 @@ In this example we place 4 boxes on the page using a `<section>` element with a 
     </p>
 </section>
 ```
-
-View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week02/10).
 
 Normally when placing `<section>` elements on a page, they will be placed in a vertical manner and span the width of the
 page.
@@ -116,10 +114,7 @@ In order to understand this example better change the properties of
 
 ### `section`
 
-Now have a look at the second [example](./index2.html). View this example
-on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week02/10/index2.html).
-
-Notice the CSS below
+Now have a look at the second [example](./index2.html). Notice the CSS below
 
 ```css
 section {
@@ -139,8 +134,7 @@ Now resize your browser window until only one `<section>` fits on the row. Notic
 whole width of the available space. This is because of the `flex-grow:1` property: this allows elements to grow in size
 so that all elements will have the same size. You can change the value for each child.
 
-Have a look at [example 3](./index3.html). View this example
-on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week02/10/index3.html).
+Have a look at [example 3](./index3.html). 
 
 The CSS now uses a different `flex-grow` setting (3) for the second
 `<section>`. This is indicated using the `&:nth-child(2)` which is the same as `section:nth-child(2)`.
@@ -187,9 +181,7 @@ we have the `align-items` instruction.
 | row            | Horizontal | Vertical   | justify-content         | align-items           | 
 | column         | Vertical   | Horizontal | align-items             | justify-content       | 
 
-We can now slightly change the CSS properties of the parent `<article>`. See [example4](./index4.html). View this
-example
-on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week02/10/index4.html).
+We can now slightly change the CSS properties of the parent `<article>`. See [example4](./index4.html). 
 
 ```css
 article {
@@ -226,8 +218,7 @@ Notice that
 
 Maybe we want the elements to be stretched along the vertical space. In this case we can use the `align-items: stretch`.
 This will determine the space usage in the 'cross axis' and fill up all available space. Look
-at [example 5](./index5.html). View this example
-on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week02/10/index5.html).
+at [example 5](./index5.html). 
 
 Look at the CSS (non-important parts removed from the example below).
 

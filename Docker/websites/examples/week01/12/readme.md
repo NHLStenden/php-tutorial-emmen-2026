@@ -1,4 +1,6 @@
-# A simple PHP program - example 3
+# Week 1 - PHP - Using variables
+
+In this example we use **variables** to hold information we can use later. 
 
 Notice this line below
 

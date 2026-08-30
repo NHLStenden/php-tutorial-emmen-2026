@@ -1,4 +1,4 @@
-# Week 4 -  Flex layout for cards
+# Week 4 -  PHP -  Flex layout for cards revisited
 
 Here we have 7 cards we want to display using the following rules:
 

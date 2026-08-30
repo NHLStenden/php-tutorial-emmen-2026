@@ -1,4 +1,4 @@
-# Example with arrays and functions
+# Week 4 - PHP - Example with arrays and functions
 
 In this example we declare an array with 'records': every item in the main array is a collection of key-value pairs.
 With this array we will be building an HTML `<table>`.

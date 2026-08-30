@@ -1,6 +1,8 @@
-# A simple PHP program - example 4
+# Week 1 - PHP - smart mixing of HTML and PHP
 
-In this example we use a HEREDOC to mix HTML and variables from PHP. Please notice the code below
+In this example we use a HEREDOC to mix HTML and variables from PHP. 
+
+Please notice the code below
 
 ```php
 

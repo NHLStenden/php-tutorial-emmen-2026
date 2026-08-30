@@ -10,8 +10,11 @@
 
 By the end of this seminar, students will be able to:
 
+HTML
 * apply pseudo classes;
 * position text on images;
+
+PHP
 * use repetition structures (loops);
 * distinguish between while, do-while, for, and foreach loops;
 * use arrays as collections;
@@ -31,3 +34,12 @@ Complete all Week 3 assignments.
 # Assignments
 
 Please have a look at [assignments week 3](../assignments/assignments-week-03.md)
+
+# Online books - advised reading
+
+## Book chapters
+
+* _HTML and CSS_:
+  * 
+* _PHP Crash Course_:
+  * Part 1, chapt

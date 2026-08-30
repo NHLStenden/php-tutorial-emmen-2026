@@ -1,4 +1,4 @@
-# Week 2 - Conditional Evaluation
+# Week 2 - PHP - Conditional Evaluation
 
 PHP will not process a part of a boolean expression if it knows the outcome
 

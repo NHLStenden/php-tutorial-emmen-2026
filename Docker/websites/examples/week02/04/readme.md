@@ -1,4 +1,5 @@
-#  Week 2 - Grid demo 4
+#  Week 2 - HTML - Grid demo 4
 
-View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week02/04).
+In this example we use fixed column sizes. 
 
+The `grid-template-columns` mentions 2 columns both being 200 pixels in width. 

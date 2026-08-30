@@ -1,6 +1,5 @@
-#  Week 2 -Grid demo 2
+#  Week 2 - HTML - Grid demo 2
 
+A demo with four cards in a 2 by 2 grid. 
 
-View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week02/02).
-
-
+In this demo we use the `grid-template-columns` to define how the columns should behave.

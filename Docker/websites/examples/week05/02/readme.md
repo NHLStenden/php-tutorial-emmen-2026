@@ -1,4 +1,7 @@
-# Advanced form controls
+# Week 5 - PHP - Advanced form controls
+
+Besides entering text, there are more HTML Form controls to enter information into a form. Think of selecting items
+from a list.
 
 The examples in this folder are taken from the MDN site (see references at the end).
 
@@ -29,6 +32,7 @@ See the example below.
 **Note** the `name=multi[]`. Normally the `[]` should be omitted, but when sending the information to a PHP-server the `[]` 
 must be present otherwise PHP will drop all but the last selected item from the `$_POST`.
 
+The PHP-file that processes the form information will simply dump the `$_POST` to the webpage.
 
 # References
 

@@ -2,98 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 - Layouts - Conditionals</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<main>
-    <article>
-        <header><h1>HTML and CSS: Layout - grid and flexbox</h1></header>
-        <section>
-            <table>
-                <thead>
+    <main>
+        <h1>Week 2 - Layouts - Conditionals</h1>
+        <table>
+            <thead>
                 <tr>
-                    <th>Item</th>
-                    <th>Link</th>
+                    <th>Title</th>
+                    <th>Language</th>
+                    <th>Folder</th>
                     <th>Description</th>
                 </tr>
-                </thead>
-                <tr>
-                    <td>Grid demo 1</td>
-                    <td><a href="01">link</a></td>
-                    <td>A simple two column example using a grid</td>
-                </tr>
-                <tr>
-                    <td>Grid demo 2</td>
-                    <td><a href="02">link</a></td>
-                    <td>Two columns with one having a fixed size.</td>
-                </tr>
-                <tr>
-                    <td>Grid demo 3</td>
-                    <td><a href="03">link</a></td>
-                    <td>Using fractions to set up a grid</td>
-                </tr>
-                <tr>
-                    <td>Grid demo 4</td>
-                    <td><a href="04">link</a></td>
-                    <td>Two fixed columns with spacing around them</td>
-                </tr>
-                <tr>
-                    <td>Grid demo 5</td>
-                    <td><a href="05">link</a></td>
-                    <td>Four columns using fractions</td>
-                </tr>
-                <tr>
-                    <td>Grid demo 6 - 12 column design</td>
-                    <td><a href="06">link</a></td>
-                    <td>A mobile friendly design using the 12 column design principle and @media-queries</td>
-                </tr>
-                <tr>
-                    <td>Flexbox demo 1</td>
-                    <td><a href="10">link</a></td>
-                    <td>A first example with flexbox using five cards</td>
-                </tr>
-                <tr>
-                    <td>Flexbox demo 2</td>
-                    <td><a href="11">link</a></td>
-                    <td>In this example we tailor the HTML to better fit the styling using flexbox</td>
-                </tr>
-                <tr>
-                    <td>Flexbox demo 3</td>
-                    <td><a href="12">link</a></td>
-                    <td>Using a sidebar and @media-queries to handle screen resizes.</td>
-                </tr>
-                <tr>
-                    <td>Flexbox - mobile friendly</td>
-                    <td><a href="13">link</a></td>
-                    <td>An example how to use @media queries to display a mobile friendly layout</td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <header>
-                <h2>PHP Programming</h2>
-            </header>
-            <table>
-                <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Link</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tr>
-                    <td>Introduction to conditionals</td>
-                    <td><a href="20">link</a></td>
-                    <td>All kinds of conditional statements</td>
-                </tr>
-                <tr>
-                    <td>The Switch-statement</td>
-                    <td><a href="21">link</a></td>
-                    <td>Reducing lots of <code>IF</code> statements</td>
-                </tr>
-            </table>
-        </section>
-    </article>
-</main>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong>Grid demo 1</strong></td>
+                <td>HTML</td>
+                <td><a href="01/">01</a></td>
+                <td>In this example we explore the <span class="code">display:grid</span> CSS instructions.</td>
+            </tr>
+            <tr>
+                <td><strong>Grid demo 2</strong></td>
+                <td>HTML</td>
+                <td><a href="02/">02</a></td>
+                <td>A demo with four cards in a 2 by 2 grid.</td>
+            </tr>
+            <tr>
+                <td><strong>Grid demo 3</strong></td>
+                <td>HTML</td>
+                <td><a href="03/">03</a></td>
+                <td>In this demo the <span class="code">grid-template-columns</span> uses fractions.</td>
+            </tr>
+            <tr>
+                <td><strong>Grid demo 4</strong></td>
+                <td>HTML</td>
+                <td><a href="04/">04</a></td>
+                <td>In this example we use fixed column sizes.</td>
+            </tr>
+            <tr>
+                <td><strong>12 column grid example</strong></td>
+                <td>HTML</td>
+                <td><a href="05/">05</a></td>
+                <td>The 12 column grid is a popular way to setup a grid for web pages.</td>
+            </tr>
+            <tr>
+                <td><strong>12 column layout with sidebar and @media-queries</strong></td>
+                <td>HTML</td>
+                <td><a href="06/">06</a></td>
+                <td>This example showcases the use of the 12 column layout to create a page with a sidebar along the length of the page.</td>
+            </tr>
+            <tr>
+                <td><strong>Grid areas</strong></td>
+                <td>HTML</td>
+                <td><a href="07/">07</a></td>
+                <td>In this example we will be creating a grid using grid-areas and semantic elements to assign rows and columns to children.</td>
+            </tr>
+            <tr>
+                <td><strong>Creating a grid using classes to assign rows and columns to children</strong></td>
+                <td>HTML</td>
+                <td><a href="08/">08</a></td>
+                <td>Sometimes HTML structure is more complex or no semantic HTML can be uniquely designated for assigning rows and columns. Then you will have to use classes like in this example.</td>
+            </tr>
+            <tr>
+                <td><strong>Flexbox introduction</strong></td>
+                <td>HTML</td>
+                <td><a href="09/">09</a></td>
+                <td>The flexible box layout module (usually referred to as flexbox) is a one-dimensional layout model for distributing space between items and includes numerous alignment capabilities. This article gives an outline of the main features of flexbox, which we will explore in more detail in the rest of these guides.</td>
+            </tr>
+            <tr>
+                <td><strong>Flex grid using div</strong></td>
+                <td>HTML</td>
+                <td><a href="11/">11</a></td>
+                <td>In this variant of example 6 (grid layout) we use <span class="code">&lt;div&gt;</span> elements to divide the HTML in parts that better fit the layout we want.</td>
+            </tr>
+            <tr>
+                <td><strong>Flex grid using automatic sizing</strong></td>
+                <td>HTML</td>
+                <td><a href="12/">12</a></td>
+                <td>In this example we see that the HTML is quite different from the example with the <span class="code">display:grid</span>.</td>
+            </tr>
+            <tr>
+                <td><strong>Flex layout for cards</strong></td>
+                <td>HTML</td>
+                <td><a href="13/">13</a></td>
+                <td>Using @media queries to make a flex-layout fit smaller screens.</td>
+            </tr>
+            <tr>
+                <td><strong>Conditionals and type juggling</strong></td>
+                <td>PHP</td>
+                <td><a href="16/">16</a></td>
+                <td>When comparing values PHP will sometimes try to coerce the two parts of a comparison to the same type</td>
+            </tr>
+            <tr>
+                <td><strong>Conditionals</strong></td>
+                <td>PHP</td>
+                <td><a href="20/">20</a></td>
+                <td>In this example a number of often used simple comparisons (&#x27;boolean expressions&#x27;) are demonstrated.</td>
+            </tr>
+            <tr>
+                <td><strong>Using switch() and match()</strong></td>
+                <td>PHP</td>
+                <td><a href="21/">21</a></td>
+                <td>Sometimes you write a lot of <span class="code">if-else-if</span>-statements to get the job done. There are two instructions that can make life easier.</td>
+            </tr>
+            <tr>
+                <td><strong>Conditional Evaluation</strong></td>
+                <td>PHP</td>
+                <td><a href="22/">22</a></td>
+                <td>PHP will not process a part of a boolean expression if it knows the outcome</td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>

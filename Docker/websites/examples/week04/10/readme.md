@@ -1,4 +1,4 @@
-# Week 4 - Function types
+# Week 4 - PHP - Function types
 
 Have a look at this example with a PHP function.
 

@@ -1,4 +1,4 @@
-# A simple PHP program - example 5
+# Week 1 - PHP - generating HTML with PHP
 
 In this example we see the more traditional way to create HTML-content through PHP: we generate complete HTML as a string
 using the `print()` or `echo` instructions.

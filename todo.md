@@ -21,10 +21,10 @@ Wrap up and preparation for exams
 * Create proper index pages per week
   * (DONE) Week 1 - Introduction to HTML and PHP
   * (DONE) Week 2 - CSS Layouts and PHP Conditionals
-  * Week 3 - Positioning and PHP loops
-  * Week 4 - Menus and PHP Functions
-  * Week 5 - HTML Forms and processing
-  * Week 6 - Printing HTML
+  *  Week 3 - Positioning and PHP loops
+  *  Week 4 - Menus and PHP Functions
+  *  Week 5 - HTML Forms and processing
+  *  Week 6 - Printing HTML
 * Add descriptions in readme.md for index pages per week 
   * (DONE) week 1 - Introduction to HTML and PHP
   * week 2 - CSS Layouts and PHP Conditionals

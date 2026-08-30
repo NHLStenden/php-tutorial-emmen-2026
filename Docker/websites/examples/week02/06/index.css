@@ -8,7 +8,7 @@ main {
         row-gap: 1rem;
         justify-content: space-around;
 
-        & > header { /* only direct descendant of article. */
+        & > header { /* only direct descendant of article having a <header>. */
             grid-column: 1 / span 12;
             text-align: center;
             background-color: whitesmoke;

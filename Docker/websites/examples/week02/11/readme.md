@@ -1,4 +1,4 @@
-# Week 2 - Flex grid using div
+# Week 2 - HTML - Flex grid using div
 
 In this variant of example 6 (grid layout) we use `<div>` elements to divide the HTML in
 parts that better fit the layout we want.

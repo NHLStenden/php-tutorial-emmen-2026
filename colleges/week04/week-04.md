@@ -10,7 +10,10 @@
 
 By the end of this seminar, students will be able to:
 
+HTML
 * create structured navigation menus in HTML;
+
+PHP
 * understand the purpose and advantages of functions in PHP;
 * use built-in PHP functions;
 * create their own functions;

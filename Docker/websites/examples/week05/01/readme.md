@@ -1,8 +1,9 @@
-# Forms
+# Week 5 - HTML - Forms
 
-Forms are meant to send information from the browser to the server. The user fills out a form and sends the information
-to the server for processing. The server will formulate a response using a HTTP Status code and results like HTML, CSS,
-Images,...
+Forms are meant to send information from the browser to the server.
+
+The user fills out a form and sends the information to the server for processing. The server will formulate a response
+using a HTTP Status code and results like HTML, CSS, Images,...
 
 In PHP the information is collected in a `super global` variable named `$_POST` when using the `method="post"`. This is
 an associative array that can be used to validate and further processing.
@@ -375,9 +376,6 @@ The `pseude-selector` `:focus` will allow us to style an input when the user has
 element or other form control (like `<select>`, `<textarea>`).
 
 # Sending informaton to the server
-
-
-
 
 # References
 

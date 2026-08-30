@@ -1,4 +1,6 @@
-# Uploading files
+# Week 5 - PHP -Uploading files
+
+Sometimes users want to upload files like an avatar image, a PDF-file or other document. 
 
 Uploaded files will be reported in the Super Global `$_FILES`. Make sure that the upload options in PHP.ini (or any 
 overrides are setup to allow for file uploads of right size and types. )

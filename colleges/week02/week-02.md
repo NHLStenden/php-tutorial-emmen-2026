@@ -9,9 +9,12 @@
 
 By the end of this seminar, students will be able to:
 
+HTML
 * use CSS Grid and Flexbox layouts;
 * explain the CSS box model;
 * use HTML entities correctly;
+
+PHP
 * apply conditional statements in PHP;
 * distinguish between if/else and switch statements;
 * use comparison and logical operators appropriately.

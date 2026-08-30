@@ -1,4 +1,4 @@
-# Week 2 - Flex grid using automatic sizing 
+# Week 2 - HTML - Flex grid using automatic sizing 
 
 In this example we see that the HTML is quite different from the example with the `display:grid`.
 

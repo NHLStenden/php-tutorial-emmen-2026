@@ -1,0 +1,222 @@
+.
+├── tree.txt
+├── week01
+│   ├── 01
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 02
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 03
+│   │   ├── index2.css
+│   │   ├── index2.html
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 04
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 05
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 06
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 07
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 08
+│   │   ├── index.php
+│   │   └── readme.md
+│   └── index.html
+├── week02
+│   ├── 01
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 02
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 03
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 04
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 05
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 06
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 07
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 08
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 09
+│   │   ├── flex-align-items1.png
+│   │   ├── flex-align-stretch.png
+│   │   ├── flex-grow-3.png
+│   │   ├── flex-grow.svg
+│   │   ├── flex-wrap.svg
+│   │   ├── index2.css
+│   │   ├── index2.html
+│   │   ├── index3.css
+│   │   ├── index3.html
+│   │   ├── index4.css
+│   │   ├── index4.html
+│   │   ├── index5.css
+│   │   ├── index5.html
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 11
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 12
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 13
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 16
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 20
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 21
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 22
+│   │   ├── index.php
+│   │   └── readme.md
+│   └── index.html
+├── week03
+│   ├── 01
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 02
+│   │   ├── images
+│   │   │   ├── mansy-graphics-GKXuFCd2fYo-unsplash.jpg
+│   │   │   └── website-banner.png
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 03
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 04
+│   │   ├── images
+│   │   │   └── screendump-table.png
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 05
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── readme.md
+│   ├── 10
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 11
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 12
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 13
+│   │   └── index.php
+│   └── index.html
+├── week04
+│   ├── 10
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 10a
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 11
+│   │   ├── error.png
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 12
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 13
+│   │   ├── index.css
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 14
+│   │   ├── index.php
+│   │   └── readme.md
+│   ├── 15
+│   │   ├── index.php
+│   │   ├── information.txt
+│   │   ├── readme.md
+│   │   └── screendump-developer-tools.png
+│   ├── 25
+│   │   ├── index.php
+│   │   └── readme.md
+│   └── index.html
+├── week05
+│   ├── 01
+│   │   ├── images
+│   │   │   ├── fieldset-example.png
+│   │   │   ├── input-extra-padding.png
+│   │   │   ├── input-standard.png
+│   │   │   └── slider.png
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   ├── process.css
+│   │   ├── process.php
+│   │   └── readme.md
+│   ├── 02
+│   │   ├── index.html
+│   │   ├── process.php
+│   │   └── readme.md
+│   ├── 03
+│   │   ├── index.html
+│   │   ├── process.php
+│   │   ├── readme.md
+│   │   └── uploads
+│   │       └── Diagrams - Request - Response - Simple.png
+│   ├── index.css
+│   └── index.html
+└── week06
+    ├── 01
+    │   ├── index.css
+    │   └── index.html
+    ├── 02
+    │   ├── index.css
+    │   └── index.html
+    ├── 03
+    │   ├── index.css
+    │   └── index.html
+    ├── images
+    │   ├── 02 - Example 1.png
+    │   ├── 02 - Example 2.png
+    │   ├── 02 - Example 3.png
+    │   ├── Google Chrome Console.png
+    │   ├── Google Chrome - developer tools overview.png
+    │   ├── Google Chrome - Emulate CSS Media.png
+    │   ├── Google Chrome - Print Dialog preview with mediaqueries 2.png
+    │   ├── Google Chrome - Print Dialog preview with mediaqueries.png
+    │   ├── Google Chrome - print dialog preview without mediaqueries.png
+    │   ├── Screendump - normal view.png
+    │   └── Screendump - printing view.png
+    └── readme.md
+
+59 directories, 161 files

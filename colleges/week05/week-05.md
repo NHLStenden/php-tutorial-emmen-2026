@@ -10,7 +10,10 @@
 
 By the end of this seminar, students will be able to:
 
+HTML
 * create HTML forms;
+
+PHP
 * process form data using PHP;
 * retrieve and display user input;
 * perform basic input validation;

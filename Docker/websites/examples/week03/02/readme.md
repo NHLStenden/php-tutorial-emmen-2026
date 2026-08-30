@@ -1,4 +1,4 @@
-# Week 3 - Positioning text over other elements
+# Week 3 -  HTML - Positioning text over other elements
 
 In this example two sections are create with both an image with text superimposed upon it. This is done using two
 different mechanisms:

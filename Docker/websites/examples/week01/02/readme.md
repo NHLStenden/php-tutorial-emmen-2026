@@ -1,6 +1,6 @@
-# Week 1 - example 2
+# Week 1 - HTML - "Hello World" without HTML
 
-View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week01/02).
+Creating "Hello World" without HTML.
 
 Look at the file 'index.html' in this folder. You'll notice that everything we learned from example 1 is missing:
 

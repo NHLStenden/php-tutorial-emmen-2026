@@ -1,4 +1,6 @@
-# Week 2 - Flex layout for cards 
+# Week 2 - HTML - Flex layout for cards 
+
+Using @media queries to make a flex-layout fit smaller screens.
 
 Here we have 7 cards we want to display using the following rules:
 

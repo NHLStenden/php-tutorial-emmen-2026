@@ -1,13 +1,12 @@
-# A simple PHP program
-View this example on [github](https://nhlstenden.github.io/php-tutorial-emmen-2026/Docker/websites/examples/week01/04).
+# Week 1 - HTML - Styling with CSS
 
-The simplest of PHP programs: just show "Hello world" on the screen. Just as we saw in the seconds example, there is 
-no HTML at all, and still the browser displays it correctly.
+Styling a webpage using **CSS**.  
 
-A PHP program is opened using the `<?php` instruction. Notice the following:
+Notice that the structure and the flow on-screen are not quite the same. You might expect that some parts might be
+indented and that the `<aside>` actually is on the side of the screen. Unfortunately this is not the case. The structure
+of the HTML has very little to do with your expectations of the visualisation on-screen. 
 
-1. there is no `>` to close the element!
-2. there is no `</php>` instruction to close the element. 
+Of course this can be improved. This can be achieved by using instruction for styling. Later in this module we will 
+take a look on how to visual style an article/page like this. 
 
-This seems odd as we first learned that every element should follow these rules. It is not forbidden to close a PHP
-program using `?>` but if is at the end of the file it is best practice to omit this.
+The styling is contained in a seperate file: `index.css`.
