@@ -38,3 +38,18 @@ Complete all Week 5 assignments.
 # Assignments
 
 Please have a look at [assignments week 5](../assignments/assignments-week-05.md)
+
+
+
+## Book chapters
+
+* _HTML and CSS_:
+    * Chapter 7
+* _PHP Crash Course_:
+    * Part III
+      * Chapter 11 Creating and processing web forms
+          * Basic Client/Server Communication for Web Forms
+          * The filter_input() Function
+      * Chapter 12 Validating form data
+        * 
+

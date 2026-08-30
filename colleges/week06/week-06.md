@@ -26,3 +26,12 @@ Complete all Week 6 assignments.
 # Assignments
 
 Please have a look at [assignments week 6](../assignments/assignments-week-06.md)
+
+# Online books - advised reading
+
+## Book chapters
+
+* _HTML and CSS_:
+    * chapter 13
+* _PHP Crash Course_:
+    

@@ -40,6 +40,17 @@ Please have a look at [assignments week 3](../assignments/assignments-week-03.md
 ## Book chapters
 
 * _HTML and CSS_:
-  * 
+  * Positioning
+    * chapter 12
+  * Pseudo classes
+    * Chapter 9,  9.1.7 - 9.1.10
 * _PHP Crash Course_:
-  * Part 1, chapt
+  * Part II
+    * Chapter 6 Loops
+    * Chapter 7 Simple Arrays
+    * Chapter 8 Sophisticated Arrays
+      * Declaring Array Keys Explicitly
+      * Arrays with Strings as Keys
+      * Multidimensional Arrays
+
+

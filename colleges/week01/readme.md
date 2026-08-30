@@ -139,6 +139,13 @@ For more in-depth information see [week 1 in depth](week-01-in-depth.md).
     * Styling with CSS. Chapters 8, 8.2, 8.3.1-8.3.5, 8.4, 9, 10
 * _PHP Crash Course_: 
   * Part I, 
-    * chapter 1 
-    * chapter 2 
-    * chapter 3 
+    * chapter 1 PHP Program basics
+    * chapter 2 Data types: 
+      * PHP Data Types
+    * chapter 3 Strings and string functions
+      * Whitespace
+      * Single-quoted strings
+      * Joining strings: Concatenation
+      * Double-QOuted strings
+      * Heredocs
+  

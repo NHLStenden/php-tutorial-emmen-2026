@@ -35,3 +35,13 @@ Complete all Week 4 assignments.
 # Assignments
 
 Please have a look at [assignments week 4](assignments-week-04.md)
+
+## Book chapters
+
+* _HTML and CSS_:
+    * Chapter 4.3 "Using semantic HTML"
+* _PHP Crash Course_:
+    * Part I
+      * Chapter 3 Strings and String functions
+        * Built-in String Functions
+      * Chapter 5 Custom functions

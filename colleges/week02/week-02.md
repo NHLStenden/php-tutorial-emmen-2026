@@ -46,9 +46,13 @@ Please have a look at [assignments week 2](../assignments/assignments-week-02.md
 ## Book chapters
 
 * _HTML and CSS_:
-    * CSS Selectors. Chapters
+    * CSS Selectors. Chapter 9 (except 9.1.7 - 9.1.10)
     * CSS media queries. Chapter 8.3.8
     * The box model. Chapter 11.2, 11.3, 11.4
     * Responsive design (grid/flex). Chapter 13.4
 * _PHP Crash Course_: 
-  * Part 1, chapter 4
+  * Part I
+    * chapter 2 Data types
+      * Type Juggling
+      * Type casting
+    * chapter 4 Conditionals
