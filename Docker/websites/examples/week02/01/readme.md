@@ -1,4 +1,4 @@
-# Week 2 - HTML - Grid demo 1
+# Week 2 - HTML - A grid with 2 columns
 
 In this example we explore the `display:grid` CSS instructions.
 

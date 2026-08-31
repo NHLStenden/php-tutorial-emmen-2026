@@ -2,9 +2,10 @@ main {
     font-family: sans-serif;
     article {
         display: grid;
-        grid-template-columns: 2fr 1fr ; /** creates two columns */
+        grid-template-columns: 200px 200px ; /** creates two columns */
         column-gap: 3rem;
         row-gap: 3rem;
+        justify-content: space-around;
 
         section {
             border:1px solid darkgray;

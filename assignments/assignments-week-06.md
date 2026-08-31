@@ -3,6 +3,8 @@
 Recreate the website below. This is an eighties style website to trade your gaming gear and games. The styling contains
 8 bit graphics, a bold, screaming logo and black/green-yellow colors.
 
+![assignment-week-06-form-00.png](images/assignment-week-06-form-00.png)
+
 This is not a site that is very printer friendly. So, your challenge is to make it so that the user can enjoy a hardcopy
 or PDF file.
 
@@ -53,6 +55,10 @@ line.
 - contents section background color: `whitesmoke`
 
 ### Form
+
+The trading form should look like the image below:
+
+![assignment-week-06-form-02.png](images/assignment-week-06-form-02.png)
 
 - when entering text in a input make the background `yellowgreen` and the border `lightblue`. hint: set `outline` to
   `none`.
