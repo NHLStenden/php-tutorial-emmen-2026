@@ -5,8 +5,8 @@ cursus PHP aan de hogeschool NHL-Stenden.
 
 ## Aan de slag
 
-Deze instructies helpen je bij het opzetten van een ontwikkelomgeving voor gebruik binnen de PHP-cursussen aan de NHL-Stenden door
-gebruik te maken van Docker. Deze code is uitsluitend bedoeld voor educatieve doeleinden.
+Deze instructies helpen je bij het opzetten van een ontwikkelomgeving voor gebruik binnen de PHP-cursussen aan de NHL-Stenden met behulp van
+Docker. Deze code is uitsluitend bedoeld voor educatieve doeleinden.
 
 ### Vereisten
 
@@ -45,13 +45,13 @@ docker-compose up
 7. Lees dit welkomstscherm goed door! Het bevat nuttige informatie over de actieve database en de PHPMyAdmin-
   instantie.
 
-De uitgepakte bestanden bevatten een map met de naam "app". In deze map bevindt zich nog een map met de naam "public". In de
-map "public" moet je je eigen code en bestanden plaatsen die openbaar toegankelijk zijn voor de buitenwereld.
+De uitgepakte bestanden bevatten een map met de naam „app“. In deze map bevindt zich nog een map met de naam „public“. In de
+map „public“ moet je je eigen code en bestanden plaatsen die openbaar toegankelijk zijn voor de buitenwereld.
 Al het overige is privé.
 
-## Database - MariaDB
+## Database - Mariadb
 
-De databasegebruiker en het wachtwoord vind je in ".env". Je kunt toegang krijgen tot de database door verbinding te maken met `[localhost:3306]`
+De databasegebruiker en het wachtwoord staan in ".env". Je kunt toegang krijgen tot de database door verbinding te maken met `[localhost:3306]`
 met je favoriete databasetool.
 
 ### Adressen voor applicaties
@@ -63,8 +63,8 @@ met je favoriete databasetool.
 
 ### Verbinding maken met de database vanuit PHP
 
-Om vanuit PHP verbinding te maken met de database, is enige speciale aandacht vereist. Gebruik in plaats van het externe
-`localhost:3306`-adres moet je de interne containernaam gebruiken zoals aangegeven in het docker-compose-bestand. In het
+Om vanuit PHP verbinding te maken met de database, is enige speciale aandacht nodig. Gebruik niet het externe
+`localhost:3306`-adres. moet je de interne containernaam gebruiken zoals vermeld in het docker-compose-bestand. In het
 standaardgeval is dit `mysql`.
 
 In PHP kun je dit als volgt gebruiken:
@@ -90,6 +90,6 @@ Als je binnen PHP toegang wilt krijgen tot de omgevingsvariabelen, kun je het vo
 Vervang "example" door de naam van de variabele waartoe je toegang wilt hebben.
 
 Opmerking: Als je aanvullende software nodig hebt, zoals `sendmail`, moet je deze zelf toevoegen aan de container of
-een nieuwe container toevoegen die de aanvullende software bevat.
+een nieuwe container aanmaken die de aanvullende software bevat.
 
 
