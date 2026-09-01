@@ -24,10 +24,10 @@ verwijzen naar de `th`-elementen.
 </table>
 ```
 
-De CSS richt zich op de positionering van de `<th>`-elementen. We stellen de positie in op `sticky`. Hiervoor moeten we ook
+De CSS richt zich op de positionering van de `<th>`-elementen. We stellen de positie in op `sticky`. Dit vereist ook dat we
 een
-instructie voor de `top` toevoegen. Omdat tabelkoppen normaal gesproken transparant zijn, zal de tekst in de kop (optisch) versmelten met de
-tekst die erachter staat. Daarom gebruiken we een achtergrondkleur om het hele gebied achter de tabelkoppen te bedekken. In
+instructie toevoegen voor de `top`. Omdat tabelkopteksten normaal gesproken transparant zijn, zal de koptekst (optisch) versmelten met de
+tekst die erachter stroomt. Daarom gebruiken we een achtergrondkleur om het hele gebied achter de tabelkoppen te bedekken. In
 dit
 geval wordt een `rgba()` kleur gespecificeerd. Hiermee kan een dekking worden opgegeven die afwijkt van 1. Dit maakt de achtergrondkleur
 een beetje transparant, zodat de tabeltekst nog net een beetje zichtbaar is. Hoe lager het laatste getal (in het voorbeeld is dat
@@ -46,8 +46,7 @@ De `position: sticky` zorgt ervoor dat de kopteksten bovenaan blijven staan wann
 exacte definitie de MDN-referentie voor ‘position’ aan het einde van dit artikel.
 
 Let op: er kunnen veel verschillende syntaxisvormen worden gebruikt om achtergrondkleuren te specificeren (waarden voor rood, groen en blauw). Zie
-de referenties aan het einde. In het voorbeeld wordt de ‘ouderwetse’ manier met komma’s als scheidingstekens gebruikt. Dit is dus ook geldig 
-:
+de referenties aan het einde. In het voorbeeld wordt de ‘ouderwetse’ manier met komma’s als scheidingstekens gebruikt. Dit is dus ook geldig:
 
 ```css
   background-color:rgb(250 250 250 / 80%);

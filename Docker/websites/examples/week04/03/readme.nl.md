@@ -1,12 +1,12 @@
-# Week 4 - HTML - Menu met verborgen submenu's
+# Week 4 - HTML - Menu met verborgen submenu’s
 
-In dit voorbeeld maken we een hoofdmenu met verborgen submenu-items. Met behulp van CSS `:hover` laten we 
-de menu's zien wanneer de muisaanwijzer over het hoofdmenu beweegt. Dit wordt een ‘harmonica-stijl’ genoemd. 
+In dit voorbeeld gaan we een hoofdmenu maken met verborgen submenu-items. Met behulp van CSS `:hover` zullen we 
+de menu’s weergeven wanneer de muisaanwijzer over het hoofdmenu beweegt. Dit wordt een ‘harmonica-stijl’ genoemd. 
 
-We gebruiken de pseudoklasse `:hover` om dit te realiseren. Let op: `:hover` moet op het `<ul>`-element staan om de
-onderliggende `<ul>` voor het submenu te activeren. Met de muis over het `<a>`-element gaan werkt niet: dit is niet het bovenliggende element van het submenu!
+We gebruiken de pseudoklasse `:hover` om deze actie te activeren. Let op: `:hover` moet op het `<ul>`-element staan om het
+onderliggende `<ul>`-element voor het submenu te activeren. Met de muis over het `<a>`-element gaan werkt niet: dit is niet het bovenliggende element van het submenu!
 
-Het werkt, maar het is een beetje schokkerig: afhankelijk van de muisbewegingen opent en sluit het menu submenu’s snel.  
+Het werkt wel, maar het is een beetje schokkerig: afhankelijk van de muisbewegingen opent en sluit het menu submenu’s snel.  
 
 ```css
   nav > ul > li > ul {

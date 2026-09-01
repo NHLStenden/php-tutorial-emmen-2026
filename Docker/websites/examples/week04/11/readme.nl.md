@@ -5,14 +5,14 @@ van een bepaald type is, bijvoorbeeld wanneer je gegevens uit een bestand of een
 
 # Foutopsporing
 
-Soms wil je de inhoud van variabelen bekijken. PHP ondersteunt dit met een aantal foutopsporingsfuncties.
+Soms wil je de inhoud van variabelen bekijken. PHP ondersteunt dit met een aantal functies voor foutopsporing.
 
 * `print_r` Geeft leesbare informatie over een variabele weer
 * `var_dump` Geeft gedetailleerde informatie over een variabele weer
 
 # Informatie over variabelen
 
-Als je wilt controleren of een variabele bepaalde eigenschappen heeft, kun je functies zoals hieronder gebruiken:
+Als je wilt controleren of een variabele bepaalde eigenschappen heeft, kun je onderstaande functies gebruiken:
 
 * `is_array()` : Controleert of een variabele een array is (we behandelen arrays volgende week)
 * `is_bool()`: Controleert of een variabele een booleaanse waarde is
@@ -21,10 +21,10 @@ Als je wilt controleren of een variabele bepaalde eigenschappen heeft, kun je fu
 
 Conversiefuncties:
 * `intval()`: haalt de gehele waarde van een variabele op (zelfs als het een tekenreeks is)
-* `floatval()` en `doubleval()`: haal de drijvende-kommagetalwaarde van een variabele op (zelfs als het een tekenreeks is)
-* `strval()`: converteert een variabele naar een tekenreeks
+* `floatval()` en `doubleval()`: haal de drijvende-kommawaarde van een variabele op (zelfs als het een tekenreeks is)
+* `strval()`: zet een variabele om naar een tekenreeks
 
-Enkele voorbeelden met een gehele waarde
+Enkele voorbeelden met een geheel getal
 
 ```php
 $x = 10;
@@ -36,7 +36,7 @@ echo "x is float? : "   . (is_float($x) ? "yes" : "no") . "\n";
 
 ```
 
-Een drijvende-kommagetal gebruiken:
+Met een drijvende-kommagetal:
 
 ```php
 $z = 1.2;

@@ -2,7 +2,7 @@
 
 De Flexible Box Layout-module (meestal aangeduid als flexbox) is een eendimensionaal lay-outmodel voor het verdelen van ruimte
 tussen elementen en biedt talrijke uitlijningsmogelijkheden. Dit artikel geeft een overzicht van de belangrijkste kenmerken van
-flexbox, die we in de rest van deze handleidingen nader zullen bekijken.
+flexbox, die we in de rest van deze handleidingen nader zullen bespreken.
 
 Wanneer we flexbox omschrijven als eendimensionaal, bedoelen we dat flexbox de lay-out in één
 dimensie tegelijk regelt — hetzij als een rij, hetzij als een kolom. Dit staat in contrast met het tweedimensionale model van CSS Grid
@@ -22,10 +22,10 @@ In dit voorbeeld plaatsen we 4 vakken op de pagina met behulp van een `<section>
 </section>
 ```
 
-Normaal gesproken worden `<section>`-elementen, wanneer ze op een pagina worden geplaatst, verticaal weergegeven en beslaan ze de volledige breedte van de
+Normaal gesproken worden `<section>`-elementen verticaal op een pagina geplaatst en beslaan ze de volledige breedte van de
 pagina.
 
-Door de `display:flex` te gebruiken (in plaats van de standaard `display:block`) kunnen we veel dingen aanpassen:
+Door het `display:flex`-element te gebruiken (in plaats van het standaard `display:block`-element) kunnen we veel dingen aanpassen:
 
 * de richting: verticaal (`column`) of horizontaal (`row`)
 * normale of omgekeerde richting (`column-reverse` of `row-reverse`)
@@ -36,11 +36,11 @@ Door de `display:flex` te gebruiken (in plaats van de standaard `display:block`)
     * `space-round`
     * `space-between`
     * `space-evenly`
-* centreren
+* centrering
 
 Zie de referenties aan het einde van dit artikel voor meer informatie.
 
-Wat heel **belangrijk** is om te begrijpen, is dat je bij het werken met flexbox de juiste eigenschappen moet instellen in zowel het
+Wat heel **belangrijk** is om te begrijpen, is dat het werken met flexbox vereist dat de juiste eigenschappen worden ingesteld in zowel het
 **bovenliggende element** als de **onderliggende elementen**.
 
 In dit voorbeeld gebruiken we de onderstaande CSS. Uitleg onder het voorbeeld
@@ -76,7 +76,7 @@ main {
 ## Ouder- en kindelementen instellen met Flexbox
 
 We gebruiken *geneste CSS* om de structuur van onze HTML te volgen. De `<article>` is de container van de sectie. We noemen deze daarom
-de **bovenliggende**. We willen `<article>` als bovenliggende element gebruiken om de display-eigenschap van de onderliggende elementen in te stellen. In
+de **ouder**. We willen de `<article>` als ouder gebruiken om de display-eigenschap van de onderliggende elementen in te stellen. In
 dit geval gebruiken we _flexbox_ en stellen we `display` in op de waarde van `flex`.
 
 We willen dat de `<section>`-elementen achter elkaar in een rij worden geplaatst en dat ze worden omgebroken als er onvoldoende ruimte is.
@@ -86,7 +86,7 @@ We willen dat de `<section>`-elementen achter elkaar in een rij worden geplaatst
 
 ## De CSS-eigenschappen van de onderliggende elementen instellen
 
-Nu moeten we eerst kijken naar de onderliggende elementen: de `<section>`-elementen. Om ervoor te zorgen dat ze zich op de gewenste manier gedragen,
+Nu moeten we eerst naar de onderliggende elementen kijken: de `<section>`-elementen. Om ervoor te zorgen dat ze zich op de gewenste manier gedragen,
 moeten we twee belangrijke eigenschappen instellen:
 
 1. stel `flex-basis` in op een waarde; in dit geval hebben we gekozen voor 15% (van de beschikbare breedte van het bovenliggende element)
@@ -94,14 +94,14 @@ moeten we twee belangrijke eigenschappen instellen:
 
 De eerste eigenschap zorgt ervoor dat elk `<section>`-element 15% van de beschikbare ruimte inneemt. Hierdoor zullen
 de
-`<section>`-elementen steeds verder krimpen, mogelijk tot onder een breedte die als acceptabel wordt beschouwd. Daarom voegen we nog een eigenschap toe, `min-width`, en
-geven we aan dat ‘ongeacht de beschikbare ruimte, dit element niet kleiner mag worden dan 300 pixels’.
+`<section>`-elementen steeds kleiner worden, mogelijk tot onder een breedte die als acceptabel wordt beschouwd. Daarom voegen we nog een eigenschap toe, `min-width`, en
+geven we aan dat ‘ongeacht de beschikbare ruimte dit element niet kleiner mag worden dan 300 pixels’.
 
 ## Regelsplitsing
 
 Dit leidt mogelijk tot een conflict met de `display:flex` en `flex-direction: row`. Want als alle onderliggende elementen
-minstens 300px breed moeten zijn, passen ze mogelijk niet meer in één rij. Hier komt de eigenschap `flex-wrap` om de hoek kijken: als de onderliggende elementen
-niet meer in het bovenliggende element passen, bepaalt deze optie wat er moet gebeuren. In dit geval geven we de instructie om items die niet meer passen
+minstens 300px breed moeten zijn, passen ze mogelijk niet meer in één rij. Hier komt de `flex-wrap` om de hoek kijken: als de onderliggende elementen
+niet meer in het bovenliggende element passen, bepaalt deze optie wat er moet gebeuren. In dit geval geven we de instructie om elementen die niet meer passen
 in een volgende rij te plaatsen. Dit wordt **wrapping** genoemd.
 
 ![afbeelding](./flex-wrap.svg)
@@ -130,13 +130,13 @@ section {
 
 (afbeelding van https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-Pas nu de grootte van je browservenster aan totdat er slechts één `<section>` in de rij past. Let op hoe de `<section>` zich over de
+Pas nu de grootte van je browservenster aan totdat er slechts één `<section>` op de rij past. Let op hoe de `<section>` zich over de
 volledige breedte van de beschikbare ruimte uitstrekt. Dit komt door de eigenschap `flex-grow:1`: hierdoor kunnen elementen in grootte toenemen
 zodat alle elementen dezelfde grootte krijgen. Je kunt de waarde voor elk onderliggend element aanpassen.
 
 Bekijk [voorbeeld 3](./index3.html). 
 
-De CSS gebruikt nu een andere `flex-grow`-instelling (3) voor het tweede
+De CSS gebruikt nu een andere `flex-grow`-instelling (3) voor de tweede
 `<section>`. Dit wordt aangegeven met de `&:nth-child(2)`, die hetzelfde is als `section:nth-child(2)`.
 
 ```css
@@ -154,8 +154,8 @@ De CSS gebruikt nu een andere `flex-grow`-instelling (3) voor het tweede
 
 ```
 
-Let op: deze `flex-grow` geldt alleen voor items **op dezelfde regel**! Probeer dus nogmaals het formaat van je browservenster aan te passen zodat
-er twee `<section>`-elementen per regel worden weergegeven.
+Let op: deze `flex-grow` geldt alleen voor items **op dezelfde regel**! Probeer dus nogmaals het formaat van je browservenster aan te passen om
+twee `<section>`-elementen per regel weer te geven.
 
 ![image-flex-grow-screendump](./flex-grow-3.png)
 
@@ -164,10 +164,10 @@ er twee `<section>`-elementen per regel worden weergegeven.
 Je kunt bepalen hoe de ruimte door onderliggende elementen wordt ingenomen. Hierbij komt wat terminologie kijken die we eerst moeten begrijpen. Ruimte
 kan horizontaal (_width_) en verticaal (_height_) worden bekeken. Dit geldt echter alleen wanneer we `display:block` gebruiken.
 Bij gebruik van `display:flex`
-kunnen we de richting veranderen waarin items worden getekend.
+kunnen we de richting wijzigen waarin items worden weergegeven.
 
-Daarom moeten we het gebruik van ‘horizontaal’ en ‘verticaal’ heroverwegen. Bij het gebruik van flexbox hanteren we de termen ‘**hoofdas**’ en
-de ‘**dwarsas**’. De ‘hoofdas’ is de as die we hebben gedefinieerd met `flex-direction`. Wanneer we `row` toewijzen als de
+Daarom moeten we het gebruik van ‘horizontaal’ en ‘verticaal’ herzien. Bij het gebruik van flexbox hanteren we de termen ‘**hoofdas**’ en
+de ‘**dwarsas**’. De ‘hoofdas’ is de as die we hebben gedefinieerd met `flex-direction`. Wanneer we `row` toewijzen als
 richting, is de ‘hoofdas’ horizontaal en is de `cross axis` verticaal.
 
 Waarom is dit belangrijk? Omdat we, wanneer we de browser instrueren hoe de ruimte moet worden ingevuld, aparte instructies hebben
@@ -196,7 +196,7 @@ article {
 }
 ```
 
-Merk op dat we `align-items` hebben toegevoegd met de waarde `center`. We hebben de `<section>` teruggezet naar de onderstaande waarden; ververs vervolgens je
+Merk op dat we `align-items` hebben toegevoegd met een waarde van `center`. We hebben de `<section>` teruggezet naar de onderstaande waarden; ververs je
 scherm.
 
 ```css
@@ -240,17 +240,17 @@ Bekijk de CSS (niet-relevante delen zijn uit het onderstaande voorbeeld verwijde
 }
 ```
 
-Let er nogmaals op dat deze regels alleen van toepassing zijn op items **in dezelfde rij**. Dit kan leiden tot ongewenst gedrag wanneer er een
+Let er nogmaals op dat deze regels alleen van toepassing zijn op items **in dezelfde rij**. Dit kan tot ongewenst gedrag leiden wanneer er een
 tweede rij wordt aangemaakt:
 
 ![screendump-flex-align-stretch](./flex-align-stretch.png)
 
-Dit probleem is echter niet eenvoudig op te lossen met behulp van de flexbox-instructie. Je zou de hoogte van de items kunnen instellen met
+Dit probleem is echter niet eenvoudig op te lossen met behulp van flexbox-instructies. Je zou de hoogte van de items kunnen instellen met
 `height:300px`, maar dat gaat enigszins in tegen het doel van flexbox.
 
 # Conclusies
 
-Daarom zeggen we:
+Daarom stellen we:
 
 > Flexbox is ontworpen als een **eendimensionale** lay-outengine: ofwel horizontaal (rij) ofwel verticaal (kolom). Elke aangemaakte rij
 > of kolom wordt gezien als een nieuwe, autonome entiteit die geen kennis heeft van eerdere rijen of kolommen.
@@ -260,5 +260,5 @@ methode gebruiken.
 
 # Referenties
 
-* [Een complete handleiding voor CSS flexbox-lay-outs](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [Een complete handleiding voor CSS-flexbox-lay-outs](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [MDN: Basisbegrippen van flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts)

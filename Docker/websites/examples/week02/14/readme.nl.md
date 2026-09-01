@@ -20,7 +20,7 @@ else {
 }
 ```
 
-Verrassend genoeg is het resultaat dat $a en $b dezelfde waarde hebben, ook al is $a een tekenreeks en $b een getal (int of
+Verrassend genoeg is het resultaat dat $a en $b dezelfde waarde hebben, ook al is $a een tekenreeks en is $b een getal (int of
 float).
 
 ```php
@@ -65,10 +65,10 @@ else {
 
 ## Vergelijking van float-waarden
 
-Omdat twee drijvende-kommagetallen iets anders kunnen worden weergegeven dan de berekende of toegewezen waarde, is het
-moeilijk om te bepalen of twee drijvende-kommagetallen ‘hetzelfde zijn’. Bovendien kan de definitie van ‘hetzelfde zijn’
+Omdat twee drijvende-kommagetallen enigszins anders kunnen worden weergegeven dan de berekende of toegewezen waarde, is het
+moeilijk te bepalen of twee drijvende-kommagetallen ‘hetzelfde’ zijn. Bovendien kan de definitie van ‘hetzelfde zijn’
 in verschillende situaties sterk verschillen. Bij zeer grote getallen (bijvoorbeeld miljoenen dollars) maakt een verschil van
-enkele centen misschien niet uit. Bij het berekenen van waarden tussen 0 en 1 kan echter zelfs een waarde van een tiende
+enkele cent misschien niet uit. Bij het berekenen van waarden tussen 0 en 1 kan echter zelfs een tiende
 je algoritme al verpesten. Daarom moet je vaak een marge definiëren met de naam ‘epsilon’, wat betekent: ‘als het verschil tussen twee getallen
 kleiner is dan dit zeer kleine getal, dan beschouw ik ze als gelijk’.
 
@@ -85,14 +85,14 @@ if (abs($p - $q) <== EPSILON) {
 }
 ```
 
-Eerst worden de twee variabelen `$p` en `$q` aangemaakt. Ze zijn van het type `float`. Vervolgens wordt een constante gedefinieerd met behulp van het
+Eerst worden twee variabelen `$p` en `$q` aangemaakt. Ze zijn van het type `float`. Vervolgens wordt een constante gedefinieerd met behulp van het
 trefwoord `const`
 . Constanten worden vaak in hoofdletters geschreven om ze te onderscheiden van variabelen.
 
 De waarde van `EPSILON` wordt uitgedrukt met een wetenschappelijke notatie:  "één tot de macht min 5", wat resulteert in
 `0.00001`.
 
-De waarde van `EPSILON` wordt weergegeven met behulp van de ingebouwde PHP-functie `number_format` (zie de referentielijst aan het einde van
+De waarde van `EPSILON` wordt weergegeven met behulp van de ingebouwde PHP-functie `number_format` (zie de referenties aan het einde van
 dit artikel).
 
 Vervolgens wordt een vergelijking uitgevoerd. De vergelijking bestaat uit de volgende onderdelen
@@ -100,19 +100,19 @@ Vervolgens wordt een vergelijking uitgevoerd. De vergelijking bestaat uit de vol
 * aftrekking van `$p` en `$q`: `$p - $q`.
 * een aanroep van de ingebouwde PHP-functie `sub()`; hierdoor wordt het resultaat altijd een positief getal (groter dan
   nul)
-* een vergelijking tussen de absolute waarde van het verschil en `EPSILON` met behulp van `<==`: **kleiner dan of gelijk aan**. Dit
-  levert ‘true’ op als de absolute waarde van het verschil kleiner is dan of gelijk is aan `EPSILON`.
+* een vergelijking tussen de absolute waarde van de aftrekking en `EPSILON` met behulp van `<==`: **kleiner dan of gelijk aan**. Dit
+  levert ‘true’ op als de absolute waarde van de aftrekking kleiner is dan of gelijk is aan `EPSILON`.
 
-Let op: `<==` voert geen typeconversie uit! De functie `abs()` staat zowel `int` als `float` toe. We zullen hier
-in week 3 dieper op ingaan bij het behandelen van functies.
+Let op: `<==` voert geen typeconversie uit! De functie `abs()` staat zowel `int` als `float` toe. We zullen daar
+in week 3 op ingaan wanneer we functies behandelen.
 
 
 # Conclusies
 
-De aanbevolen werkwijze is om altijd de `===`-operator te gebruiken. Bij het vergelijken van drijvende-kommagetallen moet je een marge (‘epsilon’) gebruiken
+De aanbevolen werkwijze is om altijd de `===`-operator te gebruiken. Bij het vergelijken van drijvende-kommagetallen moet je een marge ('epsilon') gebruiken
 
 # Referenties
 
-* [PHP-vergelijkingsoperatoren](https://www.php.net/manual/en/language.operators.comparison.php)
+* [PHP Vergelijkingsoperatoren](https://www.php.net/manual/en/language.operators.comparison.php)
 * [PHP number_format ()](https://www.php.net/manual/en/function.number-format.php)
 * [PHP abs ()](https://www.php.net/manual/en/function.abs.php)

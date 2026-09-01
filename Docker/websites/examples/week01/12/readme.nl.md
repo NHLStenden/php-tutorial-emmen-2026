@@ -36,5 +36,5 @@ of een beslissing nemen:
 
 ```
 
-We komen later nog terug op het nemen van beslissingen, maar de instructie "a ? b : c " is een "onmiddellijke IF" of "ternaire operatie"
+We komen later nog terug op het nemen van beslissingen, maar de instructie „a ? b : c“ is een „Immediate IF“ of „ternaire operatie“
 en kan worden gebruikt om eenvoudige beslissingen als een uitdrukking te schrijven. 

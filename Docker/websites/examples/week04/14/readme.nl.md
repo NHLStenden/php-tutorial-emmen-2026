@@ -1,6 +1,6 @@
-# Week 4 - PHP - Typeomzetting 1
+# Week 4 - PHP - Typeconversie 1
 
-In dit voorbeeld worden enkele voorbeelden van typeomzetting getoond.
+In dit voorbeeld worden enkele voorbeelden van typeconversie getoond.
 
 # De delingsfunctie
 
@@ -30,11 +30,11 @@ $c = divide($a, $b);
 Dit werkt perfect en levert `0.515` op. De variabele $a is al een `float` omdat deze een `.` bevat om aan te geven dat het om een
 drijvende-kommagetal gaat.
 
-## Typeconversie van string naar float
+## Typeomzetting van string naar float
 
-Het onderstaande voorbeeld levert `0.5` op. De **string**-waarde van $a is "10", maar wordt eerst geconverteerd naar een float en vervolgens wordt de
+Het onderstaande voorbeeld levert `0.5` op. De **string**-waarde van $a is "10", maar wordt eerst omgezet naar een float en vervolgens wordt de
 functie uitgevoerd. Dus ook al ontbreekt de `.`, zal PHP een `float` aanmaken in plaats van een `int`, omdat de
-functie `divide` `float`-parameters „wil”.
+functie `divide` `float` parameters „wil”.
 
 ```php
 
@@ -46,7 +46,7 @@ $c = divide($a, $b);
 ## Typeconversie van een tekenreeks met een float-waarde naar een float
 
 In het onderstaande voorbeeld bevat de variabele $a de tekenreeks "10.3". Dit kan via typeconversie worden omgezet naar een float-waarde van 10.3.
-Let op: in verschillende landen kan het _drijvende-kommateken_ verschillen. In de meeste landen is dat de punt (`.`), maar
+Let op: in verschillende landen kan het _drijvende-kommateken_ verschillen. In de meeste landen is dit de punt (`.`), maar
 in Nederland is het een komma (`,`). Dit werkt dus perfect en levert `0.515` op.
 
 ```php

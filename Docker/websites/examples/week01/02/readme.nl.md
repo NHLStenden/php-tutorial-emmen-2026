@@ -18,21 +18,21 @@ de browser zelf of door de broncode te bekijken. Zie de lijst met referenties aa
 
 # De vergevingsgezinde browser
 
-De programmeurs van browsers (zoals Brave, Firefox, Chromium, Chrome, ...) weten dat HTML-programmeurs fouten kunnen
-maken. Daarom zullen deze browserontwikkelaars *heel veel* fouten door de vingers zien en proberen de informatie weer te
-geven, ook al is de structuur van de HTML-elementen mogelijk onjuist. Dit
+De programmeurs van browsers (zoals Brave, Firefox, Chromium, Chrome, ...) weten dat HTML-programmeurs fouten kunnen maken.
+Daarom zullen deze browserontwikkelaars *heel veel* fouten door de vingers zien en proberen de informatie weer te geven,
+ook al is de structuur van de HTML-elementen mogelijk onjuist. Dit
 
 ## Validators
 
 Om te bepalen of de HTML die je hebt geschreven geldig is, bestaan er validators. Deze validators zijn een product van
-de gemeenschap die deze HTML-standaarden definieert. Je kunt deze gebruiken via een online pagina of een validator in je
-browser installeren. Zie [W3 Validator](https://validator.w3.org) voor meer informatie.
+de gemeenschap die deze HTML-standaarden definieert. Je kunt deze gebruiken op een online pagina of een validator
+in je browser installeren. Zie [W3 Validator](https://validator.w3.org) voor meer informatie.
 
-Veel IDE’s valideren je HTML ook terwijl je deze elementen intypt. Let dus goed op die rode golvende lijnen onder je
-broncode.
+Veel IDE’s valideren je HTML ook terwijl je deze elementen intypt. Let dus op die rode golvende
+lijnen onder je broncode.
 
-opmerking: houd er rekening mee dat het installeren van een validator in je browser vreemde bijwerkingen kan veroorzaken
-bij het maken van complexere PHP-pagina’s in de toekomst.
+Opmerking: houd er rekening mee dat het installeren van een validator in je browser vreemde bijwerkingen kan veroorzaken bij het maken van
+complexere PHP-pagina’s in de toekomst.
 
 # Referenties
 

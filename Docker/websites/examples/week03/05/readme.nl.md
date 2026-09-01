@@ -25,10 +25,10 @@ alinea’s tekst bevatten.
 
 
 
-## Berekeningen voor het aanpassen van hoogte en breedte
+## Berekeningen om hoogte en breedte aan te passen
 
 In dit geval zijn onze regels:
-> Zorg ervoor dat de eerste sectie een breedte heeft van minimaal 200 pixels, maar niet meer dan 50% van de breedte van de viewport.
+> Zorg ervoor dat het eerste gedeelte een breedte heeft van minimaal 200 pixels, maar niet meer dan 50% van de breedte van de viewport.
 > Zorg ervoor dat de hoogte maximaal 10 em-streepjes (`10em`) bedraagt, maar ten minste 50% van de verticale hoogte van de viewport.
 
 Deze laatste regel wordt overigens niet vaak gebruikt. 
@@ -46,14 +46,14 @@ article {
 }
 ```
 
-Eerst wordt de pseudoklasse `:first-of-type` gebruikt om de eerste `<section>` in de `<article>` te selecteren.
+Eerst wordt de pseudoklasse `:first-of-type` gebruikt om het eerste `<section>` in de `<article>` te selecteren.
 Let op hoe de `width` en `height` worden berekend. Het gebruik van `min` en `max` lijkt contra-intuïtief in het licht van 
 de regels.
 >Zorg ervoor dat het eerste gedeelte een breedte heeft van minimaal 200 pixels, maar niet meer dan 50% van de breedte van de viewport.
 
-# Een kleurenmenger gebruiken.
+# Een kleurenmengfunctie gebruiken.
 
-Soms wil je de kleuren van de huisstijl van je bedrijf misschien een beetje aanpassen. Dit kun je doen met een kleurenmenger. 
+Soms wil je de kleuren van de huisstijl van je bedrijf misschien een beetje aanpassen. Dit kun je doen met behulp van een kleurenmenger. 
 Deze heeft een aantal parameters nodig om de kleur met een andere kleur te mengen. Bekijk de link in de HTML voor een demonstratie.
 
 ```css
@@ -74,10 +74,10 @@ article {
 }
 ```
 
-Opmerking: er is ook een animatie met een `transform`-instructie en geanimeerd kleurenmengen. Probeer het eens door de 
+Opmerking: er is ook een animatie met een `transform`-instructie en geanimeerd kleurenmixen. Probeer het eens door de 
 CSS in de opmerkingen in te schakelen en speel zelf met de waarden!
 
 Let op: hier is een voorbeeld van een dubbele *pseudoklasse*: `:visited:hover`. Dit betekent 
-> dat wanneer een link binnen de derde `<section>` ooit door de gebruiker is bezocht, *en* de gebruiker met de muisaanwijzer boven
+> dat wanneer een willekeurige link binnen de derde `<section>` ooit door de gebruiker is bezocht, *en* de gebruiker met de muisaanwijzer boven
 > zo’n bezochte link beweegt, er een andere stijl wordt toegepast.
 

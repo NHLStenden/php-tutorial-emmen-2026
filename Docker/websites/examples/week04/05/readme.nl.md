@@ -8,4 +8,4 @@ Dit voorbeeld is gemaakt met ChatGPT!
 
 Het belangrijkste uitgangspunt is de positionering van de submenu's boven het hoofdmenu. Dit wordt gedaan met behulp van CSS-variabelen, namelijk
 `absolute` en `anchor-name`. Samen met `position-anchor: var(--submenu-anchor);` kunnen we het submenu
-in de buurt van het hoofdmenu plaatsen. Door enkele marges toe te passen, wordt het submenu correct gepositioneerd.
+in de buurt van het hoofdmenu positioneren. Door enkele marges toe te passen, wordt het submenu correct gepositioneerd.

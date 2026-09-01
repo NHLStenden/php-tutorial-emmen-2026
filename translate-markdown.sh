@@ -15,4 +15,4 @@
 # --preserve-code           ignore text contained in code-block markers. ( `....` or ```php ... ```)
 #
 
-find -iname 'readme.md' -execdir deepl translate {} --to nl --output readme.nl.md --preserve-code \;
+find -iname '*.md' ! -name "*.nl.md" -execdir $PWD/translate-with-deepl.sh {} \;

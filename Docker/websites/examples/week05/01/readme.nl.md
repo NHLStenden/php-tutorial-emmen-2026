@@ -2,7 +2,7 @@
 
 Formulieren zijn bedoeld om informatie van de browser naar de server te verzenden.
 
-De gebruiker vult een formulier in en verzendt de informatie naar de server voor verwerking. De server stelt vervolgens een antwoord op
+De gebruiker vult een formulier in en verzendt de informatie naar de server voor verwerking. De server stelt vervolgens een antwoord samen
 met behulp van een HTTP-statuscode en resultaten zoals HTML, CSS, afbeeldingen, ...
 
 In PHP wordt de informatie bij gebruik van de `method="post"` verzameld in een `super global`-variabele met de naam `$_POST`. Dit is
@@ -23,7 +23,7 @@ Het meest eenvoudige formulier is een leeg formulier, zonder invoervelden. Een `
 Een label wordt gebruikt om de gebruiker aan te geven wat er in het betreffende `input` moet worden ingevoerd. Maar het helpt ook bij het gemakkelijker selecteren
 van het betreffende invoerveld: door op een label te klikken kan de gebruiker direct beginnen met het invoeren van tekst.
 
-Om een `<label>` te koppelen aan een `<input>` (of een ander type formulierbesturingselement) moet je verwijzen naar het `id`-attribuut in de
+Om een `<label>` te koppelen aan een `<input>` (of een ander type formulierbesturingselement) moet u verwijzen naar het `id`-attribuut in het
 `<label>`, zoals hieronder weergegeven.
 
 ```html
@@ -38,10 +38,10 @@ Om een `<label>` te koppelen aan een `<input>` (of een ander type formulierbestu
 Als je wilt dat de gebruiker ‘gewoon normale tekst’ invoert, kun je het attribuut `type="text"` toevoegen. Dit is ook de standaardinstelling.
 
 Het attribuut `placeholder` geeft een hint over welke tekst moet worden ingevoerd. In combinatie met het attribuut `<label>` helpt dit de
-gebruiker om te weten wat geldige tekst is.
+gebruiker te begrijpen wat geldige tekst is.
 
 In dit voorbeeld geeft het attribuut `size` aan dat de breedte op het scherm 20 tekens is. De attributen `minlength` en
-`maxlength`-attributen geven de minimaal en maximaal toegestane tekstlengte aan.
+`maxlength` geven de minimaal en maximaal toegestane tekstlengte aan.
 
 ```html
 
@@ -114,14 +114,14 @@ In dit voorbeeld geeft het attribuut `size` aan dat de breedte op het scherm 20 
 
 ## Een getal binnen een bereik met behulp van een schuifbalk
 
-Als het exacte getal dat de gebruiker invoert niet echt belangrijk is, kan een schuifbalk voor een bereik handig zijn. De schuifbalk wordt
+Als het exacte getal dat de gebruiker invoert niet echt belangrijk is, kan een schuifregelaar voor een bereik handig zijn. De schuifregelaar wordt
 weergegeven als een voortgangsbalk met een knop om de waarde aan te passen. Zie de afbeelding hieronder.
 
 ![slider.png](images/slider.png)
 
 In het onderstaande voorbeeld stellen we een toegestaan bereik in met behulp van de attributen `min` en `max`. Het attribuut `step` zorgt ervoor dat de
-waarde alleen met de opgegeven hoeveelheid (in dit geval 10) kan worden verhoogd of verlaagd. Dit zorgt er ook voor dat de waarde
-een veelvoud van tien moet zijn!  Omdat de minimale waarde nul (0) is, zijn alleen waarden als 0, 10, 20, 30 enzovoort toegestaan.
+waarde alleen met de opgegeven waarde (in dit geval 10) kan worden verhoogd of verlaagd. Dit zorgt er ook voor dat de waarde
+een veelvoud van tien moet zijn!  Omdat de minimumwaarde nul (0) is, zijn alleen waarden als 0, 10, 20, 30 enzovoort toegestaan.
 
 ```html
 <label for="field08">Range</label>
@@ -157,9 +157,9 @@ Met het selectievakje kan de gebruiker een optie in- of uitschakelen.
 ```
 
 Let op: alleen als de gebruiker het vakje aanvinkt, stuurt de browser deze informatie naar de server. Als het
-selectievakje ‘niet aangevinkt’ blijft, is de volledige invoer niet aanwezig in de `$_POST` in PHP.
+selectievakje ‘niet is aangevinkt’, ontbreekt de volledige invoer in de `$_POST` in PHP.
 
-Als het selectievakje is aangevinkt, ontvangt de server het met de waarde 'on':
+Als het selectievakje is aangevinkt, ontvangt de server het met de waarde ‘on’:
 
 ```text
   'field10' => string 'on' (length=2)
@@ -212,7 +212,7 @@ Merk op dat wanneer een gebruiker een van de gegeven opties selecteert, alleen d
 Soms wil je misschien afdwingen dat de ingevoerde waarde aan een bepaald patroon voldoet. Deze patronen kunnen worden gespecificeerd
 met behulp van een (complexe) taal die ‘reguliere expressies’ wordt genoemd. Zie de onderstaande referenties voor meer informatie of boeken.
 
-Let op: de browser geeft alleen een algemene foutmelding als de invoer niet aan het patroon voldoet.
+Let op: de browser geeft alleen een algemene foutmelding wanneer de invoer niet aan het patroon voldoet.
 
 ```html
 <label for="field12">Pattern</label>
@@ -226,10 +226,10 @@ Let op: de browser geeft alleen een algemene foutmelding als de invoer niet aan 
 ## Wachtwoorden
 
 Bij het invoeren van wachtwoorden is het wellicht niet wenselijk dat andere gebruikers (die naar je scherm kijken) het wachtwoord kunnen lezen.
-Daarom is er een invoertype ‘password’. Dit maskeert de daadwerkelijk ingetypte tekens (bijvoorbeeld met sterretjes of
-stippen).
+Daarom is er een invoertype ‘password’. Dit maskeert de daadwerkelijk getypte tekens (bijvoorbeeld met sterretjes of
+stipjes).
 
-Je kunt een `pattern="...."`-attribuut toevoegen om de complexiteit van het wachtwoord te valideren met behulp van een reguliere uitdrukking. In
+Je kunt een `pattern="...."`-attribuut toevoegen om de complexiteit van het wachtwoord te valideren met behulp van een reguliere expressie. In
 dit geval geven we de browser aan dat het wachtwoord minimaal 4 tekens en maximaal 42 tekens lang mag zijn.
 
 ```html
@@ -250,7 +250,7 @@ dit geval geven we de browser aan dat het wachtwoord minimaal 4 tekens en maxima
 </select>
 ```
 
-# De informatie verzenden
+# De gegevens verzenden
 
 Om de browser te laten weten dat de gebruikersinvoer naar de server moet worden verzonden, moet je een **submit**-knop toevoegen. Dit kan een
 `<input>` met `type="submit"` zijn of een gewone `<button>`.
@@ -267,9 +267,9 @@ Er zijn verschillende manieren om een formulier op te maken
 
 * met behulp van een raster
 * met behulp van flex-box
-* gebruik `display:inline-block` voor labels om er een breedte aan toe te kunnen wijzen.
-* pas opmaak toe wanneer de invoer ongeldig is
-* pas opmaak toe wanneer een invoerveld _de focus heeft_ (de gebruiker kan tekst invoeren)
+* gebruik display:inline-block voor labels om er een breedte aan te kunnen toekennen.
+* pas styling toe wanneer de invoer ongeldig is
+* pas styling toe wanneer een invoerveld _de focus heeft_ (de gebruiker kan tekst invoeren)
 
 Afhankelijk van je keuze voor de opmaak moet de HTML mogelijk enigszins worden aangepast. In dit voorbeeld heb ik laten zien hoe je eenvoudig
 de invoervelden links kunt uitlijnen door de `<label>`-elementen een vaste breedte te geven.
@@ -314,10 +314,10 @@ body {
 
 Door gebruik te maken van de `display:inline-block` wordt de `<label>` een "block"-element dat een vaste breedte kan hebben. In dit geval
 wordt de breedte gemeten in `em`-eenheden. Het teken 'm' is het breedste teken; een 'm-streepje' is een streepje (lijn) met
-dezelfde breedte als het teken 'm'. Merk op dat dit korter is dan het minteken. Dus `15em` betekent _'net zo breed alsof er 15
+dezelfde breedte als het teken 'm'. Merk op dat dit korter is dan het minteken. Dus `15em` betekent _'zo breed alsof er 15
 'm'-tekens zouden worden gebruikt'_.
 
-Dit is handig als je weet dat al je labels in 15 tekens passen.
+Dit is handig als je weet dat al je labels binnen 15 tekens passen.
 
 ```css
 label {
@@ -327,7 +327,7 @@ label {
 }
 ```
 
-Het `<fieldset>`-element tekent een kader rond HTML-elementen, met de mogelijkheid om een bijschrift toe te voegen.
+Het `<fieldset>` is een element dat een kader rond HTML-elementen tekent, met de mogelijkheid om een bijschrift toe te voegen.
 
 ```css
 fieldset {
@@ -372,7 +372,7 @@ Vervolgens de versie met iets meer opvulling (4px).
 Met `pseudo-selector` `:user-invalid` kunnen we een invoerveld opmaken wanneer de gebruiker ongeldige tekst heeft ingevoerd (zie
 de referenties hieronder voor meer informatie).
 
-Met `pseude-selector` `:focus` kunnen we een invoerveld opmaken wanneer de gebruiker ‘de focus’ heeft verplaatst naar een `<input>`
+Met de `pseude-selector` `:focus` kunnen we een invoerveld opmaken wanneer de gebruiker ‘de focus’ heeft verplaatst naar een `<input>`
 -element of een ander formulierbesturingselement (zoals `<select>`, `<textarea>`).
 
 # Informatie naar de server verzenden
@@ -385,4 +385,4 @@ Met `pseude-selector` `:focus` kunnen we een invoerveld opmaken wanneer de gebru
 * [Een inleiding tot reguliere expressies](https://learning.oreilly.com/library/view/an-introduction-to/9781492082569/)
 * [Inleiding tot reguliere expressies](https://learning.oreilly.com/library/view/introducing-regular-expressions/9781449338879/)
 
-* [MDN: CSS-pseudoklasse :user-invalid](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid)
+* [MDN: CSS-pseudoklasse 'user-invalid'](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid)

@@ -16,7 +16,7 @@ van de HTML. Bovendien kan het veel meer `<?php`-tags genereren dan de andere op
 en [voorbeeld 7](../07/readme.md)), zoals hieronder te zien is. 
 
 
-Hier maakt het genereren van informatie deel uit van de sjabloon, wat de zaken nog verwarrender maakt. Het is zelfs een slechte praktijk omdat
+Hier maakt het genereren van informatie deel uit van de sjabloon, wat de zaak nog verwarrender maakt. Het is zelfs een slechte praktijk omdat
 er HTML is die in zowel de IF- als de ELSE-tak hetzelfde is.
 
 ```php

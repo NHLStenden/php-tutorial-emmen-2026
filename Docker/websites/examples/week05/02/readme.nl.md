@@ -5,11 +5,11 @@ uit een lijst.
 
 De voorbeelden in deze map zijn afkomstig van de MDN-website (zie de referenties aan het einde).
 
-## Meerdere keuzes met behulp van optiegroepen 
+## Meerdere selecties met behulp van optiegroepen 
 
 In de standaardvorm laat het `<select>` de gebruiker één item selecteren. Wanneer echter het attribuut `multiple` wordt opgegeven,
 verandert dit
-1) hoe de lijst wordt weergegeven: niet langer als een dropdownlijst, maar als een ‘normale’ lijst
+1) hoe de lijst wordt weergegeven: niet langer als een vervolgkeuzelijst, maar als een ‘normale’ lijst
 2) de gebruiker kan meer dan één optie selecteren (met behulp van de Ctrl-toets op het toetsenbord)
 
 Zie het onderstaande voorbeeld.
@@ -29,8 +29,8 @@ Zie het onderstaande voorbeeld.
 </select>
 ```
 
-**Let op** het `name=multi[]`. Normaal gesproken moet het `[]` worden weggelaten, maar bij het verzenden van de informatie naar een PHP-server moet het `[]` 
-aanwezig zijn, anders verwijdert PHP alle items uit het `$_POST` behalve het laatst geselecteerde.
+**Let op** de `name=multi[]`. Normaal gesproken zou de `[]` moeten worden weggelaten, maar bij het verzenden van de informatie naar een PHP-server 
+moet de `[]` aanwezig zijn, anders verwijdert PHP alle items uit de `$_POST` behalve het laatst geselecteerde.
 
 Het PHP-bestand dat de formuliergegevens verwerkt, zal de `$_POST` eenvoudigweg op de webpagina weergeven.
 

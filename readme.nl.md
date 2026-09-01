@@ -2,9 +2,9 @@
 
 Deze handleiding is bedoeld voor studenten die beginnen met webontwikkeling met behulp van HTML, CSS en PHP. 
 
-# Opbouw
+# Structuur
 
-Deze repository is als volgt opgezet:
+Deze repository is als volgt ingedeeld:
 
 * [Opdrachten](assignments/readme.md)
 * [Colleges](colleges/readme.md)

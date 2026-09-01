@@ -9,7 +9,7 @@ en deze in twee delen verdelen:
 * de zijbalk aan de linkerkant
 * de eigenlijke inhoud aan de rechterkant
 
-Dit betekent dat we de browser moeten opdragen om de standaard *verticale* lay-out niet meer te gebruiken, en
+Dit betekent dat we de browser moeten instrueren om de standaard *verticale* lay-out niet langer te gebruiken, en
 een horizontale lay-out te starten. Dit doen we met behulp van de `display:flex` CSS-instructie.
 
 ## Voordelen
@@ -22,6 +22,6 @@ een horizontale lay-out te starten. Dit doen we met behulp van de `display:flex`
 
 # Conclusie
 
-Voor lay-outs zoals deze biedt het gebruik van een `display: grid` veel voordelen. In het volgende voorbeeld
+Voor dit soort lay-outs heeft het gebruik van een `display: grid` veel voordelen. In het volgende voorbeeld
 zullen we een andere pagina bekijken die wel baat heeft bij de `display: flex`.
 

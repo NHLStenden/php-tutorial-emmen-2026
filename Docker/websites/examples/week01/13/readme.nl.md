@@ -1,6 +1,6 @@
 # Week 1 - PHP - slim combineren van HTML en PHP
 
-In dit voorbeeld gebruiken we een HEREDOC om HTML en variabelen uit PHP te combineren. 
+In dit voorbeeld gebruiken we een HEREDOC om HTML te combineren met variabelen uit PHP. 
 
 Let op de onderstaande code
 
@@ -18,7 +18,7 @@ END_OF_HTML;
 Dit betekent:
 > Verwerk de tekst op de volgende regels totdat een regel begint met de (magische) tekst `END_OF_HTML`. 
 
-Deze "magische tekst" is niet echt magisch. Je kunt hem elke gewenste naam geven, zolang hij maar een geldige vorm heeft (bijvoorbeeld geen spaties).
+Deze "magische tekst" is niet echt magisch. Je kunt hem elke gewenste naam geven, zolang hij maar in een geldige vorm is (bijvoorbeeld zonder spaties).
 
 We noemen dit een HEREDOC, en het vindt zijn oorsprong in Unix/Linux-besturingssystemen.
 

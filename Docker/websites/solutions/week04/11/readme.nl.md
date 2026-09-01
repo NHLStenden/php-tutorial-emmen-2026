@@ -5,7 +5,7 @@ meer of minder efficiënt zijn wat betreft het aantal stappen dat de functie moe
 
 ## Met behulp van een foreach-lus
 
-Het eerste probleem zou bijvoorbeeld kunnen worden opgelost met behulp van een `foreach`-lus: vergelijk gewoon alle items in de lijst met het
+Het eerste probleem zou bijvoorbeeld kunnen worden opgelost met behulp van een `foreach`-lus: controleer gewoon alle items in de lijst aan de hand van het
 gezochte item. Het lijkt echter een beetje onzinnig om door te gaan met zoeken als je weet dat je het item al hebt gevonden. Zie de
 `find2`-functie:
 
@@ -21,8 +21,8 @@ function find2(int $x, array $list): string
 ```
 
 Merk op dat de functie vrij eenvoudig is en slechts een paar variabelen bevat. Merk ook op dat we het resultaat van
-de vergelijking niet zomaar kunnen opslaan zoals hieronder, omdat het resultaat dan bijna altijd `false` zou zijn, behalve wanneer het gezochte getal
-precies op de laatste positie staat.
+de vergelijking niet zomaar kunnen opslaan zoals hieronder, want dan zou de uitkomst bijna altijd `false` zijn, behalve wanneer het gezochte getal zich
+precies op de laatste positie bevindt.
 
 ```php
 $found = ($x === $item);
@@ -41,7 +41,7 @@ om door te gaan met zoeken:
 2. De positie in de lijst ligt niet „voorbij het einde van de lijst“
 
 Wat betreft de tweede voorwaarde: als er 10 items in de lijst staan, kun je niet op positie 11 of 15 zoeken naar een item in
-die lijst. Dat levert een fout op. Onthoud dat posities in een array beginnen bij nul. De positie in een
+die lijst. Dat levert een fout op. Onthoud dat posities in een array bij nul beginnen. De positie in een
 lijst met 20 items kan dus niet hoger zijn dan 19.
 
 ```php
@@ -62,9 +62,9 @@ function find(int $x, array $list): string
 
 ## Een for-lus gebruiken met een `break`
 
-Een derde manier om dit op te lossen is door een normale `for`-lus te gebruiken in combinatie met een `break`-instructie. We kennen dit sleutelwoord al
+Een derde manier om dit op te lossen is door een normale `for`-lus te gebruiken in combinatie met een `break`-instructie. We kennen dit trefwoord al
 van de `switch()`-instructie. Wanneer het binnen een `for`-lus wordt gebruikt, wordt de for-lus afgebroken en wordt doorgegaan met de volgende
-instructie buiten het _bereik_ van de `for`-lus.
+instructie buiten de _scope_ van de `for`-lus.
 
 ```php
 function find3(int $x, array $list): string
@@ -82,10 +82,10 @@ function find3(int $x, array $list): string
 
 ```
 
-De break-instructie kan ook worden gebruikt in een `foreach` of `while`. Wanneer je deze echter in een `while` gebruikt, gaat dit enigszins in tegen
+De break-instructie kan ook worden gebruikt in een `foreach` of `while`. Bij gebruik in een `while` gaat dit echter enigszins ten koste van
 het doel van de voorwaarden in de `while`-instructie.
 
-Gebruik de `break`-instructie dus spaarzaam en alleen als de code leesbaar genoeg blijft om later te begrijpen!
+Gebruik de `break`-instructie dus spaarzaam en alleen als de code leesbaar genoeg blijft om later te kunnen begrijpen!
 
 # Opdracht – zoek het hoogste getal
 
@@ -121,8 +121,8 @@ function findHighest(array $list): int
 
 ```
 
-We stellen vast dat in het geval van een lege array het hoogste getal nul is. Dit is een willekeurige keuze, want we hadden net zo
-goed anders kunnen besluiten. Een manier om dit op te lossen is door ofwel een getal ofwel `false` terug te geven:
+We stellen vast dat bij een lege array het hoogste getal nul is. Dit is een willekeurige keuze, want we hadden net zo
+goed iets anders kunnen kiezen. Een manier om dit op te lossen is door ofwel een getal ofwel `false` terug te geven:
 
 ```php
 function findHighest3(array $list): int | false
@@ -153,25 +153,25 @@ Merk op dat bij de tweede aanroep een lege array `[]` als parameter wordt doorge
 Als de functieaanroep `findhighest3()` false retourneert, geven we "Empty Array" weer; anders geven we de daadwerkelijk
 gevonden waarde weer.
 
-# Opdracht 3 - het aantal keren dat een getal in een array voorkomt tellen
+# Opdracht 3 - het aantal herhalingen in een array tellen
 
 In dit geval hebben we een lijst met getallen, bijvoorbeeld 2,5 en 1. We willen controleren hoe vaak dit getal voorkomt in een andere lijst met
-items, bijvoorbeeld 1,5,5,2,2,1,5. In dit geval zou dat het volgende opleveren:
+elementen, bijvoorbeeld 1,5,5,2,2,1,5. In dit geval zou dat het volgende opleveren:
 
 * 1 komt twee keer voor
 * 2 komt twee keer voor
 * 5 komt drie keer voor
 
-Dus moeten we een functie maken die twee arrays kan aannemen. Bekijk de functieverklaring van de functie
+Dus moeten we een functie maken die twee arrays kan aannemen. Bekijk de functiedeclaratie van de functie
 `findMultiple` eens.
 
 ```php
 function findMultiple(array $search, array $list): array
 ```
 
-Het gevolg is dat deze functie veel zoekacties zal uitvoeren. Als er 10 elementen in de `$search` zitten en 250 in de
+Het gevolg is dat deze functie heel veel zoekacties moet uitvoeren. Als er 10 elementen in de `$search` zitten en 250 in de
 `$list`, dan bestaat het risico dat de functie 10 x 250 = 2.500 stappen moet uitvoeren. De eerste functie `findMultiple`
-werkt inderdaad op die manier.
+werkt inderdaad zo.
 
 ```php
 function findMultiple(array $search, array $list): array
@@ -199,13 +199,13 @@ function countItemOccurencesInList(int $x, array $list): int
 }
 ```
 
-Deze functie ontvangt de lijst en de gezochte items. Met behulp van een `foreach`-lus controleert deze alle items.
+Deze functie ontvangt de lijst en de zoekopdrachten. Met behulp van een `foreach`-lus controleert deze alle items.
 
-Hier maakt de ternaire operator `expr ? true-part : false-part` het tellen van items eenvoudig: als een item overeenkomt met het
-gezochte item, geeft deze één terug, anders nul. De operator `+=` betekent  "voeg een waarde toe aan de variabele links ervan"; in dit
+Hier maakt de ternaire operator `expr ? true-part : false-part` het eenvoudig om items te tellen: als een item overeenkomt met het
+gezochte item, retourneert deze één, anders nul. De operator `+=` betekent  "voeg een waarde toe aan de variabele links ervan"; in dit
 geval `$occurences`.
 
-We zouden onze functie ‘zoeken en overeenkomsten tellen’ enigszins kunnen verbeteren om te voorkomen dat alle items worden doorzocht. Een manier om
+We zouden onze functie voor ‘zoeken en overeenkomsten tellen’ enigszins kunnen verbeteren om te voorkomen dat alle items worden doorzocht. Een manier om
 dit te doen, is door de te doorzoeken array te sorteren. Dus als de doorzochte array
 
 ```text
@@ -218,7 +218,7 @@ moeten we bij het zoeken naar bijvoorbeeld het getal 2 inderdaad alle elementen 
 1,2,2,3,3,5,5,6,43
 ```
 
-is er een eenvoudige regel waarmee we onze zoekopdracht kunnen optimaliseren door te stoppen zodra het gezochte getal niet kleiner is dan het getal
+is er een eenvoudige regel waarmee we onze zoekopdracht kunnen optimaliseren door te stoppen als het gezochte getal niet kleiner is dan het getal
 dat op een bepaalde positie in de gesorteerde lijst is gevonden. Bij het zoeken naar het getal 2 zouden we bijvoorbeeld kunnen stoppen wanneer we het
 getal 3 op de vierde positie vinden. Omdat we weten dat de lijst gesorteerd is, zal er nooit een getal 2 meer voorkomen zodra we
 het getal 3 hebben gevonden.
@@ -258,7 +258,7 @@ Dat is dus
 
 `100% - (steps taken - number of items in the list)  / 100`.
 
-In PHP zou dit eruitzien zoals in de onderstaande code. We gebruiken `intval` om het `float` resultaat van de deling terug te brengen tot een eenvoudig geheel getal.
+In PHP zou dit eruitzien zoals de onderstaande code. We gebruiken `intval` om het `float` resultaat van de deling terug te brengen tot een eenvoudig geheel getal.
 
 * `$x` is het gezochte getal
 * `$i` is het aantal genomen stappen
@@ -277,7 +277,7 @@ Dit levert `findMultipleFaster([2,5,1], [1,5,3,6,5,3,2,43,2]);` op.
 1 = 1 (88 %)
 ```
 
-Bij het zoeken naar het getal ‘5’ werden dus zeven stappen gezet en werd 22% van de array niet doorzocht.
+Bij het zoeken naar het getal ‘5’ werden dus zeven stappen uitgevoerd en werd 22% van de array niet doorzocht.
 
 Bij gebruik van 1000 willekeurige getallen en 6 te zoeken getallen zou dit zonder optimalisatie kunnen leiden tot 6000 zoekopdrachten. 
 ```text
@@ -291,4 +291,4 @@ Bij gebruik van 1000 willekeurige getallen en 6 te zoeken getallen zou dit zonde
 
 # Referenties
 
-* [Union-typen in PHP](https://wiki.php.net/rfc/union_types_v2)
+* [Union Types in PHP](https://wiki.php.net/rfc/union_types_v2)

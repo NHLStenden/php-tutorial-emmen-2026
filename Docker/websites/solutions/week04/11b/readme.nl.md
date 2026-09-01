@@ -5,8 +5,8 @@ meer of minder efficiënt zijn wat betreft het aantal stappen dat de functie moe
 
 ## Met behulp van een foreach-lus
 
-Het eerste probleem zou bijvoorbeeld opgelost kunnen worden met een `foreach`-lus: controleer gewoon alle items in de lijst aan de hand van het
-gezochte item. Het lijkt echter een beetje onzinnig om door te zoeken als je weet dat je het item al gevonden hebt. Zie de
+Het eerste probleem zou bijvoorbeeld kunnen worden opgelost met behulp van een `foreach`-lus: controleer gewoon alle items in de lijst aan de hand van het
+gezochte item. Het lijkt echter een beetje zinloos om door te zoeken als je weet dat je het item al hebt gevonden. Zie de
 `find2`-functie:
 
 ```php
@@ -34,8 +34,8 @@ Er is een manier om dit efficiënter te maken: bekijk de oplossing met de reguli
 
 ## Een while-lus gebruiken
 
-Daarom kan de eerste opgave het beste worden opgelost met een `while`-lus. Let op: er moeten twee voorwaarden
-waar zijn om door te gaan met zoeken:
+Daarom kan de eerste opgave het beste worden opgelost met een `while`-lus. Merk op dat er twee voorwaarden waargenomen moeten worden
+om door te gaan met zoeken:
 
 1. Het item is niet gevonden
 2. De positie in de lijst ligt niet „voorbij het einde van de lijst“
@@ -62,7 +62,7 @@ function find(int $x, array $list): string
 
 ## Een for-lus gebruiken met een `break`
 
-Een derde manier om dit op te lossen is door een normale `for`-lus te gebruiken in combinatie met een `break`-instructie. We kennen dit sleutelwoord al
+Een derde manier om dit op te lossen is door een normale `for`-lus te combineren met een `break`-instructie. We kennen dit trefwoord al
 van de `switch()`-instructie. Wanneer het binnen een `for`-lus wordt gebruikt, wordt de for-lus afgebroken en wordt doorgegaan met de volgende
 instructie buiten de _scope_ van de `for`-lus.
 
@@ -85,7 +85,7 @@ function find3(int $x, array $list): string
 De break-instructie kan ook worden gebruikt in een `foreach` of `while`. Wanneer je deze echter in een `while` gebruikt, gaat dit enigszins in tegen
 het doel van de voorwaarden in de `while`-instructie.
 
-Gebruik de `break`-instructie dus spaarzaam en alleen als de code leesbaar genoeg blijft om later te kunnen begrijpen!
+Gebruik de `break`-instructie dus spaarzaam en alleen als de code leesbaar genoeg blijft om later nog te kunnen begrijpen!
 
 # Referenties
 

@@ -1,7 +1,7 @@
-# Opdracht: zoek en vind het hoogste getal
+# Opdracht: zoeken en het hoogste getal vinden
 
-Voor deze opdracht zijn er verschillende manieren om het probleem op te lossen. De manier waarop je het probleem oplost, kan
-meer of minder efficiënt zijn wat betreft het aantal stappen dat de functie moet uitvoeren om het gewenste resultaat te bereiken.
+Voor deze opdracht zijn er een aantal verschillende manieren om het probleem op te lossen. De manier waarop je het probleem oplost, kan
+meer of minder efficiënt zijn wat betreft het aantal stappen dat de functie moet doorlopen om het gewenste resultaat te bereiken.
 
 Bij het zoeken naar het hoogste getal moeten alle elementen worden verwerkt. Of toch niet? Er is een eenvoudige truc, zoals gebruikt in
 `findHighest2`: sorteer de array gewoon in omgekeerde volgorde en kies vervolgens het eerste element. We moeten wel controleren of de array
@@ -35,8 +35,8 @@ function findHighest(array $list): int
 
 ```
 
-We stellen vast dat bij een lege array het hoogste getal nul is. Dit is een willekeurige keuze, want we hadden net
-zo goed iets anders kunnen kiezen. Een manier om dit op te lossen is door ofwel een getal ofwel `false` terug te geven:
+We stellen vast dat bij een lege array het hoogste getal nul is. Dit is een willekeurige keuze, want we hadden net zo
+goed iets anders kunnen kiezen. Een manier om dit op te lossen is door ofwel een getal ofwel `false` terug te geven:
 
 ```php
 function findHighest3(array $list): int | false
@@ -64,7 +64,7 @@ afdrukbaar resultaat te creëren:
 
 Merk op dat bij de tweede aanroep een lege array `[]` als parameter wordt doorgegeven.
 
-Als de functieaanroep `findhighest3()` false retourneert, geven we "Empty Array" weer; anders geven we de daadwerkelijk
+Als de functieaanroep `findhighest3()` ‘false’ retourneert, geven we ‘Empty Array’ weer; anders geven we de daadwerkelijk
 gevonden waarde weer.
 
 # Referenties

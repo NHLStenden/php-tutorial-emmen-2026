@@ -8,7 +8,7 @@ In het onderstaande voorbeeld wordt een bestand met de naam 'information.txt' in
   $information = file_get_contents('./information.txt');
 ```
 
-Je kunt de uit bestanden gelezen informatie integreren in je HTML, zoals in dit voorbeeld te zien is:
+Je kunt de uit bestanden ingelezen informatie gebruiken om deze in je HTML te integreren, zoals in dit voorbeeld te zien is:
 
 ```php
 <body>
@@ -31,7 +31,7 @@ De browser past de opmaak uit het `<head>` toe op de hele pagina. Onthoud dat er
 HTML is die afkomstig is van de webserver (zie de schermafbeelding van de browser hieronder). De browser weet niet hoe je
 al die HTML maakt.
 
-Merk op dat de standaardinstructie `include_once()` ook een PHP- of HTML-bestand insluit op de plaats waar dit commando
+Merk op dat de standaardinstructie `include_once()` ook een PHP- of HTML-bestand opneemt op de plaats waar dit commando
 wordt uitgevoerd!
 
 ![screendump-developer-tools.png](screendump-developer-tools.png)

@@ -12,7 +12,7 @@ Dit leidt tot een totaal van 3 fracties. De horizontale ruimte wordt dus in 3 de
 het tweede en derde deel worden toegewezen aan de tweede kolom. 
 
 Dit zorgt er dus in feite voor dat 
-* alle horizontale ruimte wordt benut
+* de volledige horizontale ruimte wordt benut
 * de eerste kolom half zo groot is als de tweede kolom
 * 
 

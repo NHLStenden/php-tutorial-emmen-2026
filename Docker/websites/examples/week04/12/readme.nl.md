@@ -5,9 +5,9 @@ voegt optionele parameters toe en schrijft de body van de functie.
 
 ## Parameters
 
-Een functie heeft vaak parameters. Deze parameters kunnen worden voorzien van een type-indicator. Dit geeft aan dat de functie
-alleen variabelen van het opgegeven type accepteert. Als een programmeur die functie aanroept met een ander type, wordt er een foutmelding
-weergegeven. Dit leidt er vaak toe dat de rest van de PHP-code wordt gestopt
+Een functie heeft vaak parameters. Deze parameters kunnen worden voorzien van een type-indicator. Dit geeft de functie aan
+dat deze alleen variabelen van het opgegeven type mag accepteren. Als een programmeur die functie aanroept met een ander type, wordt er een foutmelding
+weergegeven. Dit leidt er vaak toe dat de rest van de PHP-code wordt gestopt.
 
 ```html
 function calc(int $a, int $b): int {
@@ -17,11 +17,11 @@ function calc(int $a, int $b): int {
 }
 ```
 
-De bovenstaande functie accepteert twee gehele getallen (`int` is de type-indicator voor gehele getallen, dus alleen hele getallen). De functie
+De bovenstaande functie accepteert twee gehele getallen (`int` is de type-indicator voor gehele getallen, uitsluitend hele getallen). De functie
 berekent een resultaat door de parameters `$a` en `$b` bij elkaar op te tellen en slaat dit op in de variabele `$result`.
 
 De namen van de parameters kunnen worden gekozen op basis van hun doel. Voor het benoemen van een parameter gelden dezelfde regels als voor het benoemen van
-een gewone parameter. Zelfs als je een naam kiest die in de rest van de code al een variabele is, is dat geen
+een gewone parameter. Zelfs als je een naam kiest die al een variabele is in de rest van de code, is dat geen
 probleem. 
 
 ## Doorgeven via verwijzing of als waarde
@@ -47,10 +47,10 @@ blijven de oorspronkelijke waarden van `$a` (namelijk 1) en `$b` (namelijk 2) ec
 De variabelen `$a` en `$b` worden als waarde aan de functie doorgegeven. Je kunt je dus voorstellen dat de waarden van de variabelen 
 naar de functie worden gekopieerd.
 
-Als we kijken naar de functie `sort()` die in PHP is ingebouwd, zien we een verschil:
+Als we kijken naar de ingebouwde functie `sort()` in PHP, zien we een verschil:
 > Sorteer een array in oplopende volgorde
 
-Deze functie heeft een andere functieverklaring:
+Deze functie heeft een andere functiedeclaratie:
 ```php
 function sort(array &$array, int $flags = SORT_REGULAR) {
  ... 
@@ -66,20 +66,20 @@ daar vinden”, zodat de functie deze kan wijzigen.
 Nogmaals, in sommige situaties is dit een goede zaak, maar meestal wil je niet dat een functie de variabelen wijzigt die
 aan de functie worden doorgegeven, tenzij dit **goed gedocumenteerd** is!
 
-In het geval van een sorteerfunctie is dit een goede keuze: wanneer een zeer grote array eerst gesorteerd en gekopieerd moet worden,
+In het geval van een sorteerfunctie is dit een goede keuze: wanneer een zeer grote array gesorteerd en eerst gekopieerd moet worden,
 kan dit veel geheugen in beslag nemen. Door de array als referentie door te geven, is het niet nodig om eerst de hele array te kopiëren.
 
 Let op: de beslissing of een functie haar parameters mag wijzigen, is de verantwoordelijkheid van de **functie** zelf, niet van degene
-die de functie aanroept of gebruikt. In oudere versies van PHP was het toegestaan om de aanroeper hierover te laten beslissen, maar deze mogelijkheid is verwijderd.
+die de functie aanroept of gebruikt. In oudere versies van PHP mocht de aanroeper hierover beslissen, maar deze mogelijkheid is verwijderd.
 
-## Standaardwaarden opgeven
+## Standaardwaarden specificeren
 
 Soms worden functieparameters niet vaak gebruikt, omdat in veel gevallen een standaardwaarde voor 
 veel programmeurs de juiste waarde is. Als de functie in sommige gevallen echter wel configureerbaar moet zijn, kun je een parameter
 met een standaardwaarde gebruiken. Parameters met een standaardwaarde worden optioneel bij het aanroepen van de functie.
 
 Dit hebben we al gezien bij de functie `sort()`. In de meeste gevallen wil je dat de functie `sort()` op 
-de gebruikelijke manier oplopend sorteert. Maar misschien wil je deze keer dat de sorteerfunctie de waarden als getallen behandelt of hoofdlettergevoeligheid negeert.
+de gebruikelijke manier oplopend sorteert. Maar misschien wil je deze keer dat de sorteerfunctie de waarden als numeriek of zonder onderscheid tussen hoofd- en kleine letters behandelt.
 Als we de [documentatie](https://www.php.net/manual/en/function.sort.php) bekijken, zien we dat `SORT_REGULAR` de
 standaardinstelling is, maar je kunt verschillende opties opgeven om het gedrag van de sorteerfunctie te wijzigen.
 
@@ -105,7 +105,7 @@ $x = doSomething(1,2, false, false);
 
 Merk echter op dat `$x = doSomething(1,2, true);` dezelfde waarde gebruikt voor parameter `$low` en daarom kan worden weggelaten.
 
-Sinds PHP 8.0 kun je ook **benoemde argumenten** gebruiken. Bij het gebruik van uitsluitend benoemde argumenten maakt de volgorde niet uit. Bij het combineren van
+Sinds PHP 8.0 kun je ook **benoemde argumenten** gebruiken. Bij het gebruik van uitsluitend benoemde argumenten doet de volgorde er niet toe. Bij het combineren van
 benoemde en positionele argumenten moeten de positionele argumenten eerst komen.
 
 ```php
@@ -119,7 +119,7 @@ $x = doSomething(1,2, low:false);
 Het sleutelwoord `return` betekent: retourneer nu het resultaat van de functie naar de **aanroeper**. Op deze manier kan de aanroeper de resultaten ontvangen
 van het werk dat de functie heeft verricht. 
 
-De variabele `$result` wordt nergens anders gebruikt dan in de instructie `return`. Vaak kan dit dus worden afgekort tot de
+De variabele `$result` wordt nergens anders gebruikt dan in de `return`-instructie. Vaak kan dit dus worden afgekort tot de
 onderstaande code. Let er echter op dat dit moeilijker te debuggen kan zijn, omdat we het resultaat van `$a + $b` niet kunnen inspecteren.
 
 ```php
@@ -140,7 +140,7 @@ voor de aanroeper.
 
 PHP maakt gebruik van het concept ‘scope’ om te bepalen waar variabelen of functies ‘zichtbaar’ of ‘bruikbaar’ zijn voor andere delen van 
 de code. Bij het schrijven van een functie is niet alles binnen de functie bruikbaar voor andere delen van de code. Daarom
-kun je ‘bereik’ interpreteren als ‘isolatie’: de functie isoleert alle variabelen van de rest van de code.
+kun je ‘scope’ interpreteren als ‘isolatie’: de functie isoleert alle variabelen van de rest van de code.
 
 Een scope in PHP begint na de `{` en eindigt na de `}` bij het gebruik van een functie (of een `class`, maar dat kun je voorlopig even vergeten).
 Alles binnen deze `{...}`-functieblokken is niet beschikbaar voor de rest van de code. 
@@ -158,12 +158,12 @@ Daarom werkt dit in PHP wel en in C# niet:
   echo $i;
 ```
 
-## Het trefwoord `global` gebruiken
+## Het sleutelwoord `global` gebruiken
 
-In PHP is het mogelijk om in een functie variabelen te gebruiken die *geen* parameters zijn, maar buiten het bereik van de 
-functie bestaan. Het sleutelwoord `global` kan worden gebruikt om een globale variabele in de scope van een functie te ‘importeren’. Dit
-is echter een zeer slechte praktijk, maar kan in extreme gevallen noodzakelijk zijn. Normaal gesproken: geef de globale variabele door als functieparameter
-.
+In PHP is het mogelijk om in een functie variabelen te gebruiken die *geen* parameters zijn, maar buiten de scope van de 
+functie bestaan. Het sleutelwoord `global` kan worden gebruikt om een globale variabele in het bereik van een functie te ‘importeren’. Dit
+is echter een zeer slechte praktijk, maar kan in extreme gevallen noodzakelijk zijn. Normaal gesproken: geef de globale variabele door als een
+functieparameter.
 
 
 # Referenties

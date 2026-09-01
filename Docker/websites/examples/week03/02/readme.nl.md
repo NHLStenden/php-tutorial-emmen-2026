@@ -1,6 +1,6 @@
 # Week 3 -  HTML - Tekst boven andere elementen plaatsen
 
-In dit voorbeeld worden twee secties gemaakt, beide met een afbeelding waarop tekst is geplaatst. Dit wordt gedaan met behulp van twee
+In dit voorbeeld worden twee secties gemaakt, beide met een afbeelding waarop tekst is geplaatst. Dit gebeurt met behulp van twee
 verschillende methoden:
 
 * absolute positionering
@@ -15,7 +15,7 @@ verschillende methoden:
 </section>
 ```
 De eerste sectie (met de _selector_ `&:first-of-type` ) maakt gebruik van absolute positionering. De koptekst en de afbeelding worden 
-in de ‘normale stroom’ weergegeven. Bij het toepassen van `display:absolute` worden ze echter verwijderd en zoekt de browser naar een bovenliggend
+in de ‘normale flow’ weergegeven. Bij het toepassen van de `display:absolute` worden ze echter verwijderd en zoekt de browser naar een bovenliggend
 element met een expliciete positioneringsinstructie. Bekijk de onderstaande CSS eens. 
 
 ```css
@@ -39,15 +39,15 @@ section {
 }
 
 ```
-Omdat we de koptekst en de afbeelding willen positioneren, geven we de `section` de instructie om de positie `relative` in te nemen. Hierdoor
-konden we de afbeelding opmaken met behulp van ‘absolute’ positionering ‘ten opzichte van de `section`’. Dus in plaats van dat `top:0`
+Omdat we de koptekst en de afbeelding willen positioneren, geven we het `section` de instructie om de positie `relative` in te nemen. Hierdoor
+konden we de afbeelding opmaken met ‘absolute’ positionering ‘ten opzichte van het `section`’. Dus in plaats van dat `top:0`
 de bovenkant van de webpagina is, betekent `top:0` de bovenkant van de sectie.
 
 Omdat de `<header>` in de HTML vóór de `img` staat, komt de afbeelding ‘bovenop’ de `header` te liggen en is deze onzichtbaar, aangezien 
 de afbeelding veel groter is. Om dit op te lossen, plaatsen we de `header` expliciet bovenaan de ‘stapel’. De waarde van 
 `z-index` is enigszins willekeurig, maar wordt meestal ruim hoog genoeg gekozen om zeker te zijn. In ons voorbeeld zou de z-index bijvoorbeeld
 een waarde van 10 kunnen zijn. Je kunt zelf experimenteren om de exacte grootte van ‘de stapel’ te achterhalen, er één bij optellen en deze waarde
-toewijzen aan de `z-index`.
+toekennen aan de `z-index`.
 
 Een ander probleem is dat van de ‘normale tekst’: omdat de `header` en `image` uit de ‘normale tekststroom’ worden gehaald, 
 is de container te klein. De normale tekst komt daardoor ook onder de afbeelding te staan en is onzichtbaar. Dit kan worden
@@ -92,8 +92,8 @@ box van de `<section>` in plaats van ten opzichte van de pagina.
 # Een achtergrondafbeelding gebruiken
 
 In plaats van de afbeelding in de HTML te plaatsen, kun je de afbeelding ook via CSS instellen. Dit doe je met behulp van
-de `background-image`-eigenschappen. Er zijn een paar eigenschappen nodig om dit goed te laten werken:
-1. zorg dat het HTML-element groot genoeg is om de afbeelding te bevatten
+de `background-image`-eigenschappen. Er zijn een paar eigenschappen nodig om dit goed te doen:
+1. maak het HTML-element groot genoeg om de afbeelding te bevatten
 2. voeg een `background-image` toe met de waarde `url(...)` om naar de afbeelding te verwijzen
 3. stel de waarde van `backround-repeat` in op de juiste waarde (in dit geval: niet herhalen)
 4. stel de waarde van `background-size` in op de juiste waarde. 

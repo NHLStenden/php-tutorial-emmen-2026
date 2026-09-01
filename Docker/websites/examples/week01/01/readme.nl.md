@@ -20,9 +20,9 @@ Eerst moeten we de browser laten weten dat we de programmeertaal HTML willen geb
 Er zijn een paar belangrijke elementen:
 
 1. `<` is het begin van alle instructies in HTML.
-2. `!DOCTYPE` is de eigenlijke instructie. Deze betekent: „Ik wil het documenttype instellen op een bepaalde waarde“.
+2. `!DOCTYPE` is de eigenlijke instructie. Deze betekent: „Ik wil het documenttype op een bepaalde waarde instellen“
 3. `html` is de programmeertaal die we willen instellen.
-4. `>` sluit de instructie af
+4. `>` sluit de instructie af.
 
 Het derde deel wordt een attribuut genoemd. Het specificeert een bepaald aspect van de gegeven instructie. In dit geval ‘HTML’.
 
@@ -60,10 +60,10 @@ Dus in dit geval:
 3. `lang="en"` is een attribuut met een specifieke waarde: de taal die deze pagina gebruikt is ‘en’ (wat staat voor Engels)
 4. `>` sluit de instructie af
 5. vervolgens worden enkele elementen (die later worden besproken) ingesloten
-6. het element wordt afgesloten met `</html>`
+6. het element wordt gesloten met `</html>`
 
 Merk op dat attributen een optionele waarde kunnen hebben. In het `<!DOCTYPE html>`-element heeft het `html`-attribuut geen waarde. In het
-`<HTML>`-element heeft het `lang`-attribuut wel een waarde. Wanneer er een waarde wordt opgegeven, wordt deze tussen dubbele aanhalingstekens geplaatst: "....".
+`<HTML>`-element heeft het `lang`-attribuut wel een waarde. Wanneer een waarde wordt opgegeven, wordt deze tussen dubbele aanhalingstekens geplaatst: "....".
 
 ## Koptekst en hoofdtekst
 
@@ -86,7 +86,7 @@ om te begrijpen hoe de structuur van tekst en afbeeldingen moet worden weergegev
 * Links naar andere bestanden met JavaScript en opmaak.
 * ....
 
-In dit voorbeeld bevinden zich twee elementen binnen de `<head>`.
+In dit voorbeeld bevinden zich twee elementen binnen het `<head>`-element.
 
 ```html
 
@@ -115,7 +115,7 @@ elementen om de browser de juiste informatie te laten weergeven, zoals tekst en 
 </body>
 ```
 
-In dit geval wordt het `<p>`-element gebruikt om aan de browser aan te geven: "Hier is een alinea tekst, met daarin de tekst '
+In dit geval wordt het `<p>`-element gebruikt om aan de browser aan te geven: "Hier is een alinea tekst, met de tekst '
 Hello World'". 
 
 De browser zal de tekst eenvoudigweg weergeven ('tekenen') op het scherm met behulp van het standaardlettertype, de standaardkleur en de standaardtekstgrootte. 

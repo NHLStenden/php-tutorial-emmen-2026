@@ -1,9 +1,9 @@
 # Week 3 - HTML - Elementen positioneren
 
-Normaal gesproken worden elementen opgemaakt met standaardoplossingen die blok- en inline-elementen volgen.
+Normaal gesproken worden elementen opgemaakt met behulp van standaardoplossingen die blok- en inline-elementen volgen.
 
-Soms wil je elementen echter op een vaste positie plaatsen. Let op: dit is
-alleen een laatste redmiddel! Gebruik altijd flex-box of grid-layout om dingen op de juiste positie te plaatsen.
+Soms wil je echter elementen op een vaste positie plaatsen. Let wel: dit is
+een laatste redmiddel! Gebruik altijd flex-box of grid-layout om dingen op de juiste positie te plaatsen.
 
 Uitzonderingen kunnen zijn:
 
@@ -21,7 +21,7 @@ instellingen zijn `relative` of `absolute`.
 ## Positie: absolute
 
 Bij gebruik van `position:absolute` wordt het element uit de normale stroom gehaald en moet je
-instructies instellen voor de positie ervan op de pagina. Het element wordt gepositioneerd ten opzichte van zijn dichtstbijzijnde gepositioneerde voorouder (indien
+instructies instellen voor de positie ervan op de pagina. Het element wordt gepositioneerd ten opzichte van de dichtstbijzijnde gepositioneerde voorouder (indien
 aanwezig) of ten opzichte van het oorspronkelijke omvattende blok.
 
 Let op: elementen zonder expliciete `position`-instructie worden beschouwd als ‘niet gepositioneerd’, 
@@ -34,7 +34,7 @@ De uiteindelijke positie wordt bepaald door de coördinaatinstructies voor de po
 4. right
 
 De eerste twee bepalen de verticale positie op de pagina. De derde en vierde bepalen de horizontale positie op
-de pagina. Zowel relatieve als positieve waarden zijn toegestaan. De positie bovenaan links zou dus zijn:
+de pagina. Zowel relatieve als positieve waarden zijn toegestaan. De positie bovenaan/links zou dus zijn:
 
 ```css
 .someclass {
@@ -44,9 +44,9 @@ de pagina. Zowel relatieve als positieve waarden zijn toegestaan. De positie bov
 }
 ```
 
-Let op: wanneer een waarde nul is, hoeft er geen eenheid te worden opgegeven.
+Let op: wanneer een waarde nul is, mag er geen eenheid worden opgegeven.
 
-De positie in de rechteronderhoek zou zijn:
+De positie in de rechteronderhoek zou dan zijn:
 
 ```css
 .someclass {
@@ -56,8 +56,8 @@ De positie in de rechteronderhoek zou zijn:
 }
 ```
 
-Bij gebruik van de instructies `bottom` en `right` worden de gebruikte coördinaten van het kader gewijzigd van de (bovenste, linker) hoek naar de
-(onderste, rechter) hoek. Om een element dus met zijn rechteronderhoek in de rechteronderhoek van de pagina te plaatsen, is er geen
+Bij gebruik van de instructies `bottom` en `right` worden de gebruikte box-coördinaten omgeschakeld van de (boven, links) hoek naar de
+(onder, rechts) hoek. Om een element dus met de rechteronderhoek in de rechteronderhoek van de pagina te plaatsen, is er geen
 berekening
 nodig en kan voor beide instructies (rechts en onder) gewoon nul worden gebruikt.
 
@@ -69,10 +69,10 @@ van andere elementen.
 
 # Het voorbeeld
 
-In het voorbeeld volgen we de structuur van main/article en meerdere secties. De twee secties maken gebruik van verschillende instellingen
+In het voorbeeld volgen we de structuur van main/article en meerdere secties. De twee secties maken gebruik van verschillende instellingen,
 zoals hierboven uitgelegd. Om het voorbeeld te laten werken, moeten we de browser ook opdragen een vaste hoogte en breedte in te stellen voor
-het bovenliggende element (de `article`). Omdat beide `section`-elementen uit de 'normale stroom' zijn gehaald, zal de browser moeite hebben
-om precies te bepalen hoeveel ruimte het `article`-element moet innemen. Dit leidt vaak tot elementen die te klein zijn.
+het bovenliggende element (de `article`). Omdat beide `section`-elementen uit de ‘normale stroom’ zijn gehaald, zal de browser moeite hebben om
+precies te bepalen hoeveel ruimte het `article`-element moet innemen. Dit leidt vaak tot elementen die te klein zijn.
 
 Om het `article`-element duidelijk zichtbaar te maken, is het voorzien van een opvallende achtergrondkleur (bisque).
 
@@ -85,7 +85,7 @@ article {
 }
 ```
 
-Merk op dat de `width`-instructie verschilt van eerdere voorbeelden. In dit geval maken we gebruik van een berekening. In gewone
+Merk op dat de `width`-instructie afwijkt van eerdere voorbeelden. In dit geval maken we gebruik van een berekening. In gewone
 taal zou dit luiden als ‘bereken de breedte als 100% van de breedte van de browser (`100vw`), maar verminder deze met 20
 pixels’. We zouden dit ook voor de hoogte kunnen gebruiken. Bijvoorbeeld: `height: calc(100vh - 20px)`.
 

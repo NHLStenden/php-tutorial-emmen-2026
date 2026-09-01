@@ -1,6 +1,6 @@
 # Week 4 - PHP - Voorbeeld met arrays en functies
 
-In dit voorbeeld definiëren we een array met ‘records’: elk element in de hoofdarray is een verzameling sleutel-waarde-paren.
+In dit voorbeeld definiëren we een array met ‘records’: elk element in de hoofdarray is een verzameling van sleutel-waardeparen.
 Met deze array gaan we een HTML-code `<table>` opbouwen.
 
 Bekijk de array eens:
@@ -13,7 +13,7 @@ $table = [
 ];
 ```
 
-De array bevat dus drie elementen, die elk bestaan uit een array van sleutel-waardeparen. Dit komt neer op het volgende:
+De array bevat dus drie items, die elk bestaan uit een array van sleutel-waardeparen. Dit komt overeen met het volgende:
 
 ```php
 $row1 = [
@@ -47,11 +47,11 @@ foreach ($table as $row) {
 }
 ```
 
-We beginnen met het initialiseren van een variabele met de lege tekenreeks om alle HTML op te vangen die de functie zal retourneren. Telkens wanneer
+We beginnen met het initialiseren van een variabele met de lege tekenreeks om alle HTML op te vangen die de functie retourneert. Telkens wanneer
 de functie een waarde retourneert, voegen we deze toe aan de reeds verzamelde HTML. We gebruiken de `.` (punt)operator die 
-de bestaande HTML 'samenvoegt’ (kortweg ‘concat’) met de nieuw verkregen HTML uit de functie.
+de bestaande HTML 'samenvoegt' (kortweg 'concat') met de nieuw verkregen HTML uit de functie.
 
-De functie haalt simpelweg alle waarden uit de records op. Omdat we een tekenreeks als sleutel hebben gebruikt, kunnen we de informatie gemakkelijk
+De functie haalt simpelweg alle waarden uit de records op. Omdat we een tekenreeks als sleutel hebben gebruikt, kunnen we de informatie eenvoudig
 uit de array ophalen. De functie wordt hieronder weergegeven. Omdat het ophalen van een waarde uit een array iets ingewikkelder is dan bij een eenvoudige
 variabele wanneer deze in een tekenreeks wordt gebruikt, moeten we deze omringen met `{....}`.
 
@@ -90,7 +90,7 @@ function CreateHTMLForRecord2(array $values): string
 
 ```
 
-We kunnen het resultaat `$HTML` nu eenvoudig in de hoofdcode combineren met de HTML-body, zoals hieronder weergegeven. Let op hoe we de
+We kunnen het resultaat `$HTML` nu eenvoudig in de hoofdcode combineren met de HTML-body, zoals hieronder. Let op hoe we de
 `<?= ..... ?>`-constructie gebruiken om een variabele weer te geven, wat hetzelfde is als `<?php echo $html ?>`. 
 
 ```php

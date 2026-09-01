@@ -1,9 +1,9 @@
 # Week 5 - PHP - Bestanden uploaden
 
-Soms willen gebruikers bestanden uploaden, zoals een avatarafbeelding, een PDF-bestand of een ander document. 
+Soms willen gebruikers bestanden uploaden, zoals een avatar, een PDF-bestand of een ander document. 
 
 Geüploade bestanden worden gerapporteerd in de superglobale variabele `$_FILES`. Zorg ervoor dat de uploadopties in PHP.ini (of eventuele 
-aanpassingen) zo zijn ingesteld dat het uploaden van bestanden met de juiste grootte en het juiste type mogelijk is. )
+overschrijvingen) zo zijn ingesteld dat het uploaden van bestanden met de juiste grootte en het juiste type mogelijk is. )
 
 Gebruik de functie `move_uploaded_file()` om het bestand te verplaatsen vanuit de tijdelijke locatie waar de webserver het heeft geplaatst. 
 

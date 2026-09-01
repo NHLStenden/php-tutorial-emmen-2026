@@ -19,11 +19,11 @@ De `display`-instructie is hier nieuw. De standaardwaarde is `block` of `inline`
 
 Wanneer een element een ‘blokelement’ is, betekent dit dat het een blok is
 dat zoveel mogelijk horizontale ruimte in beslag neemt. Ook `width` en `height` kunnen in CSS worden ingesteld. Elementen worden
-altijd van boven naar beneden opgemaakt.
+altijd van boven naar beneden weergegeven.
 
 Elementen met een `inline`
 
-Als we deze ‘van boven naar beneden’-opmaak willen wijzigen
+Als we deze 'van boven naar beneden'-weergave willen wijzigen
 
 ```css
 article {

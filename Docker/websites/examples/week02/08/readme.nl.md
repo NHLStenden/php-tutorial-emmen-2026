@@ -1,7 +1,7 @@
 #   Week 2 - HTML - Een raster maken met behulp van klassen om rijen en kolommen aan onderliggende elementen toe te wijzen
 
 
-Soms is de HTML-structuur complexer of is er geen semantische HTML beschikbaar die eenduidig kan worden gebruikt voor het toewijzen van rijen en kolommen. 
+Soms is de HTML-structuur complexer of is er geen semantische HTML die eenduidig kan worden gebruikt voor het toewijzen van rijen en kolommen. 
 In dat geval moet je klassen gebruiken, zoals in dit voorbeeld. 
 
 Bekijk de (ingekorte code hieronder).

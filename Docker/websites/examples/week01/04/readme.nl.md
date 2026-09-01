@@ -7,6 +7,6 @@ ingesprongen zijn en dat de `<aside>` zich daadwerkelijk aan de zijkant van het 
 van de HTML heeft maar weinig te maken met je verwachtingen van de weergave op het scherm. 
 
 Dit kan natuurlijk worden verbeterd. Dit kun je bereiken door opmaakinstructies te gebruiken. Later in deze module zullen we 
-bekijken hoe je een artikel of pagina als deze visueel kunt opmaken. 
+bekijken hoe je een artikel/pagina als deze visueel kunt opmaken. 
 
 De opmaak staat in een apart bestand: `index.css`.

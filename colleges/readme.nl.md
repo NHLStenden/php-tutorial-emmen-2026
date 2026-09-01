@@ -12,7 +12,7 @@ PHP
 HTML & CSS
 
 1. [HTML en CSS](https://learning.oreilly.com/library/view/html-and-css/9781806111831/)
-1. [Modern HTML & CSS From The Beginning 2.0 – Tweede editie, Brad Traversy, videocursus](https://learning.oreilly.com/course/modern-html-/9781835880562/)
+1. [Modern HTML & CSS From The Beginning 2.0 - Tweede editie, Brad Traversy, videocursus](https://learning.oreilly.com/course/modern-html-/9781835880562/)
 
 # Week: 1
 
@@ -23,7 +23,7 @@ HTML & CSS
 
 ### Leerdoelen
 
-Aan het einde van deze sessie zullen studenten:
+Aan het einde van deze sessie zullen de studenten:
 
 * de structuur en inhoud van de module Webontwikkeling begrijpen;
 * vertrouwd zijn met de lesmethoden;
@@ -32,9 +32,9 @@ Aan het einde van deze sessie zullen studenten:
 
 ### Inhoud
 
-Tijdens het inleidende hoorcollege krijgen studenten een overzicht van:
+Tijdens de inleidende hoorcollege krijgen studenten een overzicht van:
 
-* de opzet van de module;
+* de opbouw van de module;
 * de onderwijsmethoden;
 * de beoordelingsprocedures;
 * de vereiste literatuur en software;
@@ -43,7 +43,7 @@ Tijdens het inleidende hoorcollege krijgen studenten een overzicht van:
 
 ## Seminar Webontwikkeling
 
-* Onderwijsmethode: Seminar
+* Onderwijsvorm: Seminar
 * Duur: 3 × 2 lesuren
 
 ### Leerdoelen
@@ -73,7 +73,7 @@ Studenten dienen:
 
 * Docker te installeren;
 * hun favoriete IDE te installeren;
-* indien nodig de inleidende college te raadplegen;
+* indien nodig de inleidende collegeopname te raadplegen;
 * de opdrachten van week 1 te voltooien.
 
 # Week 2
@@ -90,8 +90,8 @@ Aan het einde van dit seminar zijn studenten in staat om:
 * CSS Grid- en Flexbox-lay-outs te gebruiken;
 * het CSS-boxmodel uit te leggen;
 * HTML-entiteiten correct te gebruiken;
-* voorwaardelijke instructies in PHP toe te passen;
-* onderscheid te maken tussen if/else- en switch-instructies;
+* voorwaardelijke constructies in PHP toe te passen;
+* onderscheid te maken tussen if/else- en switch-constructies;
 * vergelijkings- en logische operatoren op de juiste manier te gebruiken.
 
 ### Inhoud
@@ -110,7 +110,7 @@ specifieke voorwaarden. Deze concepten vormen een essentiële basis voor dynamis
 
 ### Voorbereiding
 
-Voltooi alle opdrachten van week 2.
+Maak alle opdrachten van week 2 af.
 
 # Week 3
 
@@ -125,10 +125,10 @@ Aan het einde van dit seminar zijn studenten in staat om:
 
 * met CSS-pseudoklassen te werken;
 * tekst op afbeeldingen te plaatsen;
-* herhalingsstructuren (lussen) gebruiken;
-* onderscheid maken tussen while-, do-while-, for- en foreach-lussen;
-* arrays als verzamelingen gebruiken;
-* arrays effectief combineren met lussen.
+* herhalingsstructuren (lussen) te gebruiken;
+* onderscheid te maken tussen while-, do-while-, for- en foreach-lussen;
+* arrays als verzamelingen te gebruiken;
+* arrays effectief te combineren met lussen.
 
 ### Inhoud
 
@@ -139,7 +139,7 @@ Aan het einde van dit seminar zijn studenten in staat om:
 
 ### Voorbereiding
 
-Voltooi alle opdrachten van week 3.
+Maak alle opdrachten van week 3 af.
 
 # Week 4
 
@@ -156,15 +156,15 @@ Aan het einde van dit seminar zijn studenten in staat om:
 * het doel en de voordelen van functies in PHP te begrijpen;
 * ingebouwde PHP-functies te gebruiken;
 * hun eigen functies te maken;
-* de concepten bereik, doorgeven per waarde en doorgeven per referentie uit te leggen;
+* de begrippen scope, doorgeven per waarde en doorgeven per referentie uit te leggen;
 * functies toe te passen om de leesbaarheid en onderhoudbaarheid van hun code te verbeteren.
 
 ### Inhoud
 
-Dit seminar richt zich op het maken van navigatiemenu’s in HTML en het introduceren van functies in PHP.
+Dit seminar richt zich op het maken van navigatiemenu’s in HTML en de introductie van functies in PHP.
 
-Studenten leren hoe functies codeherhaling verminderen door herbruikbare functionaliteit in te kapselen. Ze werken zowel met
-ingebouwde PHP-functies als met door de gebruiker gedefinieerde functies, terwijl ze zich verdiepen in functieparameters, retourwaarden en het bereik van variabelen.
+Studenten leren hoe functies codeherhaling verminderen door herbruikbare functionaliteit in te kapselen. Ze werken met zowel
+ingebouwde PHP-functies als door de gebruiker gedefinieerde functies, terwijl ze functieparameters, retourwaarden en het bereik van variabelen verkennen.
 
 ### Voorbereiding / Individuele opdrachten
 
@@ -172,24 +172,24 @@ Voltooi alle opdrachten van week 4.
 
 # Week 5
 
-* Lesmethode: Seminar
+* Lesvorm: Seminar
 * Duur: 3 × 2 lesuren
 
 ## Seminar Webontwikkeling
 
 ### Leerdoelen
 
-Aan het einde van dit seminar kunnen studenten:
+Aan het einde van dit seminar zijn studenten in staat om:
 
-* HTML-formulieren maken;
-* formuliergegevens verwerken met PHP;
-* gebruikersinvoer ophalen en weergeven;
-* eenvoudige invoervalidatie uitvoeren;
-* HTML-formulieren combineren met PHP om interactieve webpagina’s te maken.
+* HTML-formulieren te maken;
+* formuliergegevens te verwerken met PHP;
+* gebruikersinvoer op te halen en weer te geven;
+* eenvoudige invoervalidatie uit te voeren;
+* HTML-formulieren te combineren met PHP om interactieve webpagina’s te maken.
 
 ### Inhoud
 
-Studenten leren hoe HTML-formulieren worden gebruikt om gebruikersinvoer te verzamelen en hoe PHP de verzonden gegevens kan verwerken.
+Studenten leren hoe HTML-formulieren worden gebruikt om gebruikersinvoer te verzamelen en hoe PHP de ingediende gegevens kan verwerken.
 
 Onderwerpen zijn onder meer:
 
@@ -201,7 +201,7 @@ Onderwerpen zijn onder meer:
 
 ### Voorbereiding / Individuele opdrachten
 
-Maak alle opdrachten van week 5.
+Voltooi alle opdrachten van week 5.
 
 # Week 6
 
@@ -245,7 +245,7 @@ Studenten zullen:
 Dit seminar biedt studenten de mogelijkheid om de concepten die tijdens de module aan bod zijn gekomen te versterken.
 
 Op verzoek kunnen aanvullende demonstraties worden gegeven en kunnen eerder behandelde onderwerpen indien nodig opnieuw worden besproken.
-Studenten kunnen ook verzoeken om relevante aanvullende onderwerpen te bespreken.
+Studenten kunnen ook vragen om de bespreking van relevante aanvullende onderwerpen.
 
 ### Voorbereiding / Individuele opdrachten
 
@@ -253,7 +253,7 @@ Maak alle opdrachten van week 7 af.
 
 # Week 8
 
-* Lesvorm: Seminar
+* Lesmethode: seminar
 * Duur: 3 × 2 lesuren
 
 ## Seminar Webontwikkeling
@@ -261,7 +261,7 @@ Maak alle opdrachten van week 7 af.
 ### Leerdoelen
 
 Aan het einde van dit seminar zijn studenten in staat om zelfstandig een complete website te ontwikkelen met behulp van de kennis en
-vaardigheden die zij tijdens de module hebben opgedaan.
+vaardigheden die ze tijdens de module hebben opgedaan.
 
 ### Inhoud
 

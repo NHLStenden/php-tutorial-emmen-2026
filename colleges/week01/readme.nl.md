@@ -22,7 +22,7 @@ Aan het einde van dit seminar zijn studenten in staat om:
 ### Inhoud
 
 Tijdens dit seminar installeren studenten Docker en een geïntegreerde ontwikkelomgeving (IDE) (zie bijlage 7). Het
-seminar introduceert de principes van het opmaken van HTML-pagina’s met behulp van CSS. Studenten leren hoe klassen en ID’s kunnen worden gebruikt om
+seminar biedt een inleiding tot de principes van het opmaken van HTML-pagina’s met behulp van CSS. Studenten leren hoe klassen en ID’s kunnen worden gebruikt om
 specifieke elementen op te maken. De basisbeginselen van de PHP-syntaxis worden geïntroduceerd, waarna studenten beginnen met het maken van dynamische webpagina’s
 door PHP in HTML in te bedden.
 
@@ -32,7 +32,7 @@ Studenten dienen:
 
 * Docker te installeren;
 * hun favoriete IDE te installeren;
-* indien nodig de inleidende collegeopname te raadplegen;
+* waar nodig de inleidende collegeopname te raadplegen;
 * de opdrachten van week 1 te voltooien.
 
 
@@ -69,23 +69,22 @@ om daadwerkelijk een domeinnaam (‘url’) te kopen en voor een webserver te be
 
 In plaats daarvan zetten we een webserver op onze eigen computer op. Het opzetten van een webserver kan lastig zijn voor beginnende software-
 ontwikkelaars. Daarom maken we gebruik van het Docker-ecosysteem. Met Docker kun je één of meer virtuele computers opzetten die
-elk een specifieke taak uitvoeren. We zullen een webserver, een databaseserver en een (in PHP geschreven) databasebeheerprogramma
+elk een specifieke taak uitvoeren. We zullen een webserver, een databaseserver en een (in PHP gebouwd) databasebeheerprogramma
 opzetten.
 
-De docent zal je de bestanden en instructies verstrekken om deze servers op te zetten.
+De docent zal je voorzien van de bestanden en instructies om deze servers op te zetten.
 
 ## Server-side programmeren
 
 Een van de voordelen van het gebruik van een server is dat we deze webserver vervolgens kunnen gebruiken om een meer dynamische website te maken. Dit wordt
-*server-side programmeren* of *server-side rendering* genoemd.
-Als we niet-statische websites (‘dynamisch’) willen bouwen, hebben we
-een andere programmeertaal nodig die informatie kan verwerken en een website kan maken die beter aansluit
-bij de behoeften van de gebruiker.
+*server-side programmeren* of *server-side rendering* genoemd. Als we niet-statische websites (‘dynamische’) willen bouwen, hebben we
+een andere programmeertaal nodig die informatie kan verwerken en een website kan maken die beter aansluit bij de behoeften van de gebruiker
+.
 
 Er zijn een aantal mogelijkheden om dynamische websites te maken:
 
 * PHP (_Pre Hypertext Processor_), soms in combinatie met frameworks zoals Symphony en Laravel
-* Java, bijvoorbeeld Springboot
+* Java, bijvoorbeeld Spring Boot
 * Python met frameworks zoals Flask en Django
 * JavaScript (Node.js en client-side)
 * ASP.NET met C# en Entity Framework
@@ -95,9 +94,9 @@ webserverhostingproviders en goed wordt ondersteund door de community.
 
 ### Front-end-programmering
 
-Bij het bouwen van websites gaat er ook veel aandacht uit naar interactiviteit en dynamisch gedrag met behulp van front-end-programmering.
+Bij het maken van websites ligt er ook veel nadruk op interactiviteit en dynamisch gedrag met behulp van front-end-programmering.
 Dit betekent dat je (weer een) programmeertaal zoals _JavaScript_ kunt gebruiken om dynamisch gedrag af te handelen zonder
-dat je de webserver nodig hebt. Hierdoor kun je zeer aantrekkelijke websites maken, maar nemen ook de veiligheidsrisico’s
+dat je de webserver nodig hebt. Hierdoor kun je zeer aantrekkelijke websites maken, maar neemt ook het beveiligingsrisico
 aanzienlijk toe.
 
 Populaire front-end programmeerframeworks
@@ -111,8 +110,8 @@ In deze eerste module zullen we *geen* gebruik maken van JavaScript of andere fr
 
 ### Styling
 
-Last but not least zullen we kijken naar de styling van onze website. De HTML geeft de browser alleen aan welke tekst en afbeeldingen moeten
-worden weergegeven, maar niet in welke lettertypes, kleuren enz. Met behulp van CSS (Cascading Style Sheets) leer je hoe je je
+Last but not least zullen we kijken naar het stylen van onze website. De HTML geeft de browser alleen aan welke tekst en afbeeldingen moeten
+worden weergegeven, maar niet in welke lettertypen, kleuren enz. Met behulp van CSS (Cascading Style Sheets) leer je hoe je je
 website aantrekkelijker kunt maken dan de standaardopmaak van de webbrowser. 
 
 Hiervoor gebruiken we de taal Cascading Style Sheets (CSS). 
@@ -124,7 +123,7 @@ Hiervoor gebruiken we de taal Cascading Style Sheets (CSS).
 * Docker-basisprincipes voor het opzetten van een eenvoudige webserveromgeving
 * PHP starten met `<php` of `<?`
 
-Zie voor meer diepgaande informatie [week 1 in detail](week-01-in-detail.md).
+Zie [week 1 uitgebreid](week-01-in-depth.md) voor meer diepgaande informatie.
 
 
 # Online boeken – aanbevolen lectuur
@@ -143,7 +142,7 @@ Zie voor meer diepgaande informatie [week 1 in detail](week-01-in-detail.md).
     * Hoofdstuk 2 Gegevenstypen: 
  * PHP-gegevenstypen
     * Hoofdstuk 3 Strings en stringfuncties
- * Spaties
+ * Witruimte
  * Strings tussen enkele aanhalingstekens
  * Strings samenvoegen: concatenatie
  * Strings tussen dubbele aanhalingstekens

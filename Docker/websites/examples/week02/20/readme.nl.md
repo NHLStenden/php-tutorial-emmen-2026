@@ -1,10 +1,10 @@
 #   Week 2 - PHP - Voorwaardelijke constructies
 
-In dit voorbeeld worden een aantal veelgebruikte eenvoudige vergelijkingen ('booleaanse uitdrukkingen') gedemonstreerd.
+In dit voorbeeld worden een aantal veelgebruikte eenvoudige vergelijkingen (‘booleaanse uitdrukkingen’) gedemonstreerd.
 
 ## Controleren of twee waarden gelijk zijn
 
-Om te vergelijken of twee waarden gelijk zijn, gebruiken we de operator `===`. Later zullen we begrijpen waarom er drie `=` zijn.
+Om te vergelijken of twee waarden gelijk zijn, gebruiken we de `===`-operator. Later zullen we begrijpen waarom er drie `=` zijn.
 
 ```php
 $a = 10;
@@ -35,7 +35,7 @@ else {
 
 De `not`-operator wordt weergegeven met een uitroepteken `!`. In het voorbeeld wordt dus een functie `is_null()` gebruikt om te controleren
 of een waarde `null` is. Als de waarde van `$x` **niet** null is, wordt de eerste tak uitgevoerd en wordt „A is niet
-null“ weergegeven.
+null“ weergegeven
 
 ```php
 
@@ -63,7 +63,7 @@ else {
 }
 ```
 
-## Eerst het resultaat van een vergelijking in een variabele opslaan
+## Het resultaat van een vergelijking eerst in een variabele opslaan
 
 We kunnen het resultaat van een vergelijking in een variabele opslaan. Bekijk het onderstaande voorbeeld
 
@@ -92,7 +92,7 @@ if ($d) {
 
 ```
 
-Dit zou hetzelfde zijn als hieronder. Eerst is de waarde van `$c` waar als `$a` kleiner is dan of gelijk is aan `$b`. Hier, in de `if`
+Dit zou hetzelfde zijn als hieronder. Allereerst is de waarde van `$c` waar als `$a` kleiner is dan of gelijk is aan `$b`. Hier, in de `if`
 -instructie, wordt de waarde van `$c` omgekeerd. 
 
 Vergelijk dit met het voorbeeld van de `is_null()`-functie hierboven.
