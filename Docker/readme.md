@@ -8,6 +8,8 @@ course PHP on NHL-Stenden university of applied sciences.
 These instructions will aid you in setting up a development environment for use within the PHP courses at NHL-Stenden by
 using docker. This code is for educational purposes only.
 
+Note: there is no need to create a Docker account!
+
 ### Prerequisites
 
 #### Windows
@@ -24,30 +26,34 @@ using docker. This code is for educational purposes only.
 - [Docker engine](https://docs.docker.com/engine/install/#server)
     - Select your distribution from the table and follow the provided instructions.
 
-### Running
+## Running Docker for the first time
 
-The following steps will set-up your development environment
+To start the container and download all necessary files, follow instructions below:
 
-1. Download the archive containing the necessary files.
-2. Extract the files to a folder in which you will start your project.
-3. Open a terminal in the folder in which you extracted the files.
-    - This can be done within a supporting editor (E.g. Visual studio code)
-    - Alternatively you can use the terminal to navigate or use a file explorer to open a terminal in the desired
-      folder (Windows: `Shift + right click in explorer -> Powershell`)
-4. Execute the following docker-compose command
+1. Find the 'Docker' folder within this project using the Windows Explorer
+2. Click in the Address bar and type 'cmd'.
+3. This will open a *Command Shell* in the current directory
+4. Alternatively you could open the Command Shell from the windows start menu and use the `cd` command to navigate to
+   the correct folder. For instance `cd \sources\year1\webdev\Docker`.
+5. Enter the command below
 
 ``` powershell
 docker-compose up
 ```
 
-5. Wait for docker to start up the container.
+5. Wait for docker to start up the container. This can take a while the first time as it must download all kinds of
+   software and build the container.
 6. Go to [localhost](http://localhost) in your favorite browser, you should see the welcome screen.
 7. Read this welcome screen well! It contains useful information regarding the running database and the PHPMyAdmin
-   instance.
+   instance (not really needed for this module by the way)
 
-The extracted files contains a folder called "app". Inside this folder there is another folder called "public". The
-public folder is where you will need to place your own code and files that are publicly available to the outside world.
-Everything else is private.
+Now you can use the examples and solutions and show them in a browser. When writing your own code, please place files
+in the `/Docker/websites/student` folder. Have a look at the example [over there](http://localhost/student).
+
+## Running Docker the next time
+
+Next time you need the webserver, just run Docker Desktop and start the 'nhl stenden webserver php tutorial' using the
+play button. 
 
 ## Database - Mariadb
 
@@ -78,8 +84,8 @@ In PHP you can use it as follows:
 ### php.ini
 
 The file ```custom.php.ini```is there to add custom php settings that overwrite the default setting. Just add the
-settings you want to change to this file and they will overwrite the default settings of the PHP instance.
-If you want to get access too the environmental variables whithin PHP, you can use:
+settings you want to change to this file and they will overwrite the default settings of the PHP instance. If you want
+to get access too the environmental variables whithin PHP, you can use:
 
 ``` php
 <?php
