@@ -1,8 +1,9 @@
-version: '3'
+name: php-tutorial
 services:
     webserver-php-tutorial:
-
         build: ./webserver
+        networks:
+            - webdevelopment
         environment:
             - DB_SERVER=${DB_SERVER}
             - DB_USER=${DB_ROOT_USER}
@@ -12,22 +13,24 @@ services:
             - ./websites:/var/www/student
         depends_on:
             - mysql-php-tutorial
-        expose:
-            - 80
         ports:
             - "80:80"
         extra_hosts:
             - "host.docker.internal:host-gateway"
     mysql-php-tutorial:
         image: mariadb:latest
+        networks:
+            - webdevelopment
         environment:
             MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
         volumes:
             - mysqldata:/var/lib/mysql
         ports:
-            - 3306:3306
+            - "3306:3306"
     phpmyadmin:
         image: phpmyadmin
+        networks:
+            - webdevelopment
         ports:
             - "8080:80"
         environment:
@@ -37,3 +40,7 @@ services:
             - mysql-php-tutorial
 volumes:
     mysqldata: {}
+
+networks:
+    webdevelopment:
+        driver: bridge
