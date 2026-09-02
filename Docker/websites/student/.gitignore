@@ -1,0 +1,9 @@
+# Ignore everything in this folder
+*
+
+# Keep the stuff the teacher put in here.
+!assignment1
+!assignment1/**
+!readme.*
+!.gitignore
+!index.html
