@@ -202,13 +202,13 @@ Kies ten minste 3 vormen uit de onderstaande lijst om na te maken. Gebruik funct
 
 ![assignment-week-04-03-2.png](images/assignment-week-04-03-2.png)
 
-![opdracht-week-04-03-03.png](images/opdracht-week-04-03-03.png)
+![opdracht-week-04-03-03.png](images/assignment-week-04-03-03.png)
 
-![opdracht-week-04-03-04.png](images/opdracht-week-04-03-04.png)
+![opdracht-week-04-03-04.png](images/assignment-week-04-03-04.png)
 
-![opdracht-week-04-03-05.png](images/opdracht-week-04-03-05.png)
+![opdracht-week-04-03-05.png](images/assignment-week-04-03-05.png)
 
-![opdracht-week-04-03-06.png](images/opdracht-week-04-03-06.png)
+![opdracht-week-04-03-06.png](images/assignment-week-04-03-06.png)
 
 # Opdracht 4
 

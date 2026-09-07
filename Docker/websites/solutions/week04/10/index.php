@@ -86,7 +86,7 @@ function createStrips(int $lightness): string
             vitae voluptate. Consequatur dolores ea eaque enim exercitationem ipsa nulla odio sequi sit. Ad, assumenda
             atque
             illum molestiae odio ut. Animi deserunt doloribus esse explicabo fuga inventore laboriosam libero officiis
-            reiciendis totam.</span>
+            reiciendis totam.
         </p>
     </section>
 </article>

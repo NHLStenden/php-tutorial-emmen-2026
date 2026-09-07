@@ -25,7 +25,7 @@ Complete all Week 6 assignments.
 
 # Assignments
 
-Please have a look at [assignments week 6](../assignments/assignments-week-06.md)
+Please have a look at [assignments week 6](../../assignments/assignments-week-06.md)
 
 # Online books - advised reading
 

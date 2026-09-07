@@ -27,4 +27,4 @@ Maak alle opdrachten van week 8 af en rond ze af.
 
 # Opdrachten
 
-Bekijk [opdrachten week 8](../assignments/assignments-week-08.md)
+Bekijk [opdrachten week 8](../../assignments/assignments-week-08.md)

@@ -41,10 +41,10 @@ To start the container and download all necessary files, follow instructions bel
 docker-compose up
 ```
 
-5. Wait for docker to start up the container. This can take a while the first time as it must download all kinds of
+1. Wait for docker to start up the container. This can take a while the first time as it must download all kinds of
    software and build the container.
-6. Go to [localhost](http://localhost) in your favorite browser, you should see the welcome screen.
-7. Read this welcome screen well! It contains useful information regarding the running database and the PHPMyAdmin
+2. Go to [localhost](http://localhost) in your favorite browser, you should see the welcome screen.
+3. Read this welcome screen well! It contains useful information regarding the running database and the PHPMyAdmin
    instance (not really needed for this module by the way)
 
 Now you can use the examples and solutions and show them in a browser. When writing your own code, please place files

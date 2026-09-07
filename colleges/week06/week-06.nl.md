@@ -25,7 +25,7 @@ Maak alle opdrachten van week 6 af.
 
 # Opdrachten
 
-Bekijk [opdrachten week 6](../assignments/assignments-week-06.md)
+Bekijk [opdrachten week 6](../../assignments/assignments-week-06.md)
 
 # Online boeken - aanbevolen literatuur
 

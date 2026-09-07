@@ -101,8 +101,7 @@ main {
 
             &:nth-of-type(3) {
                 ul {
-                    list-style: square;
-                    list-style-position: outside;
+                    list-style: square outside;
 
                     li {
                         padding-left: 10px;

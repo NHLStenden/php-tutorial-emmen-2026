@@ -33,7 +33,7 @@ Maak alle opdrachten van week 3 af.
 
 # Opdrachten
 
-Bekijk [opdrachten week 3](../assignments/assignments-week-03.md)
+Bekijk [opdrachten week 3](../../assignments/assignments-week-03.md)
 
 # Online boeken – aanbevolen lectuur
 

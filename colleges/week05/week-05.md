@@ -37,7 +37,7 @@ Complete all Week 5 assignments.
 
 # Assignments
 
-Please have a look at [assignments week 5](../assignments/assignments-week-05.md)
+Please have a look at [assignments week 5](../../assignments/assignments-week-05.md)
 
 
 

@@ -100,7 +100,7 @@ footer > p{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
 input[type="text"], input[type="email"]{

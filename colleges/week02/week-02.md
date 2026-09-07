@@ -39,7 +39,7 @@ Complete all Week 2 assignments.
 
 # Assignments
 
-Please have a look at [assignments week 2](../assignments/assignments-week-02.md)
+Please have a look at [assignments week 2](../../assignments/assignments-week-02.md)
 
 # Online books - advised reading
 

@@ -96,7 +96,7 @@ Requirements
     * city
     * home country
     * hobby
-    * Link to your social media profile (LinkedIn, Snapchat etc)
+    * Link to your social media profile (LinkedIn, Snapchat etc.)
 * Calculate your age using the `Date('Y')` function call; subtract your year of birth of the current year (this might
   cause a
   small fault which is not a problem for now)

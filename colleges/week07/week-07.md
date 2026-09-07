@@ -28,4 +28,4 @@ Complete all Week 7 assignments.
 
 # Assignments
 
-Please have a look at [assignments week 7](../assignments/assignments-week-07.md)
+Please have a look at [assignments week 7](../../assignments/assignments-week-07.md)

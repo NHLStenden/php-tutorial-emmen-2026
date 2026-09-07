@@ -14,4 +14,4 @@ else {
 
 ?>
 </code></pre>
-<img src="<?= $uploadedFilename ?>">
+<img src="<?= $uploadedFilename ?>" alt="uploaded file">

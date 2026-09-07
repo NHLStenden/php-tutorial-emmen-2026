@@ -7,12 +7,12 @@ Beschikbaar via de O'Reilly-website (gebruik een NHL Stenden-account).
 PHP
 
 1. [PHP Crash Course, Matt Smith](https://learning.oreilly.com/library/view/php-crash-course/9798341620049/)
-1. [PHP by Example: A Practical Guide to Creating Web Applications with PHP, Alex Vasilev](https://learning.oreilly.com/library/view/php-by-example/9798868802584)
+2. [PHP by Example: A Practical Guide to Creating Web Applications with PHP, Alex Vasilev](https://learning.oreilly.com/library/view/php-by-example/9798868802584)
 
 HTML & CSS
 
 1. [HTML en CSS](https://learning.oreilly.com/library/view/html-and-css/9781806111831/)
-1. [Modern HTML & CSS From The Beginning 2.0 - Tweede editie, Brad Traversy, videocursus](https://learning.oreilly.com/course/modern-html-/9781835880562/)
+2. [Modern HTML & CSS From The Beginning 2.0 - Tweede editie, Brad Traversy, videocursus](https://learning.oreilly.com/course/modern-html-/9781835880562/)
 
 # Week: 1
 

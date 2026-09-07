@@ -12,9 +12,8 @@ print("<h1>Welcome $name $surname </h1>")
 This is valid. The `$name` and `$surname` are replaced with their values. This only works if you use **double qoutes**!
 
 However, it poses a new problem: the IDE will have problems understanding how you create the HTML and might stop validating
-the HTML. Furthermore, it might generate a lot more `<?php` tags than the other options (see [example 6](../06/readme.md)
-and [example 7](../07/readme.md)) as can be seen below. 
-
+the HTML. Furthermore, it might generate a lot more `<?php` tags than the other options (see [example 13](../13/readme.md)
+as can be seen below. 
 
 Here the generation of information is part of the template, which confuses matter more. It is even bad practice because
 there is some HTML that is the same in both the IF and ELSE branch.

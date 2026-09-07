@@ -28,4 +28,4 @@ Maak alle opdrachten van week 7 af.
 
 # Opdrachten
 
-Bekijk [de opdrachten van week 7](../assignments/assignments-week-07.md)
+Bekijk [de opdrachten van week 7](../../assignments/assignments-week-07.md)

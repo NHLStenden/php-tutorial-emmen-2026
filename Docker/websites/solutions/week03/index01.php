@@ -3,7 +3,7 @@
 Assignment 1: explode() and implode()
 <?php
 
-  function myExplode(string $separator, string $text) : array {
+  function myExplode(string $text) : array {
       $result = [];
 
       $part = "";
@@ -15,7 +15,7 @@ Assignment 1: explode() and implode()
       return $result;
   }
 
-  echo "Explode " . explode(", ","abc,def,g,e,rter,werwt4,wefrwer") . PHP_EOL;
+  echo "Explode " . myExplode("abc,def,g,e,rter,werwt4,wefrwer") . PHP_EOL;
 
 
 ?>

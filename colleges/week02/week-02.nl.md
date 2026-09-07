@@ -39,7 +39,7 @@ Maak alle opdrachten van week 2 af.
 
 # Opdrachten
 
-Bekijk [de opdrachten van week 2](../assignments/assignments-week-02.md)
+Bekijk [de opdrachten van week 2](../../assignments/assignments-week-02.md)
 
 # Online boeken – aanbevolen literatuur
 

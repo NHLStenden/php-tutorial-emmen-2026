@@ -63,9 +63,7 @@ main {
 .width-4col { grid-column-end: span 4;}
 .width-5col { grid-column-end: span 5;}
 .width-6col { grid-column-end: span 6;}
-.width-7col { grid-column-end: span 7;}
-.width-8col { grid-column-end: span 8;}
-.width-12col { grid-column-end: span 12;}
+
 section > * {
     min-width: 0;
 }

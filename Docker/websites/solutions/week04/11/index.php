@@ -181,8 +181,8 @@ $list1 = findMultipleFaster([1, 3, 53, 2, 45], [1, 2, 3, 4, 5, 6, 4, 5, 3, 32, 5
 $list2 = findMultipleFaster([2,5,1], [1,5,3,6,5,3,2,43,2]);
 
 // create an array with 1000 random numbers
-$longListValues =  array_map(function($item) { return random_int(0,61); },array_fill(0, 1000, 0));
-$longListSearch =  array_map(function($item) { return random_int(0,61); },array_fill(0, 100, 0));
+$longListValues =  array_map(function() { return random_int(0,61); },array_fill(0, 1000, 0));
+$longListSearch =  array_map(function() { return random_int(0,61); },array_fill(0, 100, 0));
 $list3 = findMultipleFaster($longListSearch, $longListValues);
 
 $highest1 = findHighest($areacodes);

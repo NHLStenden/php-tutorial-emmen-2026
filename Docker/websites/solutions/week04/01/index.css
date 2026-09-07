@@ -30,13 +30,10 @@ body {
 .background-purple500 {background-color:var(--Purple500);}
 .background-yellow100 {background-color:var(--Yellow100);}
 .background-yellow500 {background-color:var(--Yellow500);}
-.background-White {background-color:var(--White);}
-.background-Black {background-color:var(--Black);}
 
 
-.color-purple100 {color:var(--Purple100);}
 .color-purple500 {color:var(--Purple500);}
-.color-yellow100 {color:var(--Yellow100);}
+
 .color-yellow500 {color:var(--Yellow500);}
 .color-white {color:var(--White);}
 .color-black {color:var(--Black);}
@@ -45,7 +42,7 @@ body {
 .italic {font-style: italic;}
 
 .font-size-small  { font-size: var(--font-size-small); font-weight: 300;}
-.font-size-large  { font-size: var(--font-size-large); font-weight: 400;}
+
 .font-size-xlarge { font-size: var(--font-size-xlarge);font-weight: 500;}
 .font-size-xxlarge { font-size: var(--font-size-xxlarge);font-weight: 600;}
 

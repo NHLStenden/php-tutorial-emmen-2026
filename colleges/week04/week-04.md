@@ -34,7 +34,7 @@ Complete all Week 4 assignments.
 
 # Assignments
 
-Please have a look at [assignments week 4](assignments-week-04.md)
+Please have a look at [assignments week 4](../../assignments/assignments-week-04.md)
 
 ## Book chapters
 

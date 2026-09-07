@@ -15,4 +15,4 @@
 # --preserve-code           ignore text contained in code-block markers. ( `....` or ```php ... ```)
 #
 
-find -iname '*.md' ! -name "*.nl.md" -execdir $PWD/translate-with-deepl.sh {} \;
+find . -iname '*.md' ! -name "*.nl.md" -execdir "$PWD/translate-with-deepl.sh" {} \;

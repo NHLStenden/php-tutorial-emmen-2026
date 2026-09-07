@@ -1,0 +1,20 @@
+body {
+    color:red;
+}
+
+ol {
+    font-size:20pt;
+}
+
+.logo {
+    max-width:50px;
+}
+
+p.important {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+ul.important {
+    text-decoration: underline;
+}

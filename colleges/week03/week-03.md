@@ -33,7 +33,7 @@ Complete all Week 3 assignments.
 
 # Assignments
 
-Please have a look at [assignments week 3](../assignments/assignments-week-03.md)
+Please have a look at [assignments week 3](../../assignments/assignments-week-03.md)
 
 # Online books - advised reading
 

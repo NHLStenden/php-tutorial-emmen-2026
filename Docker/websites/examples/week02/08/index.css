@@ -19,7 +19,7 @@ article {
 }
 
 .cols-1 { grid-column: span 1;}
-.cols-2 { grid-column: span 2;}
+
 .cols-3 { grid-column: span 3;}
 
 .rows-1 {grid-row:span 1;}

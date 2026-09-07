@@ -34,7 +34,7 @@ Maak alle opdrachten van week 4 af.
 
 # Opdrachten
 
-Bekijk [de opdrachten van week 4](assignments-week-04.md)
+Bekijk [de opdrachten van week 4](../../assignments/assignments-week-04.md)
 
 ## Hoofdstukken uit het boek
 

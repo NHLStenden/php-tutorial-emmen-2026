@@ -37,7 +37,7 @@ Maak alle opdrachten van week 5.
 
 # Opdrachten
 
-Bekijk [opdrachten week 5](../assignments/assignments-week-05.md)
+Bekijk [opdrachten week 5](../../assignments/assignments-week-05.md)
 
 
 
