@@ -8,7 +8,7 @@ services:
             - DB_SERVER=${DB_SERVER}
             - DB_USER=${DB_ROOT_USER}
             - DB_PASSWORD=${DB_ROOT_PASSWORD}
-            - PHP_IDE_CONFIG=serverName=localhost
+            - PHP_IDE_CONFIG=serverName=php-tutorial
         volumes:
             - ./websites:/var/www/student
         depends_on:
