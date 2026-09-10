@@ -116,3 +116,8 @@ this folder without problems when the GitHub repository is updated.
 During the course there will be updates on the examples, solutions, readme information etcetera. In order to keep
 up-to-date with these updates, you use the 
 
+
+# Debugging
+
+Debugging tools allow you to single step through your code and inspect variables. For instructions on how to make this
+work in **PHP Storm** and **Visual studio Code** see the instructions in de [debugging](./debugging) folder.
