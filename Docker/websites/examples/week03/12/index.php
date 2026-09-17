@@ -53,7 +53,7 @@ var_dump($words);
 sort($words);
 $sortedwords = implode(" ", $words);
 
-echo "-------------------------\n";
+echo "--------sorted words-----------------\n";
 var_dump($sortedwords);
 
 ?>

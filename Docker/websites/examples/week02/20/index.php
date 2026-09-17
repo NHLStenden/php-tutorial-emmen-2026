@@ -8,8 +8,8 @@
 
 # $p = (10 != 20);
 # $q = (10 == 10);
-$p = date("Y") == 2026;
-$q = date("m") == 9; // 9 == september
+$p = date("Y") == "2026";
+$q = date("m") == "9"; // 9 == september
 
 if ($p && $q) {
     print "p and q and both true\n";

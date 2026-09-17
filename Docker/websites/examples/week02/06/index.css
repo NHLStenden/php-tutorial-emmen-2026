@@ -55,7 +55,7 @@ main {
                 grid-column-start: 1;
                 grid-column-end: 3;
 
-                background-color:whitesmoke;
+                background-color:red;
             }
             section {
                 grid-column-start: 3;
@@ -74,7 +74,8 @@ main {
                 grid-column-start: 1;
                 grid-column-end: 5;
 
-                background-color:whitesmoke;
+                background-color:blue;
+                color:white;
             }
             section {
                 grid-column-start: 5;
