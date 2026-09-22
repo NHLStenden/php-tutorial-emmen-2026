@@ -38,7 +38,7 @@ Errors have a red color.
 
 ## Task 2: Change your validation so that you are able to validate the following options:
 
-* Name (both first and last) has to be minimum of 5 characters and contains at least 1 uppercase character.
+* Name (both first and last) has to be minimum of 5 words and contains at least 1 uppercase character.
 * The email needs to be valid. Valid in this case means, contains an @ and ends in .eu
 
 Street address line 1 cannot be empty, but street address line 2 can be empty. When submitted, if the street address
