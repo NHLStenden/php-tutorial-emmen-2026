@@ -13,6 +13,7 @@
     </style>
 </head>
 <body>
+<h1>Example using the foreach using a key to understand the array</h1>
 <table>
     <?php
     $row1 = ["surname" => "x", "name" => "Martin", "age" => 55];

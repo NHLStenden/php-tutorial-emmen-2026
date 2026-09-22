@@ -1,0 +1,40 @@
+h1,h2,h3 {
+    background-color: white;
+    height:40px;
+    position: sticky;
+}
+
+header {
+    position: sticky;
+    top:0;
+    background-color: black;
+    color:white;
+    height: 40px;
+    padding:5px;
+}
+
+footer {
+    position:sticky;
+    bottom:0;
+    background:darkblue;
+    color:white;
+    height:120px;
+}
+
+h1 {
+    top: 40px;
+}
+
+h2 {
+    top: 80px;
+    margin-left: 1rem;
+}
+
+h3 {
+    top:120px;
+    margin-left:2rem;
+}
+
+p {
+    margin-left:3rem;
+}

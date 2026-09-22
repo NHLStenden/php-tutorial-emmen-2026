@@ -31,8 +31,6 @@ article {
                 font-size:13pt;
                 /** small bonus: changes to font-size, background-color and text-color will animate in 1 second  */
                 transition: background-color,color,font-size 1s ease-in;
-
-
             }
 
         }

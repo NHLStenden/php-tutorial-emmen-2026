@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    article {
+        height: 800px;
+        width: calc(100vw - 20px);
+        background-color: bisque;
+
+        section {
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 4px 4px 4px darkgray;
+
+            background-color: aqua;
+
+            &:first-of-type {
+                height: 400px;
+                width: 30em;
+                margin-left:200px;
+                margin-top:200px;
+
+                div.image-text {
+                    position: relative;
+                    height: 200px;
+
+                    header {
+                        position: absolute;
+                        top: 40px;
+                        left: 0;
+                        text-align: center;
+                        z-index: 999;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        max-height: 200px;
+                    }
+
+                }
+
+
+                /*
+                p {
+                    position: relative;
+                    top: 200px;
+
+                }
+                */
+            }
+        }
+    }
+}
