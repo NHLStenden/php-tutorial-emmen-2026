@@ -32,6 +32,16 @@ echo "Search the letter 'A' in $name : " . (str_contains($name, 'A')  ?  "YES" :
 echo "Search the location of the first occurence of the letter 'l' in $name : " . strpos($name, 'l') . "\n";
 echo "Search the location of the first occurence of the letter 'm' in $name starting at the end: " . strrpos($name, 'm') . "\n";
 
+// always use === or !== when comparing to false, as the number 0 is also valid as 'false'.
+$pos = strpos($name, 'x');
+if ($pos === false) {
+    echo "Found letter x not found\n";
+}
+else {
+    echo "Found letter x at position $pos \n";
+
+}
+
 // replacing
 
 echo "Replace all letters 'a' with 'b' in Martin Molema: " . str_replace("a","b", $name) . "\n";
