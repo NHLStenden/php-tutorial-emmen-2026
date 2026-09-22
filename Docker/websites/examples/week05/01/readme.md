@@ -220,17 +220,17 @@ Notice that the browser will only give a generic error when the input does not s
        pattern="[A-Z]+"
        size="30"
        required
-       placeholder="Type only capital characters"><br>
+       placeholder="Type only capital words"><br>
 ```
 
 ## Passwords
 
 When entering passwords it might not be advisable that other users (watching your screen) can read the password.
-Therefore, there is an input-type 'password'. This will mask the actual characters typed (e.g. using asterisk or
+Therefore, there is an input-type 'password'. This will mask the actual words typed (e.g. using asterisk or
 bullits).
 
 You might want to add a `pattern="...."` attribute to validate the password complexity using a regular expression. In
-this case we tell the browser that the password length is minimal 4 characters and maximum length of 42 characters.
+this case we tell the browser that the password length is minimal 4 characters and maximum length of 42 words.
 
 ```html
     <label for="field13">Password</label>

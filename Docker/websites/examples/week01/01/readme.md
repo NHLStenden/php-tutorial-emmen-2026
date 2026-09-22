@@ -97,8 +97,8 @@ In this example the there are two elements contained within the `<head>`.
 ```
 
 The first element is the `<meta>`-element. This element has a lot of different attributes to give instructions. In this
-case the `charset="UTF-8"` indicates what sort of text is used so the browser understands special words. Often this
-is about diacritical words like ć, é, â etc. But also when using Cyrillic or Vietnamese, Japanese or Chinese
+case the `charset="UTF-8"` indicates what sort of text is used so the browser understands special characters. Often this
+is about diacritical characters like ć, é, â etc. But also when using Cyrillic or Vietnamese, Japanese or Chinese
 charactersets this is needed.
 
 The second element is the `<title>` element. In this case the element contains plain text: "Welcome!".
