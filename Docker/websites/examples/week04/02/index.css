@@ -12,6 +12,7 @@ main {
             border-radius: 4px;
             padding:10px;
             nav {
+                white-space: nowrap;
                 font-size:small;
                 ul {
                     margin:0;
