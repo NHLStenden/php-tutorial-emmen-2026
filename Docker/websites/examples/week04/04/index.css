@@ -18,7 +18,7 @@ main {
                     summary {
                         list-style: none;
                         &::marker {
-                            content: ""
+                            content: "+"
                         }
                         cursor: pointer;
                     }
