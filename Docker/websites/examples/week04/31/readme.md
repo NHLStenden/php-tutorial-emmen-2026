@@ -1,5 +1,7 @@
 # Memory usage with different parameter passing conventions
 
+In this example we look at how the PHP engine handles passing variables to functions.
+
 There are two ways to pass variables to a function
 
 1. Pass by value
