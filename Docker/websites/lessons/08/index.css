@@ -1,0 +1,9 @@
+nav ul li {
+    list-style: none;
+    white-space: nowrap;
+    a {
+        text-decoration: none;
+        color:black;
+
+    }
+}

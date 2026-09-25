@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulieren</title>
+    <style>
+        input:focus {
+            box-shadow: 5px 5px 5px blue;
+        }
+        input:required {
+            color:Red;
+
+        }
+    </style>
+</head>
+<body>
+<form action="process.php" method="post">
+    <label for="naam">
+        Naam
+        <input type="text"
+               minlength="3"
+               maxlength="30"
+               size="30"
+               required
+               id="naam"
+               name="naam">
+    </label>
+    <br>
+    <label>
+        Afstand
+        <input type="range"
+               name="distance"
+               value="0"
+               min="0"
+               max="100"
+               step="25">
+    </label>
+    <br>
+    <label for="freetext">Vrije tekst</label>
+    <textarea id="freetext"
+              name="freetext"
+              cols="80" rows="10">dit is de standaard tekst
+    </textarea>
+    <br>
+    <label for="pickfile">Avatar foto</label>
+    <input name="avatar" type="file" id="pickfile" accept="image/jpeg">
+    <br>
+    <label for="meedoen">Doe mee?</label>
+    <input type="checkbox" id="meedoen">
+
+    <br>
+    <label>Abonnement</label>
+    <br>
+    <input type="radio" name="abonnement" value="A" id="keuze_a">
+    <label for="keuze_a">A</label>
+    <br>
+    <input id="B" type="radio" name="abonnement" value="B">
+    <label for="keuze_a">B</label>
+    <br>
+    <input id="C" type="radio" name="abonnement" value="C">
+    <label for="keuze_a">C</label>
+    <br>
+    <input id="D" type="radio" name="abonnement" value="D">
+    <label for="keuze_a">D</label>
+    <br>
+    <input id="E" type="radio" name="abonnement" value="E">
+    <label for="keuze_a">E</label>
+
+    <br>
+    <label for="keuze2">Keuze</label>
+    <select name="keuze2" id="keuze2">
+        <option value="A">wrefmwreiwm A</option>
+        <option value="B">wrefmwreiwm B</option>
+        <option value="C">wrefmwreiwm C</option>
+        <option value="D">wrefmwreiwm D</option>
+        <option value="E">wrefmwreiwm E</option>
+    </select>
+
+    <br>
+    <input type="button" value="Opslaan">
+    <br>
+    <button type="submit">Opslaan</button>
+</form>
+</body>
+</html>
